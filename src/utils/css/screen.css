@@ -26,7 +26,9 @@ production stylesheet in assets/built/screen.css using gulp dev
 body {
   /* font-family: 'Muli', sans-serif; */
   font-family: var(--font-sans-serif);
-  background: var(--color-bg);
+  background-image: url("./fondo.gif");
+  background-repeat: round;
+  background-attachment: fixed;
   transition: background 0.3s ease-out;
   transition-delay: 0.25;
 }
@@ -65,9 +67,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 13vw 0;
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
   text-align: center;
+  height: 100vh;
 }
 
 .error-head {
@@ -172,8 +175,10 @@ body {
   display: block;
   margin: 0;
   padding: 10px 12px;
+  font-size: 1rem;
   color: var(--color-base);
-  font-weight: 600;
+  font-family: var(--font-computers);
+  font-weight: normal;
   opacity: 0.4;
 }
 
@@ -193,17 +198,18 @@ body {
 .site-head-logo {
   flex-shrink: 0;
   display: block;
+  font-family: var(--font-computers);
   padding: 10px;
   color: var(--color-base);
-  font-size: 2.1rem;
+  font-size: 2.7rem !important;
   line-height: 1em;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .site-head-logo:hover {
-  text-decoration: none;
+  text-decoration: line-through;
+  color: black;
 }
 
 .site-head-logo img {
@@ -795,7 +801,7 @@ body {
 .tag-item:hover {
   color: var(--color-bg-bright);
   background-color: var(--color-sub-base);
-  transition: all 0.4s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 @media (max-width: 700px) {

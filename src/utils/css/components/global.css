@@ -339,12 +339,11 @@ blockquote cite a {
 a {
   color: color(var(--color-primary) l(-5%));
   text-decoration: none;
-  transition: 0.4s ease;
+  /* transition: 0.4s ease; */
 }
 
 a:hover {
-  text-decoration: underline;
-  transition: 0.2s ease;
+  /* transition: 0.2s ease; */
 }
 
 h1,
