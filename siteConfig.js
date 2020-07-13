@@ -1,5 +1,5 @@
 module.exports = {
-  name: "Animanoir",
+  name: "animanoir",
   shortName: "AB",
   description:
     "Blog about stuff that interests me, which is animation, 2D/3D, software, digital creativity, etc. Mainly written in spanish.",

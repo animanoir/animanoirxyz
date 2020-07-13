@@ -7,6 +7,12 @@
 @import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,400i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cousine:400,400i&display=swap");
 
+@font-face {
+  font-family: "Computers";
+  src: url("./font-computers.woff");
+  format: ("woff");
+}
+
 :root {
   /* Colours */
   /* --color-primary: #3eb0ef; */
@@ -45,6 +51,8 @@
   --font-normal: 400;
   --font-bold: 700;
   --font-heavy: 800;
+
+  --font-computers: "Computers";
 
   /* Breakpoints */
   --xlarge: 1680px;

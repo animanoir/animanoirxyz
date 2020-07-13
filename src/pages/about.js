@@ -52,7 +52,10 @@ const AboutPage = ({ data }, location) => {
           </div>
           <h3 id="dynamic-styles">Óscar A. Montiel</h3>
           <h4>
-            <center>Front-end // Interacción // Animación // Multimedia</center>
+            <center>
+              {" "}
+              <pre>Front-end // Interacción // Animación // Multimedia</pre>
+            </center>
           </h4>
           <h6>
             <a

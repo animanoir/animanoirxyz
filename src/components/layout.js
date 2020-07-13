@@ -26,52 +26,31 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" class="site-head-left">
+          <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              {/* <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li> */}
+              <li className="nav-home nav-current" role="menuitem">
+                <Link className="site-head-logo" to={`/`}>
+                  animanoir.xyz
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://animanoir.com"
+                  title="Animanoir's presentation card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  portfolio
+                </a>
+              </li>
               <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+                <Link to={`/about`}>about</Link>
               </li>
               <li className="nav-tags" role="menuitem">
-                <Link to={`/tags`}>Tags</Link>
+                <Link to={`/tags`}>post-tags</Link>
               </li>
             </ul>
           </nav>
-          <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
-          </div>
-          <div className="site-head-right">
-            <div className="social-links">
-              <a
-                href="https://ello.co/animanoir"
-                title="Animanoir's Ello"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ello
-              </a>
-              <a
-                href="https://twitter.com/geosminu"
-                title="Animanoir's Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://animanoir.com"
-                title="Animanoir's presentation card"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Animanoir.com
-              </a>
-            </div>
-          </div>
         </div>
       </header>
       <main id="site-main" className="site-main">
