@@ -50,15 +50,12 @@ const AboutPage = ({ data }, location) => {
               <Box position={[-1.2, 0, 0]} />
             </Canvas>
           </div>
-          <figure className="kg-card kg-image-card kg-width-full">
-            <Img
-              fluid={data.fotoAcerca.childImageSharp.fluid}
-              className="kg-image"
-            />
-          </figure>
           <h3 id="dynamic-styles">Óscar A. Montiel</h3>
           <h4>
-            <center>Front-end // Interacción // Animación // Multimedia</center>
+            <center>
+              {" "}
+              <pre>Front-end // Interacción // Animación // Multimedia</pre>
+            </center>
           </h4>
           <h6>
             <a

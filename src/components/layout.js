@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTwitter, faEllo } from "@fortawesome/free-solid-svg-icons"
 
 const Layout = props => {
   const { title, children } = props
@@ -24,75 +26,41 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" class="site-head-left">
+          <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              {/* <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li> */}
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+              <li className="nav-home nav-current" role="menuitem">
+                <Link className="site-head-logo" to={`/`}>
+                  animanoir.xyz
+                </Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
+              <li>
+                <a
+                  href="https://animanoir.com"
+                  title="Animanoir's presentation card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  portfolio
+                </a>
+              </li>
+              <li className="nav-about" role="menuitem">
+                <Link to={`/about`}>about</Link>
               </li>
               <li className="nav-tags" role="menuitem">
-                <Link to={`/tags`}>Tags</Link>
+                <Link to={`/tags`}>post-tags</Link>
               </li>
             </ul>
           </nav>
-          <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
-          </div>
-          <div className="site-head-right">
-            <div className="social-links">
-              <a
-                href="https://ello.co/animanoir"
-                title="Ello"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ello
-              </a>
-              <a
-                href="https://twitter.com"
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
-              <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
-          {children}
-        </div>
+        <div id="swup">{children}</div>
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()}{" "}
         <a
           target="_blank"
-          href="mailto:omontiel@animanoir.com?subject=¡Hagamos un proyecto juntos ❤️!"
+          href="mailto:omontiel@animanoir.com?subject=Let's make ❤️ together."
         >
           omontiel@animanoir.com
         </a>
