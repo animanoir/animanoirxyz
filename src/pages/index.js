@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
@@ -6,10 +6,39 @@ import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
 
+import { Canvas, useFrame } from "react-three-fiber"
+
 // import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
+
+function Box(props) {
+  const mesh = useRef()
+
+  const [hovered, setHover] = useState(false)
+  const [active, setActive] = useState(false)
+
+  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
+
+  return (
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+      onClick={e => setActive(!active)}
+      onPointerOver={e => setHover(true)}
+      onPointerOut={e => setHover(false)}
+    >
+      <boxBufferGeometry attach="geometry" args={[4, 4, 4]} />
+      <meshStandardMaterial
+        attach="material"
+        color={hovered ? "hotpink" : "orange"}
+      />
+    </mesh>
+  )
+}
+
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -30,9 +59,9 @@ const BlogIndex = ({ data }, location) => {
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
-          <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
-          </h2>
+          <Canvas>
+            <Box position={[-1.2, 0, 0]} />
+          </Canvas>
         </header>
       )}
       <div className="post-feed">

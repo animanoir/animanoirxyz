@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTwitter, faEllo } from "@fortawesome/free-solid-svg-icons"
 
 const Layout = props => {
   const { title, children } = props
@@ -32,9 +34,6 @@ const Layout = props => {
               <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>About</Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li>
               <li className="nav-tags" role="menuitem">
                 <Link to={`/tags`}>Tags</Link>
               </li>
@@ -49,44 +48,34 @@ const Layout = props => {
             <div className="social-links">
               <a
                 href="https://ello.co/animanoir"
-                title="Ello"
+                title="Animanoir's Ello"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Ello
               </a>
               <a
-                href="https://twitter.com"
-                title="Twitter"
+                href="https://twitter.com/geosminu"
+                title="Animanoir's Twitter"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
               <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
-                title="GitHub"
+                href="https://animanoir.com"
+                title="Animanoir's presentation card"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                Animanoir.com
               </a>
             </div>
           </div>
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
-          {children}
-        </div>
+        <div id="swup">{children}</div>
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()}{" "}

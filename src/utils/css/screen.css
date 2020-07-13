@@ -26,7 +26,8 @@ production stylesheet in assets/built/screen.css using gulp dev
 body {
   /* font-family: 'Muli', sans-serif; */
   font-family: var(--font-sans-serif);
-  background: var(--color-bg);
+  background-image: url("./fondo.gif");
+  background-repeat: round;
   transition: background 0.3s ease-out;
   transition-delay: 0.25;
 }
@@ -65,9 +66,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 13vw 0;
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
   text-align: center;
+  height: 100vh;
 }
 
 .error-head {

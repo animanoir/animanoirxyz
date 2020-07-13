@@ -17,14 +17,14 @@
   --color-base: #f5f5f7;
   --color-sub-base: #aaa;
   --color-border: #d2d2d7;
-  --color-bg: #111111;
-  --color-bg-bright: #1d1d1f;
+  --color-bg: #000000;
+  --color-bg-bright: #191919;
   --color-bg-dark: #000;
 
   --color-spare1: #66bbff;
   --color-spare2: #cccccc;
-  --color-spare3: #63636e;
-  --color-spare4: #252429;
+  --color-spare3: #000000;
+  --color-spare4: #000000;
 
   /* Apple Dark Appearance System Color*/
   --color-apple-blue: rgb(10, 132, 255);
