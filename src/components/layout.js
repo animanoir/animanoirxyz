@@ -60,7 +60,7 @@ const Layout = props => {
         &copy; {new Date().getFullYear()}{" "}
         <a
           target="_blank"
-          href="mailto:omontiel@animanoir.com?subject=¡Hagamos un proyecto juntos ❤️!"
+          href="mailto:omontiel@animanoir.com?subject=Let's make ❤️ together."
         >
           omontiel@animanoir.com
         </a>
