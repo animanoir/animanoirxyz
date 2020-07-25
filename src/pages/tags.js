@@ -18,7 +18,7 @@ const TagIndex = ({ data }) => {
     <Layout title={siteTitle}>
       <SEO title="Tags" />
       <header className="tag-page-head">
-        <h1 className="page-head-title">Tags({tags.length})</h1>
+        <h1 className="page-head-title">Tags</h1>
       </header>
       <div className="tag-container">
         {tags.map(tag => {
@@ -28,7 +28,7 @@ const TagIndex = ({ data }) => {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <div className="tag-item">#{tag}</div>
+              <div className="tag-item">{tag}</div>
             </Link>
           )
         })}
