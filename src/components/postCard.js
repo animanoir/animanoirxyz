@@ -4,20 +4,14 @@ import Tags from "./tag"
 
 export default props => (
   <article
-    className={`post-card ${props.count % 3 === 0 && `post-card-large`} ${
-      props.postClass
-    } ${props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
+    className={`post-card  ${props.postClass} no-image`}
     style={
       props.node.frontmatter.thumbnail && {
         backgroundImage: `url(${props.node.frontmatter.thumbnail.childImageSharp.fluid.src})`,
       }
     }
   >
-    {props.node.frontmatter.thumbnail ? (
-      <ContentWithImage props={props} />
-    ) : (
-      <ContentNoImage props={props} />
-    )}
+    <ContentNoImage props={props} />
   </article>
 )
 
@@ -37,19 +31,7 @@ class ContentNoImage extends Component {
           </Link>
         </div>
         <div className="post-card-date">{props.node.frontmatter.date}</div>
-        <div className="post-card-body">
-          {props.node.frontmatter.description || props.node.excerpt}
-        </div>
-        <div>
-          <Link
-            to={props.node.fields.slug}
-            className="post-card-link post-card-readmore"
-          >
-            {props.node.frontmatter.description || props.node.excerpt
-              ? "Read more"
-              : null}
-          </Link>
-        </div>
+        <div></div>
       </div>
     )
   }

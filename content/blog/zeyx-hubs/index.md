@@ -1,8 +1,8 @@
 ---
-title: Don't stop
+title: Zeyx Hubs
 date: "2019-05-07"
 tags: [pink, color]
-thumbnail: ./ian-dooley-298769-unsplash.jpg
+thumbnail: ./zeyxbg2.jpg
 description: Pink is my favourite colour. I used to say my favourite colour was black to be cool, but it is pink - all shades of pink. If I have an accessory, it is probably pink.
 ---
 
