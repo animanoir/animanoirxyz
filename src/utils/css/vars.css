@@ -21,7 +21,7 @@
   /* --color-bg: #f8f8f8; */
   --color-primary: #2997ff;
   --color-base: #f5f5f7;
-  --color-sub-base: #aaa;
+  --color-sub-base: rgb(230, 230, 230);
   --color-border: #d2d2d7;
   --color-bg: #000000;
   --color-bg-bright: #191919;
