@@ -57,17 +57,6 @@ const AboutPage = ({ data }, location) => {
               <pre>Front-end // Interacción // Animación // Multimedia</pre>
             </center>
           </h4>
-          <h6>
-            <a
-              href="https://www.linkedin.com/in/oscaramontiel/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-            <a href="https://ello.co/animanoir" target="_blank">
-              Ello
-            </a>
-          </h6>
         </div>
       </article>
     </Layout>
