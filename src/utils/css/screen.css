@@ -395,7 +395,7 @@ body {
   position: relative;
   flex: 1 1 50%;
   display: flex;
-  height: 35vw;
+  height: 15vw;
   /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
   /* based #1d1d1f */
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
@@ -483,7 +483,6 @@ body {
 /* Posts without images */
 .post-card.no-image:before {
   display: block;
-  content: counter(posts);
   position: absolute;
   bottom: -0.15em;
   right: 5vw;
