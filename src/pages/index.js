@@ -21,13 +21,45 @@ const Index = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Posts"
+        title="Animanoir"
         keywords={[
-          `devlog`,
+          `animanoir`,
           `blog`,
-          `Animanoir`,
           `Óscar A. Montiel`,
-          `three.js`,
+          `animación`,
+          `animation`,
+          "interactive",
+          "creative",
+          "developer",
+          "3d",
+          "2d",
+          "idm",
+          "unity",
+          "three js",
+          "aphex twin",
+          "art",
+          "ghosts",
+          "fantasmas",
+          "arte digital",
+          "digital art",
+          "interacción",
+          "frontend",
+          "react",
+          "html 5",
+          "web developer",
+          "creative agencies",
+          "web developer portafolio",
+          "website developer",
+          "creative studio",
+          "web design",
+          "graphic designers",
+          "interactive design",
+          "freelance web developer",
+          "desarrollo web",
+          "diseño interactivo",
+          "web interactiva",
+          "programador",
+          "animador",
         ]}
       />
       <img src={temporalPhoto} />
