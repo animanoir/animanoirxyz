@@ -8,53 +8,24 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import { Canvas, useFrame } from "react-three-fiber"
-
-function Box(props) {
-  const mesh = useRef()
-
-  const [hovered, setHover] = useState(false)
-  const [active, setActive] = useState(false)
-
-  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
-
-  return (
-    <mesh
-      {...props}
-      ref={mesh}
-      scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
-      onClick={e => setActive(!active)}
-      onPointerOver={e => setHover(true)}
-      onPointerOut={e => setHover(false)}
-    >
-      <boxBufferGeometry attach="geometry" args={[4, 4, 4]} />
-      <meshStandardMaterial
-        attach="material"
-        color={hovered ? "hotpink" : "orange"}
-      />
-    </mesh>
-  )
-}
-
 const AboutPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO
+        title="About"
+        keywords={[`Óscar A. Montiel`, `threejs`, `javascript`, `react`]}
+      />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <div id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            <Canvas>
-              <Box position={[-1.2, 0, 0]} />
-            </Canvas>
-          </div>
+          <div id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-"></div>
           <h3 id="dynamic-styles">Óscar A. Montiel</h3>
           <h4>
             <center>
               {" "}
-              <pre>Front-end // Interacción // Animación // Multimedia</pre>
+              <p>Front-end // Interacción // Animación // Multimedia</p>
             </center>
           </h4>
         </div>

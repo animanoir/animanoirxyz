@@ -10,6 +10,7 @@ class Tags extends Component {
         {tags &&
           tags.map(tag => (
             <span key={tag}>
+              {" > "}
               <Link
                 className="post-card-tag-link"
                 key={tag}
@@ -17,7 +18,7 @@ class Tags extends Component {
                 to={`/tags/${_.kebabCase(tag)}`}
               >
                 {tag}
-              </Link>{" "}
+              </Link>
             </span>
           ))}
       </div>

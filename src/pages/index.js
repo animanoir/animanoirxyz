@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react"
 import { graphql, StaticQuery } from "gatsby"
+// import Img from 'gatsby-image'
+import temporalPhoto from "../../content/assets/animanoir.jpg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,7 +13,7 @@ import "../utils/normalize.css"
 import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 
-const BlogIndex = ({ data }, location) => {
+const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
@@ -28,19 +30,7 @@ const BlogIndex = ({ data }, location) => {
           `three.js`,
         ]}
       />
-      <div className="post-feed">
-        {posts.map(({ node }) => {
-          postCounter++
-          return (
-            <PostCard
-              key={node.fields.slug}
-              count={postCounter}
-              node={node}
-              postClass={`post`}
-            />
-          )
-        })}
-      </div>
+      <img src={temporalPhoto} />
     </Layout>
   )
 }
@@ -83,7 +73,7 @@ export default props => (
   <StaticQuery
     query={indexQuery}
     render={data => (
-      <BlogIndex location={props.location} props data={data} {...props} />
+      <Index location={props.location} props data={data} {...props} />
     )}
   />
 )
