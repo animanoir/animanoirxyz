@@ -137,6 +137,7 @@ body {
   position: relative;
   z-index: 300;
   margin-top: -10px;
+  margin-bottom: 1.5rem;
   font-size: 1.35rem;
 }
 
@@ -439,7 +440,7 @@ body {
 .post-card-date,
 .post-card-body,
 .post-card-tag-link {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--color-sub-base);
 }
 
@@ -474,10 +475,10 @@ body {
 .post-card-title {
   margin: 0;
   display: inline-block;
-  font-size: 3.4rem;
+  font-size: 3rem;
   /* max-width: 70%; */
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
+  /* transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1); */
 }
 
 /* Posts without images */
@@ -551,21 +552,19 @@ body {
 /* ---------------------------------------------------------- */
 
 .post-content {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 6vw 0;
+  padding: 3vw 0;
 }
 
 .post-content-header {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .post-content-title {
-  margin: 0 0 3vw;
   color: var(--color-base);
-  text-align: center;
 }
 
 .post-content-excerpt {
@@ -573,7 +572,6 @@ body {
   font-size: 2.2rem;
   line-height: 1.6em;
   color: var(--color-base);
-  text-align: center;
   opacity: 0.5;
 }
 @media (max-width: 500px) {
@@ -583,17 +581,15 @@ body {
 }
 
 .post-content-image {
-  margin: 4vw 0;
   position: relative;
   width: 75vw;
-  min-width: 100%;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   transform: translateX(calc(50vw - 50%));
 }
 
 .post-content-body {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   line-height: 1.65em;
 }
 @media (max-width: 500px) {
