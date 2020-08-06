@@ -53,10 +53,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { tags: { in: [$tag] } } }, sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {

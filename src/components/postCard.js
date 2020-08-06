@@ -30,8 +30,6 @@ class ContentNoImage extends Component {
             </h2>
           </Link>
         </div>
-        <div className="post-card-date">{props.node.frontmatter.date}</div>
-        <div></div>
       </div>
     )
   }

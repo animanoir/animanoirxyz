@@ -1,8 +1,8 @@
 module.exports = {
-  name: "animanoir",
-  shortName: "AB",
+  name: "Animanoir",
+  shortName: "Animanoir",
   description:
-    "Blog about stuff that interests me, which is animation, 2D/3D, software, digital creativity, etc. Mainly written in spanish.",
+    "Creative development. Interactive design. Multimedia wizardy. Ghosts, spectres and ethereal beings.",
   url: "https://animanoir.xyz", // Domain of your site without prefix!
   prefix: "/",
   author: "Óscar A. Montiel",

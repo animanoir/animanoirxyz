@@ -15,13 +15,14 @@ import "../utils/css/screen.css"
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
+  const siteDescription = data.site.siteMetadata.description
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
 
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Animanoir"
+        title={siteDescription}
         keywords={[
           `animanoir`,
           `blog`,
@@ -62,7 +63,19 @@ const Index = ({ data }, location) => {
           "animador",
         ]}
       />
-      <img src={temporalPhoto} />
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          postCounter++
+          return (
+            <PostCard
+              key={node.fields.slug}
+              count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          )
+        })}
+      </div>
     </Layout>
   )
 }

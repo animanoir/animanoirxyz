@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import photo from '../../content/assets/oamm.gif';
+
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
@@ -15,20 +17,65 @@ const AboutPage = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title="About"
-        keywords={[`Óscar A. Montiel`, `threejs`, `javascript`, `react`]}
+        keywords={[
+          `animanoir`,
+          `blog`,
+          `Óscar A. Montiel`,
+          `animación`,
+          `animation`,
+          "interactive",
+          "creative",
+          "developer",
+          "3d",
+          "2d",
+          "idm",
+          "unity",
+          "three js",
+          "aphex twin",
+          "art",
+          "ghosts",
+          "fantasmas",
+          "arte digital",
+          "digital art",
+          "interacción",
+          "frontend",
+          "react",
+          "html 5",
+          "web developer",
+          "creative agencies",
+          "web developer portafolio",
+          "website developer",
+          "creative studio",
+          "web design",
+          "graphic designers",
+          "interactive design",
+          "freelance web developer",
+          "desarrollo web",
+          "diseño interactivo",
+          "web interactiva",
+          "programador",
+          "animador",
+        ]}
       />
 
       <article className="post-content page-template no-image">
-        <div className="post-content-body">
+      <center>
+
+      <div className="post-content-body">
           <div id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-"></div>
-          <h3 id="dynamic-styles">Óscar A. Montiel</h3>
           <h4>
-            <center>
-              {" "}
-              <p>Front-end // Interacción // Animación // Multimedia</p>
-            </center>
+              <img src={photo}></img>
+              <p className='about__subtitle'>Creative development | Interactive designer | Multimedia</p>
+              <div className='about__links'>
+                <a href='https://www.linkedin.com/in/oscaramontiel/'>linkedin</a>
+                <a href='https://animanoir.com'>animanoir.com</a>
+                <a href='https://twitter.com/geosminu'>twitter</a>
+                <a href='https://github.com/animanoir'>github</a>
+              </div>
           </h4>
         </div>
+      </center>
+
       </article>
     </Layout>
   )
