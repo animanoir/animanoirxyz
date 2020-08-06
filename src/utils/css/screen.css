@@ -46,6 +46,14 @@ body {
   text-indent: -9999px;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
 /* Layout
 /* ---------------------------------------------------------- */
 
@@ -137,6 +145,11 @@ body {
   color: var(--color-border);
 }
 
+@media (max-width: 320px) {
+  .site-foot{
+    font-size: 1rem;
+  }
+}
 /* Site Navigation
 /* ---------------------------------------------------------- */
 
@@ -397,6 +410,15 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.home__img {
+  display: block;
+}
+
+.home__container {
+  display: block;
+  position: absolute;
 }
 
 .post-card {
@@ -818,4 +840,15 @@ body {
   max-width: 70%;
   margin: auto;
   text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.custom-navbar {
+  display: flex;
+}
+
+.custom-navbar .title {
+  font-family: var(--font-josefin);
+  font-size: 4rem;
 }
