@@ -58,7 +58,9 @@ a:hover {
 /* ---------------------------------------------------------- */
 
 .site-wrapper {
-  padding: 3vw;
+  padding-top: 3vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   min-height: 100vh;
 }
 @media (max-width: 850px) {
@@ -416,10 +418,6 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.home__img {
-  display: block;
-}
-
 .home__container {
   display: block;
   position: absolute;
@@ -598,7 +596,7 @@ a:hover {
   max-width: 960px;
   /* margin: 0 auto; */
   padding-top: 1vw;
-  padding-right:3vw;
+  padding-right:10vw;
 }
 
 .post-content-header {
@@ -612,7 +610,7 @@ a:hover {
 }
 
 .post-content-excerpt {
-  margin: -2vw 0 2vw;
+  margin: -2vw 0 1.5vw;
   font-size: 2.2rem;
   line-height: 1.6em;
   color: var(--color-base);
@@ -649,6 +647,7 @@ a:hover {
 .post-content-body h5,
 .post-content-body h6 {
   color: var(--color-base);
+  margin: 0;
 }
 
 .post-content-body li {
@@ -728,7 +727,7 @@ a:hover {
 }
 
 .post-content-body hr {
-  margin: 4vw 0;
+  margin: vw 0;
 }
 
 .post-content-body hr:after {
@@ -868,3 +867,6 @@ a:hover {
   font-size: 4rem;
 }
 
+.gatsby-resp-image-wrapper {
+  margin: 1rem!important;
+}
