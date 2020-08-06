@@ -859,7 +859,6 @@ a:hover {
 .custom-navbar {
   display: flex;
   align-items: baseline;
-  margin-bottom: 0.3rem;
 }
 
 .custom-navbar .title {
@@ -922,4 +921,8 @@ body::-webkit-scrollbar-thumb {
 .about__links a {
   font-weight: 200;
   font-size: 1.3rem;
+}
+
+.post__container {
+  margin-top: 2.7rem;
 }

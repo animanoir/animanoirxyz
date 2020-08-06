@@ -23,4 +23,9 @@ Para su promoción, Emmanuel Martinez y yo, Óscar. A. Montiel creamos una exper
 Para su desarrollo se empleó _Three.js_ como motor gráfico. En el lobby se optó por _Hydra_. Lo interesante fue encontrar una manera de embeber el canvas con Hydra de manera sencilla, así como mantener la densidad de píxeles adecuada.
 
 ![Jardines Alquitrán Animanoir Óscar A. Montiel VR](jardines-2.jpg)
+
+La intención fue intentar sumergir al usuario dentro de un jardín virtual donde perderse sea parte de la aventura, la música siendo un tipo de guía con qué entender este mundo. Algo así como la vida real también.
+
+El usuario puede moverse con el mouse o bien las teclas. Cada orbe es un _audioSource_ que, con la magia de Three.js, facilita la espacialización del audio: dependiendo de a dónde se mueva el usuario, se escuchará más cerca o más lejos la fuente musical.
+
 ![Jardines Alquitrán Animanoir Óscar A. Montiel VR](jardines-1.jpg)

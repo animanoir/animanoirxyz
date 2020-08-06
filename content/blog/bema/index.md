@@ -9,7 +9,8 @@ thumbnail: ./bema-1.jpg
 <div class='md-link'>
 
 _Links:
-[BEMA](https://derivelab.org/proyecto/bema/)_
+[BEMA](https://derivelab.org/proyecto/bema/) |
+[Presentación del día 1 (Google Drive)](https://docs.google.com/presentation/d/1j1E7KgyOnQeYvUUb-sMj158kkEOp7Xd3TGaVYhnrWiE/edit?usp=sharing)_
 
 </div>
 
