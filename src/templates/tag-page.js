@@ -29,7 +29,7 @@ class TagPageTemplate extends React.Component {
           ]}
         />
         <header className="tag-page-head">
-          <h1 className="page-head-title">Search post by tag...</h1>
+          <h1 className="page-head-title">.posts by tag</h1>
         </header>
         <div className="post-feed">
           {posts.map(({ node }) => {
@@ -53,7 +53,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { tags: { in: [$tag] } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       totalCount
       edges {
         node {
