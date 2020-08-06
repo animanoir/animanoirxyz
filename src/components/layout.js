@@ -13,14 +13,14 @@ const Layout = props => {
 
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
+    <Navbar />
       <main id="site-main" className="site-main">
-        <Navbar />
         <div id="swup">{children}</div>
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()}{" "}
         <a target="_blank" href="mailto:omontiel@animanoir.com?subject=❤️">
-          Animanoir | <span>Óscar A. Montiel</span> | Working on it |{" "}
+          Animanoir | <span>Óscar A. Montiel</span> | Site under construction |{" "}
           <span>omontiel@animanoir.com</span>
         </a>
       </footer>

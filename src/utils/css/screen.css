@@ -406,7 +406,11 @@ a:hover {
 /* Post Feed
 /* ---------------------------------------------------------- */
 
+
 .post-feed {
+  height: auto;
+  width: 100%;
+  z-index: 100;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -451,6 +455,9 @@ a:hover {
 }
 
 .post-card-content {
+  position: absolute;
+  width: 100%;
+  height: auto;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -461,9 +468,16 @@ a:hover {
   bottom: 0;
   left: 0;
   color: var(--color-base);
-  background: rgba(0, 0, 0, 0.1);
+  filter: invert(0);
+  background-color:rgba(0,0,0,.5);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+.post-card-content:hover {
+  filter: invert(100);
+  background-color:rgba(0,0,0,.3);
+
 }
 
 .post-card-date,
@@ -582,8 +596,9 @@ a:hover {
 
 .post-content {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 3vw 0;
+  /* margin: 0 auto; */
+  padding-top: 1vw;
+  padding-right:3vw;
 }
 
 .post-content-header {
@@ -597,7 +612,7 @@ a:hover {
 }
 
 .post-content-excerpt {
-  margin: -2vw 0 3vw;
+  margin: -2vw 0 2vw;
   font-size: 2.2rem;
   line-height: 1.6em;
   color: var(--color-base);
@@ -852,3 +867,4 @@ a:hover {
   font-family: var(--font-josefin);
   font-size: 4rem;
 }
+

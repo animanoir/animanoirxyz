@@ -53,10 +53,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { tags: { in: [$tag] } } }, sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -69,6 +66,13 @@ export const pageQuery = graphql`
             title
             description
             tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

@@ -75,8 +75,7 @@ const Index = ({ data }, location) => {
             />
           )
         })}
-    </div>
-      <img className='home__img' src={temporalPhoto} />
+      </div>
     </Layout>
   )
 }
@@ -101,6 +100,13 @@ const indexQuery = graphql`
             title
             description
             tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
