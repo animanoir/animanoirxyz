@@ -130,7 +130,7 @@ a:hover {
 }
 
 .site-foot {
-  margin: 3vw 0 1vw;
+  margin: 2.5vw 0 1vw;
   text-align: center;
   font-family: var(--font-josefin);
   color: color(var(--color-border) l(-20%));
@@ -593,10 +593,10 @@ a:hover {
 /* ---------------------------------------------------------- */
 
 .post-content {
-  max-width: 960px;
+  max-width: 885px;
   /* margin: 0 auto; */
   padding-top: 1vw;
-  padding-right:10vw;
+  margin: auto;
 }
 
 .post-content-header {
@@ -631,8 +631,8 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 1.5rem;
-  line-height: 1.65em;
+  font-size: 1.6rem;
+  line-height: 1.5em;
 }
 @media (max-width: 500px) {
   .post-content-body {
@@ -860,13 +860,63 @@ a:hover {
 
 .custom-navbar {
   display: flex;
+  align-items: baseline;
 }
 
 .custom-navbar .title {
   font-family: var(--font-josefin);
   font-size: 4rem;
+  margin-right: 2rem;
+}
+
+.custom-navbar .links {
+  font-family: var(--font-josefin);
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 .gatsby-resp-image-wrapper {
   margin: 1rem!important;
+}
+
+.md-link {
+  color: grey;
+}
+
+.md-link a {
+  color: rgb(160, 160, 160);
+}
+
+.md-link a:hover {
+  color: red;
+}
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(97, 97, 97);
+  outline: 1px solid rgb(51, 51, 51);
+}
+
+.about__subtitle {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+.about__links {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.about__links a {
+  font-weight: 200;
+  font-size: 1.3rem;
 }

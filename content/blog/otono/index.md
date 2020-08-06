@@ -6,9 +6,13 @@ description: Jardín virtual con orbes musicales.
 thumbnail: ./otono.jpg
 ---
 
+<div class='md-link'>
+
 *Links:
 [Experiencia VR](http://maremoto.mx/) |
 [otono.space/jardines/](https://otono.space/jardines/)*
+
+</div>
 
 <hr>
 
