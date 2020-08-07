@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
-import Navbar from './navbar';
+import Navbar from "./navbar"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faTwitter, faEllo } from "@fortawesome/free-solid-svg-icons"
-
-
 
 const Layout = props => {
   const { title, children } = props
@@ -13,7 +11,7 @@ const Layout = props => {
 
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
-    <Navbar />
+      <Navbar />
       <main id="site-main" className="site-main">
         <div id="swup">{children}</div>
       </main>
