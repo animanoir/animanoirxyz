@@ -873,6 +873,26 @@ a:hover {
   margin-right: 1rem;
 }
 
+@media (max-width: 500px) {
+  .custom-navbar {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  .custom-navbar .title {
+    font-family: var(--font-josefin);
+    font-size: rem;
+    margin-right: 2rem;
+  }
+
+  .custom-navbar .links {
+    font-family: var(--font-josefin);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
 .gatsby-resp-image-wrapper {
   margin: 1rem !important;
 }
