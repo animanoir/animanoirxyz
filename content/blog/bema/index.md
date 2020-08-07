@@ -16,10 +16,18 @@ _Links:
 
 <hr>
 
-Me gusta dar enseñar, intentar invadir de asombro sobre lo que me realmente me interesa. Por éso, a veces doy cursos, algunos pagados, otros gratuitos sobre programación.
+Creo que una parte fundamental que nos hace humanos es el deseo y satisfacción de explicar lo que nos asombra. Por ello, suelo dar cursos, ya sean pagados o gratuitos, de programación, normalmente enfocada al arte digital.
 
-El último que di fue en **BEMA**, en la ciudad de Querétaro. Impartí **Fantasma en la máquina: Programación para artistas**, el cual duró 3 días.
+El último que di fue en **BEMA**, en la ciudad de Querétaro, en el 2019. Impartí **Fantasma en la máquina: Programación para artistas**, el cual duró 3 días y que contó con varios asistentes.
 
-A los asistentes les mostré el uso de la programación como herramienta para la creación artística usando **Processing**.
+Decidí emplear **Processing** ya que:
+
+a) Es muy sencillo.
+b) Se enfoca en el arte.
+c) Es divertido.
+
+Mi intención primordial ha sido el aumentar los horizontes creativos de las personas. Estos últimos años la programación pasó de ser "difícil y para matemáticos" a "más difícil, para matemáticos **y artistas**, por lo que probablemente siga dando cursos a lo largo de mi vida.
+
+Eventualmente podría armarse un colectivo, tal vez.
 
 ![BEMA Clases Animanoir Óscar A. Montiel VR](bema-2.jpg)
