@@ -18,7 +18,7 @@ _Links:
 
 Creo que una parte fundamental que nos hace humanos es el deseo y satisfacción de explicar lo que nos asombra. Por ello, suelo dar cursos, ya sean pagados o gratuitos, de programación, normalmente enfocada al arte digital.
 
-El último que di fue en **BEMA**, en la ciudad de Querétaro, en el 2019. Impartí **Fantasma en la máquina: Programación para artistas**, el cual duró 3 días y que contó con varios asistentes.
+El último que di fue en el Centro Cultural **BEMA**, en la ciudad de Querétaro, en el 2019. Impartí **Fantasma en la máquina: Programación para artistas**, el cual duró 3 días y que contó con varios asistentes.
 
 Decidí emplear **Processing** ya que:
 
