@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: `Animanoir`,
+          content: title,
         },
         {
           property: `og:image`,
