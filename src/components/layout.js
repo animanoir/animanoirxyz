@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
+import React from "react"
 import Navbar from "./navbar"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faTwitter, faEllo } from "@fortawesome/free-solid-svg-icons"
 
 const Layout = props => {
-  const { title, children } = props
-  const [toggleNav, setToggleNav] = React.useState(false)
-  const [index, setIndex] = useState(0)
+  const { children } = props
+  const [toggleNav] = React.useState(false)
 
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
@@ -17,7 +15,11 @@ const Layout = props => {
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()}{" "}
-        <a target="_blank" href="mailto:omontiel@animanoir.com?subject=❤️">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="mailto:omontiel@animanoir.com?subject=❤️"
+        >
           Animanoir | <span>Óscar A. Montiel</span> | Site under construction |{" "}
           <span>omontiel@animanoir.com</span>
         </a>

@@ -36,6 +36,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-three-fiber": "^4.2.13",
+    "teenyicons": "^0.3.0",
     "three": "^0.118.3",
     "typeface-alegreya": "^0.0.69",
     "typeface-merriweather": "0.0.72",
