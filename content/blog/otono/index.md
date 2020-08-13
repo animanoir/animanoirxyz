@@ -1,5 +1,5 @@
 ---
-title: Jardines | Alquitrán EP (Experiencia VR)
+title: Alquitrán EP (Experiencia VR)
 date: "2019-11-11"
 tags: [three.js, interactive, music]
 description: Jardín virtual con orbes musicales.

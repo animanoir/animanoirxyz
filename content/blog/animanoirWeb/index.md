@@ -3,6 +3,7 @@ title: Animanoir.xyz
 date: "2019-11-11"
 tags: [React, Gatsby]
 description: Desarrollo sobre mi nuevo sitio web/portafolio
+thumbnail: an-fondo.jpg
 ---
 
 <div class='md-link'>

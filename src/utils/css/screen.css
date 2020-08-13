@@ -59,8 +59,8 @@ a:hover {
 
 .site-wrapper {
   padding-top: 3vw;
-  padding-left: 22vw;
-  padding-right: 22vw;
+  padding-left: 23.5vw;
+  padding-right: 23.5vw;
   min-height: 100vh;
 }
 @media (max-width: 850px) {
@@ -534,7 +534,6 @@ a:hover {
 }
 
 .post-card.no-image .post-card-content {
-  justify-content: flex-start;
   align-items: flex-start;
   padding: 4vw;
   flex-direction: column;
