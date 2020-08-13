@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import photo from "../../content/assets/oamm.gif"
-import animanoirLogoSVG from "../../content/assets/anSVG.svg"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -81,12 +80,6 @@ const AboutPage = ({ data }, location) => {
                       stroke="currentColor"
                     ></path>
                   </svg>
-                </a>
-                <a href="https://animanoir.com">
-                  <img
-                    style={{ width: "21px", height: "21px" }}
-                    src={animanoirLogoSVG}
-                  />
                 </a>
                 <a href="https://twitter.com/geosminu">
                   <svg

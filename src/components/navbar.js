@@ -7,10 +7,10 @@ const Navbar = props => (
       <h1 className="title">Animanoir</h1>
     </Link>
     <Link to="/about">
-      <p className="links">.about</p>
+      <span className="links">.about</span>
     </Link>
     <Link to="/">
-      <p className="links">.blog (coming soon)</p>
+      <span className="links">.blog (coming soon)</span>
     </Link>
   </nav>
 )

@@ -59,8 +59,8 @@ a:hover {
 
 .site-wrapper {
   padding-top: 3vw;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-left: 22vw;
+  padding-right: 22vw;
   min-height: 100vh;
 }
 @media (max-width: 850px) {
@@ -134,7 +134,7 @@ a:hover {
   text-align: center;
   font-family: var(--font-josefin);
   color: color(var(--color-border) l(-20%));
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .site-foot a {
@@ -514,7 +514,7 @@ a:hover {
 .post-card-title {
   margin: 0;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 3 rem;
   /* max-width: 70%; */
   text-align: center;
   /* transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1); */
@@ -541,7 +541,7 @@ a:hover {
 }
 
 .post-card.no-image .post-card-title {
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 1.15em;
   text-align: left;
   color: var(--color-base);
@@ -553,7 +553,7 @@ a:hover {
 
 @media (max-width: 1200px) {
   .post-card.no-image .post-card-title {
-    font-size: 3.4rem;
+    font-size: 2.5rem;
   }
   .post-card.no-image .post-card-date,
   .post-card.no-image .post-card-body,
@@ -591,7 +591,7 @@ a:hover {
 /* ---------------------------------------------------------- */
 
 .post-content {
-  max-width: 913px;
+  /* max-width: 913px; */
   /* margin: 0 auto; */
   margin: auto;
 }
@@ -604,7 +604,7 @@ a:hover {
 
 .post-content-title {
   color: var(--color-base);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .post-content-excerpt {
@@ -629,7 +629,8 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-family: var(--font-serif);
   line-height: 1.5em;
 }
 @media (max-width: 500px) {
@@ -725,10 +726,10 @@ a:hover {
 }
 
 .post-content-body hr {
-  margin: vw 0;
+  margin: 1.5vw 0;
 }
 
-.post-content-body hr:after {
+/* .post-content-body hr:after {
   content: "";
   position: absolute;
   top: -15px;
@@ -740,7 +741,7 @@ a:hover {
   background: color(var(--color-border) l(+10%));
   box-shadow: #fff 0 0 0 5px;
   transform: rotate(45deg);
-}
+} */
 
 .footnotes-sep {
   margin-bottom: 30px;
@@ -944,5 +945,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .post__container {
-  margin-top: 2.7rem;
+  margin-top: 1rem;
+}
+
+.post__img {
+  width: 50%;
+  margin-bottom: 2.5rem;
 }
