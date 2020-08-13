@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react"
+import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 // import Img from 'gatsby-image'
-import temporalPhoto from "../../content/assets/animanoir.jpg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

@@ -1,5 +1,5 @@
 ---
-title: Jardines | Alquitrán EP (Experiencia VR)
+title: Alquitrán EP (Experiencia VR)
 date: "2019-11-11"
 tags: [three.js, interactive, music]
 description: Jardín virtual con orbes musicales.
@@ -10,7 +10,8 @@ thumbnail: ./otono.jpg
 
 _Links:
 [Experiencia VR](https://maremoto.mx/) |
-[otono.space/jardines/](https://otono.space/jardines/)_
+[otono.space/jardines/](https://otono.space/jardines/) |
+[Since 66 by Vans](https://since66.mx/jardines-debuta-en-otono-con-un-nuevo-ep/)_
 
 </div>
 

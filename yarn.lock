@@ -14195,6 +14195,11 @@ tar@^6.0.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
+teenyicons@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/teenyicons/-/teenyicons-0.3.0.tgz#cc75ff6981a434a844a8708113d606ac800644b9"
+  integrity sha512-nkjmLAdOskyTB09D+AtV3Wqn7nNp1yRE9Jp1Tg0CrWUXbu/dKIGDUIwZzjwKJoYyKt8Ft9C01L42KaRFSqJ6pw==
+
 temp-dir@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-1.0.0.tgz#0a7c0ea26d3a39afa7e0ebea9c1fc0bc4daa011d"
