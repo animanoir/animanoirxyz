@@ -130,7 +130,7 @@ a:hover {
 }
 
 .site-foot {
-  margin: 2.5vw 0 1vw;
+  margin: 1.5vw 0 1vw;
   text-align: center;
   font-family: var(--font-josefin);
   color: color(var(--color-border) l(-20%));
