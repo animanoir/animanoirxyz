@@ -7,29 +7,22 @@ thumbnail: zeyxCard.jpeg
 ---
 
 <div class='md-link'>
-
-Links:
-[animanoir.com (old site)](https://animanoir.com/)
-Foto de la portada por Emmanuel Martinez
-
+Foto de la portada por Emmanuel Martinez ·
+<a href="https://zeyxlab.com/">ZeYX Lab (tarda en cargar por los assets)</a>
 </div>
 
 <hr>
 
-Honestamente, me encanta mi sitio previo [animanoir.com (old site)](https://animanoir.com/). Recuerdo que me tardé dos meses en diseñarlo y armarlo, incluyendo las noches que me pasaba leyendo la documentación de [Jekyll](https://jekyllrb.com/) para entender lo que intentaría hacer.
+**ZeYX Lab** es un proyecto desarrollado entre [**Salvador Herrera**](https://outsiders.gallery/), [**Emmanuel Martínez** ](http://maremoto.mx/)y yo, donde exploramos las posibilidades post-2020 de apreciar arte en un mundo cada vez más virtualizado.
 
-Algo que me siento orgulloso es, creo, **traduje mi personalidad y gustos al diseño de UI/UX.** Los colores, algunas interacciones (como pasar el mouse por encima de cierto texto), pero todo bajo el umbral de _quién soy yo realmente_.
+<img class="post__img" src="zeyx-img2.jpeg" alt="Animanoir Óscar A. Montiel" />
 
-La unicidad en la web ha perdido fuerza, siendo todo centralizado, homogéneo, y para fines completamente comerciales. Sin duda el internet de antaño era un lugar más diverso y atrevido, hoy en día es tan sólo otro medio para cosechar dinero, no cultura, no debate, no progreso.
+Desarrollado casi en su totalidad en **Three.js**, ZeYX es el prototipo de un espacio virtual enfocado en la navegación creativa dentro de los mares artístico-digitales.
 
-**Por éso creo que toda persona debería tener un espacio único, alejado de la masa popular, para desenvolverse como la persona que realmente es y puede ser.**
+El navegante puede flotar en la dirección que deseé con las teclas WASD, o bien haciendo click en el mouse.
 
-<hr>
+<img class="post__img" src="zeyx-img3.jpeg" alt="Animanoir Óscar A. Montiel" />
 
-En esta nueva iteración opté por un formato más minimalista,
+Fue presentado en la inauguración de la galería [Outsiders Gallery](https://outsiders.gallery/) en Querétaro, México.
 
-Este nuevo sitio nació de mi necesidad por cambiar y explorar nuevas formas de creación.
-
-<center>
-  <img class="post__img" src="logo-animanoir.svg" alt="Animanoir Óscar A. Montiel" />
-</center>
+<img class="post__img" src="./og3.jpg" alt="Animanoir Óscar A. Montiel" />

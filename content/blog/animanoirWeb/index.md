@@ -8,8 +8,7 @@ thumbnail: an-fondo.jpg
 
 <div class='md-link'>
 
-_Links:
-[animanoir.com (old site)](https://animanoir.com/)_
+[animanoir.com (old site)](https://animanoir.com/)
 
 </div>
 
