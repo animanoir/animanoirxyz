@@ -890,6 +890,19 @@ a:hover {
   z-index: -1;
 }
 
+.fondo-gif {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(3px);
+  background-image: url("../../../content/assets/yoxyzgif.gif");
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
 .custom-navbar {
   display: flex;
   align-items: baseline;

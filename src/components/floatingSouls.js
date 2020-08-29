@@ -84,7 +84,10 @@ function Scene() {
 }
 
 const FloatingSouls = () => (
-  <Canvas className="custom-canvas" camera={{ position: [0, 50, 10], fov: 75 }}>
+  <Canvas
+    className="custom-canvas fade-in"
+    camera={{ position: [0, 50, 10], fov: 75 }}
+  >
     <Scene />
   </Canvas>
 )
