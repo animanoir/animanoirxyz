@@ -8,10 +8,10 @@ thumbnail: ./otono.jpg
 
 <div class='md-link'>
 
-_Links:
+Links:
 [Experiencia VR](https://maremoto.mx/) |
 [otono.space/jardines/](https://otono.space/jardines/) |
-[Since 66 by Vans](https://since66.mx/jardines-debuta-en-otono-con-un-nuevo-ep/)_
+[Since 66 by Vans](https://since66.mx/jardines-debuta-en-otono-con-un-nuevo-ep/)
 
 </div>
 
@@ -27,5 +27,5 @@ La intención de este proyecto fue sumergir al usuario dentro de un jardín virt
 
 El usuario puede moverse con el mouse o las teclas. Cada orbe es un `audioSource` de Three.js para facilitar la espacialización del audio: dependiendo de la posición del usuario en el entorno 3D, la música sonará más cerca o lejos, por la derecha o la izquierda. Inmersión.
 
-Agradezco a Emmanuel Martínez por invitarme a colaborar en el proyecto =).
+Agradezco a Emmanuel Martínez por invitarme a colaborar en el proyecto.
 ![Jardines Alquitrán Animanoir Óscar A. Montiel VR](jardines-1.jpg)
