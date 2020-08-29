@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useState, useRef } from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Navbar from "../components/navbar"
 
 import photo from "../../content/assets/oamm.gif"
 
@@ -57,6 +58,7 @@ const AboutPage = ({ data }, location) => {
         ]}
       />
 
+      <Navbar />
       <article className="post-content page-template no-image">
         <center>
           <div className="post-content-body">
@@ -123,13 +125,6 @@ const indexQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    fotoAcerca: file(relativePath: { eq: "acerca-de-oamm.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
       }
     }
   }

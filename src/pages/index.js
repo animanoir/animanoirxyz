@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
+import Navbar from "../components/Navbar"
+import FloatingSouls from "../components/floatingSouls"
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"
@@ -19,63 +21,67 @@ const Index = ({ data }, location) => {
   let postCounter = 0
 
   return (
-    <Layout title={siteTitle}>
-      <SEO
-        title={siteDescription}
-        keywords={[
-          `animanoir`,
-          `blog`,
-          `Óscar A. Montiel`,
-          `animación`,
-          `animation`,
-          "interactive",
-          "creative",
-          "developer",
-          "3d",
-          "2d",
-          "idm",
-          "unity",
-          "three js",
-          "aphex twin",
-          "art",
-          "ghosts",
-          "fantasmas",
-          "arte digital",
-          "digital art",
-          "interacción",
-          "frontend",
-          "react",
-          "html 5",
-          "web developer",
-          "creative agencies",
-          "web developer portafolio",
-          "website developer",
-          "creative studio",
-          "web design",
-          "graphic designers",
-          "interactive design",
-          "freelance web developer",
-          "desarrollo web",
-          "diseño interactivo",
-          "web interactiva",
-          "programador",
-          "animador",
-        ]}
-      />
-      <div className="post-feed">
-        {posts.map(({ node }) => {
-          postCounter++
-          return (
-            <PostCard
-              key={node.fields.slug}
-              count={postCounter}
-              node={node}
-              postClass={`post`}
-            />
-          )
-        })}
-      </div>
-    </Layout>
+    <>
+      <Layout title={siteTitle}>
+        <SEO
+          title={siteDescription}
+          keywords={[
+            `animanoir`,
+            `blog`,
+            `Óscar A. Montiel`,
+            `animación`,
+            `animation`,
+            "interactive",
+            "creative",
+            "developer",
+            "3d",
+            "2d",
+            "idm",
+            "unity",
+            "three js",
+            "aphex twin",
+            "art",
+            "ghosts",
+            "fantasmas",
+            "arte digital",
+            "digital art",
+            "interacción",
+            "frontend",
+            "react",
+            "html 5",
+            "web developer",
+            "creative agencies",
+            "web developer portafolio",
+            "website developer",
+            "creative studio",
+            "web design",
+            "graphic designers",
+            "interactive design",
+            "freelance web developer",
+            "desarrollo web",
+            "diseño interactivo",
+            "web interactiva",
+            "programador",
+            "animador",
+          ]}
+        />
+        <Navbar />
+        <div className="post-feed">
+          {posts.map(({ node }) => {
+            postCounter++
+            return (
+              <PostCard
+                key={node.fields.slug}
+                count={postCounter}
+                node={node}
+                postClass={`post`}
+              />
+            )
+          })}
+        </div>
+      </Layout>
+      <FloatingSouls />
+    </>
   )
 }
 

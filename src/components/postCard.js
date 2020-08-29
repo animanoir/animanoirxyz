@@ -4,7 +4,7 @@ import Tags from "./tag"
 
 export default props => (
   <article
-    className={`post-card  ${props.postClass} no-image`}
+    className={`post-card  ${props.postClass} no-image fade-in`}
     style={
       props.node.frontmatter.thumbnail && {
         backgroundImage: `url(${props.node.frontmatter.thumbnail.childImageSharp.fluid.src})`,
