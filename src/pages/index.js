@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
-import Navbar from "../components/Navbar"
+import Navbar from "../components/navbar"
 import FloatingSouls from "../components/floatingSouls"
 
 // import "../utils/global.scss"
