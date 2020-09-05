@@ -1,10 +1,9 @@
-import React, { useState, useRef } from "react"
+import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Navbar from "../components/navbar"
-import FondoGif from "../components/FondoGif"
 
 import photo from "../../content/assets/oamm.gif"
 

@@ -5,21 +5,24 @@ import * as meshline from "three.meshline"
 
 extend(meshline)
 
-const numLines = 26
+const numLines = 100
 const lines = new Array(numLines).fill()
-const colors = ["#FF0000", "#FFF", "#000"]
+const colors = ["#194272", "#7691D7", "#7FEDFB", "#32021B", "#194272"]
 
 function Fatline() {
   const material = useRef()
-  const [color] = useState(() => colors[colors.length * Math.random()])
-  const [ratio] = useState(() => 0.5 + 0.5 * Math.random())
+  const [color] = useState(
+    () => colors[parseInt(colors.length * Math.random())]
+  )
+  const [ratio] = useState(() => 0.3 + 0.3 * Math.random())
   const [width] = useState(() => Math.max(0.1, 0.3 * Math.random()))
+  const [isHovered, setIsHovered] = useState(false)
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(
-      30 - 60 * Math.random(),
+      33 - 60 * Math.random(),
       -5,
-      10 - 20 * Math.random()
+      30 - 63 * Math.random()
     )
     return new Array(30)
       .fill()
@@ -29,7 +32,7 @@ function Fatline() {
             new THREE.Vector3(
               2 - Math.random() * 4,
               4 - Math.random() * 2,
-              5 - Math.random() * 10
+              5 - Math.random() * 7
             )
           )
           .clone()
@@ -38,7 +41,7 @@ function Fatline() {
   // Hook into the render loop and decrease the materials dash-offset
   useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0005))
   return (
-    <mesh>
+    <mesh onHover={e => console.log("hover")}>
       {/** MeshLine and CMRCurve are a OOP factories, not scene objects, hence all the imperative code in here :-( */}
       <meshLine onUpdate={self => (self.parent.geometry = self.geometry)}>
         <geometry onUpdate={self => self.parent.setGeometry(self)}>
@@ -56,7 +59,7 @@ function Fatline() {
         depthTest={false}
         lineWidth={width}
         color={color}
-        dashArray={0.1}
+        dashArray={0.7}
         dashRatio={ratio}
       />
     </mesh>
@@ -70,7 +73,7 @@ function Scene() {
   useFrame(() =>
     group.current.rotation.set(
       0,
-      5 * Math.sin(THREE.Math.degToRad((theta += 0.02))),
+      5 * Math.sin(THREE.Math.degToRad((theta += 0.003))),
       0
     )
   )

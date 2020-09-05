@@ -23,6 +23,10 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* Main - Theme styles
 /* ---------------------------------------------------------- */
 
+html {
+  font-size: 10px;
+}
+
 body {
   /* font-family: 'Muli', sans-serif; */
   font-family: var(--font-sans-serif);
@@ -452,6 +456,12 @@ a:hover {
   counter-increment: posts;
 }
 
+.post-card:hover {
+  transition: filter 0.2s;
+  filter: invert(100);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 700px) {
   .post-card {
     flex: 1 1 100%;
@@ -482,15 +492,9 @@ a:hover {
   bottom: 0;
   left: 0;
   color: var(--color-base);
-  filter: invert(0);
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
-}
-
-.post-card-content:hover {
-  filter: invert(100);
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .post-card-date,
@@ -627,11 +631,12 @@ a:hover {
 .post-content-title {
   color: var(--color-base);
   margin-bottom: 3rem;
+  font-size: 7rem;
 }
 
 .post-content-excerpt {
   margin: -2vw 0 1rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.6em;
   color: var(--color-base);
   opacity: 0.5;
@@ -652,7 +657,7 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: var(--font-serif);
   line-height: 1.5em;
 }
