@@ -657,9 +657,9 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 2rem;
-  font-family: var(--font-serif);
-  line-height: 1.5em;
+  font-size: 1.55rem;
+  font-family: var(--font-open);
+  line-height: 1em;
 }
 
 @media (max-width: 500px) {
