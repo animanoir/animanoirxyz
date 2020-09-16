@@ -51,8 +51,5 @@ const indexQuery = graphql`
 `
 
 export default props => (
-  <StaticQuery
-    query={indexQuery}
-    render={data => <TagIndex props data={data} />}
-  />
+  <StaticQuery query={indexQuery} render={data => <TagIndex data={data} />} />
 )

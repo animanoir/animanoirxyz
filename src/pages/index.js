@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql, StaticQuery } from "gatsby"
 // import Img from 'gatsby-image'
+// import Cursor from '../components/cursor'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -65,7 +66,6 @@ const Index = ({ data }, location) => {
             "animador",
           ]}
         />
-        <Navbar />
         <div className="post-feed">
           {posts.map(({ node }) => {
             postCounter++
@@ -79,6 +79,7 @@ const Index = ({ data }, location) => {
             )
           })}
         </div>
+        <Navbar />
       </Layout>
       <FloatingSouls />
     </>

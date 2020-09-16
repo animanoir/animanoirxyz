@@ -1,12 +1,3 @@
-/*
-
-This is a development CSS file which is built to a minified
-production stylesheet in assets/built/screen.css using gulp dev
-
-*/
-
-/* Lib - Local component imports
-/* ---------------------------------------------------------- */
 @import "vars.css";
 @import "components/global.css";
 @import "components/ghost.css";
@@ -25,12 +16,12 @@ production stylesheet in assets/built/screen.css using gulp dev
 
 html {
   font-size: 10px;
+  /* background-color: black; */
 }
 
 body {
-  /* font-family: 'Muli', sans-serif; */
   font-family: var(--font-sans-serif);
-  transition: background 0.3s ease-out;
+  transition: background 1s ease-out;
   transition-delay: 0.25;
   background-color: black;
 }
@@ -62,10 +53,20 @@ a:hover {
 /* ---------------------------------------------------------- */
 
 .site-wrapper {
-  padding-top: 3vw;
-  padding-left: 23.5vw;
-  padding-right: 23.5vw;
   z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+#site-main {
+  height: inherit;
+}
+#swup {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
 }
 
 @media (max-width: 850px) {
@@ -447,7 +448,7 @@ a:hover {
   position: relative;
   flex: 1 1 50%;
   display: flex;
-  height: 15vw;
+  height: 50%;
   /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
   /* based #1d1d1f */
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
@@ -457,9 +458,9 @@ a:hover {
 }
 
 .post-card:hover {
-  transition: filter 0.2s;
+  transition: filter 0.1s;
+  background-color: rgba(0, 0, 0, 0.9);
   filter: invert(100);
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 700px) {
@@ -617,15 +618,8 @@ a:hover {
 /* ---------------------------------------------------------- */
 
 .post-content {
-  /* max-width: 913px; */
-  /* margin: 0 auto; */
   margin: auto;
-}
-
-.post-content-header {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  padding: 0 15vw;
 }
 
 .post-content-title {
@@ -657,9 +651,10 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 1.55rem;
+  font-size: 1.5rem;
+  color: rgb(224, 224, 224);
   font-family: var(--font-open);
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 @media (max-width: 500px) {
@@ -909,22 +904,27 @@ a:hover {
 }
 
 .custom-navbar {
+  width: 15vw;
+  /* min-height: 15vw; */
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  right: calc(100vw - 99vw);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5rem;
+  z-index: 1000;
+  bottom: calc(100% - 99vh);
 }
 
 .custom-navbar .title {
   font-family: var(--font-josefin);
-  font-size: 4rem;
-  margin-right: 2rem;
+  font-size: 3rem;
 }
 
 .custom-navbar .links {
   font-family: var(--font-josefin);
   font-size: 1.5rem;
-  margin-right: 1rem;
+  font-style: italic;
 }
 
 @media (max-width: 500px) {

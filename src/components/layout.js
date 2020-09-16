@@ -6,20 +6,9 @@ const Layout = props => {
 
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
-      <main id="site-main" className="site-main">
+      <main id="site-main">
         <div id="swup">{children}</div>
       </main>
-      <footer className="site-foot">
-        &copy; {new Date().getFullYear()}{" "}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="mailto:omontiel@animanoir.com?subject=❤️"
-        >
-          Animanoir | <span>Óscar A. Montiel</span> | Site under construction |{" "}
-          <span>omontiel@animanoir.com</span>
-        </a>
-      </footer>
     </div>
   )
 }

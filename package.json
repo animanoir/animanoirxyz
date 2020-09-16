@@ -36,6 +36,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "react-script-tag": "^1.1.2",
     "react-spring": "^8.0.27",
     "react-three-fiber": "^4.2.13",
     "teenyicons": "^0.3.0",

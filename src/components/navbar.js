@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-// import classnames from "classnames"
 
-const Navbar = className => {
+const Navbar = () => {
   return (
     <nav className="custom-navbar">
       <Link to="/">
