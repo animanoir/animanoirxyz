@@ -5,7 +5,7 @@ import * as meshline from "three.meshline"
 
 extend(meshline)
 
-const numLines = 100
+const numLines = 77
 const lines = new Array(numLines).fill()
 const colors = ["#194272", "#7691D7", "#7FEDFB", "#32021B", "#194272"]
 
@@ -73,7 +73,7 @@ function Scene() {
   useFrame(() =>
     group.current.rotation.set(
       0,
-      5 * Math.sin(THREE.Math.degToRad((theta += 0.003))),
+      2 * Math.sin(THREE.Math.degToRad((theta += 0.003))),
       0
     )
   )
@@ -89,7 +89,7 @@ function Scene() {
 const FloatingSouls = () => (
   <Canvas
     className="custom-canvas fade-in"
-    camera={{ position: [0, 50, 10], fov: 75 }}
+    camera={{ position: [0, 100, 100], fov: 75 }}
   >
     <Scene />
   </Canvas>

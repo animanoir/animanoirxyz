@@ -16,13 +16,11 @@
 
 html {
   font-size: 10px;
-  /* background-color: black; */
 }
 
 body {
-  font-family: var(--font-sans-serif);
+  /* font-family: var(--font-sans-serif); */
   transition: background 1s ease-out;
-  transition-delay: 0.25;
   background-color: black;
 }
 
@@ -46,7 +44,8 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: rgb(236, 0, 0);
+  text-decoration: none;
 }
 
 /* Layout
@@ -54,24 +53,34 @@ a:hover {
 
 .site-wrapper {
   z-index: 1;
+  position: relative;
   height: 100vh;
   width: 100vw;
 }
 
 #site-main {
   height: inherit;
+  width: inherit;
 }
 #swup {
   width: inherit;
-  height: inherit;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  padding: 4rem;
+  padding: 7rem 67rem 7rem 13rem;
 }
 
 @media (max-width: 850px) {
   .site-wrapper {
     padding: 6vw;
+  }
+  #swup {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    width: 55vw;
+    flex-direction: row;
+    padding: 1rem;
   }
 }
 
@@ -109,7 +118,6 @@ a:hover {
 .error-link {
   margin-top: 1rem;
   font-size: 1.5rem;
-  text-decoration: underline;
 }
 
 .page-head-title {
@@ -569,8 +577,13 @@ a:hover {
   color: var(--color-base);
 }
 
-.post-card.no-image:hover .post-card-title {
-  text-decoration: underline;
+/* .post-card.no-image:hover .post-card-title {
+  text-decoration: none;
+} */
+
+.post-card-title a:hover {
+  text-decoration: none;
+  color: blue;
 }
 
 @media (max-width: 1200px) {
@@ -619,7 +632,6 @@ a:hover {
 
 .post-content {
   margin: auto;
-  padding: 0 15vw;
 }
 
 .post-content-title {
@@ -904,14 +916,14 @@ a:hover {
 }
 
 .custom-navbar {
-  width: 15vw;
-  /* min-height: 15vw; */
+  width: 20vw;
+  min-height: 30vh;
   display: flex;
   position: absolute;
   flex-direction: column;
   right: calc(100vw - 99vw);
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 5rem;
+  padding: 4rem 4rem 4rem 2rem;
   z-index: 1000;
   bottom: calc(100% - 99vh);
 }
