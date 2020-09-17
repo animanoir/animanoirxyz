@@ -5,7 +5,7 @@ import * as meshline from "three.meshline"
 
 extend(meshline)
 
-const numLines = 77
+const numLines = 99
 const lines = new Array(numLines).fill()
 const colors = ["#194272", "#7691D7", "#7FEDFB", "#32021B", "#194272"]
 
@@ -89,7 +89,7 @@ function Scene() {
 const FloatingSouls = () => (
   <Canvas
     className="custom-canvas fade-in"
-    camera={{ position: [0, 100, 100], fov: 75 }}
+    camera={{ position: [10, 50, 50], fov: 75 }}
   >
     <Scene />
   </Canvas>
