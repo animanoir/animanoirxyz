@@ -1,19 +1,11 @@
 import React, { useEffect } from "react"
 import { graphql, StaticQuery } from "gatsby"
-// import Img from 'gatsby-image'
-// import Cursor from '../components/cursor'
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Bio from "../components/bio"
 import PostCard from "../components/postCard"
-import Navbar from "../components/navbar"
 import FloatingSouls from "../components/floatingSouls"
-
-// import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -22,7 +14,7 @@ const Index = ({ data }, location) => {
   let postCounter = 0
 
   return (
-    <>
+    <React.Fragment>
       <Layout title={siteTitle}>
         <SEO
           title={siteDescription}
@@ -79,10 +71,9 @@ const Index = ({ data }, location) => {
             )
           })}
         </div>
-        <Navbar />
       </Layout>
       <FloatingSouls />
-    </>
+    </React.Fragment>
   )
 }
 

@@ -59,12 +59,14 @@ a:hover {
 }
 
 #site-main {
-  height: inherit;
+  height: 100%;
   width: inherit;
 }
+
 #swup {
   width: inherit;
-  height: 100%;
+  min-height: auto;
+  height: inherit;
   display: flex;
   flex-direction: row;
   padding: 7rem 67rem 7rem 13rem;
@@ -909,28 +911,30 @@ a:hover {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  filter: blur(3px);
+  filter: blur(1px);
   background-image: url("../../../content/assets/yoxyzgif.gif");
   background-repeat: round;
   background-attachment: fixed;
 }
 
 .custom-navbar {
-  width: 20vw;
-  min-height: 30vh;
+  min-width: 20vw;
+  width: auto;
+  min-height: 32vh;
+  position: fixed;
   display: flex;
-  position: absolute;
   flex-direction: column;
+  justify-content: space-between;
   right: calc(100vw - 99vw);
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 4rem 4rem 4rem 2rem;
+  padding: 4rem 4rem 4rem 3rem;
   z-index: 1000;
   bottom: calc(100% - 99vh);
 }
 
 .custom-navbar .title {
   font-family: var(--font-josefin);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .custom-navbar .links {
@@ -1002,17 +1006,13 @@ body::-webkit-scrollbar-thumb {
 
 .about__links {
   display: flex;
+  margin-top: 1.5rem;
   width: 50%;
   justify-content: space-evenly;
 }
 
 .about__links a {
   font-weight: 200;
-  font-size: 1.3rem;
-}
-
-.post__container {
-  /* margin-top: 1rem; */
 }
 
 .post__img {

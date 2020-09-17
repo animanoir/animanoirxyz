@@ -70,9 +70,6 @@ const AboutPage = ({ data }, location) => {
                   src={photo}
                   alt="Animanoir Óscar A. Montiel Animation"
                 ></img>
-                <p className="about__subtitle">
-                  Creative development | Interactive designer | Multimedia
-                </p>
                 <div className="about__links">
                   <a href="https://www.linkedin.com/in/oscaramontiel/">
                     <svg
