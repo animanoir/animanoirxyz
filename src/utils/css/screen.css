@@ -72,7 +72,7 @@ a:hover {
   padding: 7rem 67rem 7rem 13rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1270px) {
   .site-wrapper {
     padding: 6vw;
   }
