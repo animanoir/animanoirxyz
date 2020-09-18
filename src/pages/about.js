@@ -1,12 +1,10 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Navbar from "../components/navbar"
-
 import photo from "../../content/assets/oamm.gif"
-
+import cv from "../../content/assets/C.V.Ó.A.M.2020.pdf"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
@@ -113,6 +111,7 @@ const AboutPage = ({ data }, location) => {
                       ></path>
                     </svg>
                   </a>
+                  <a href={cv}>C.V. 2020</a>
                 </div>
               </h4>
             </div>
