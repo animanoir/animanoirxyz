@@ -1,8 +1,7 @@
 ---
-title: BEMA | Curso de programación
+title: BEMA | Programming course
 date: "2019-11-11"
 tags: [processing, interactive, courses]
-description: Suelo dar clases porque me gusta enseñar, o al menos lo intento.
 thumbnail: ./bema-1.jpg
 ---
 

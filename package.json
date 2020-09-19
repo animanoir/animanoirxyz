@@ -39,6 +39,7 @@
     "react-script-tag": "^1.1.2",
     "react-spring": "^8.0.27",
     "react-three-fiber": "^4.2.13",
+    "react-transition-group": "^4.4.1",
     "teenyicons": "^0.3.0",
     "three": "^0.120.0",
     "three.meshline": "^1.2.0",

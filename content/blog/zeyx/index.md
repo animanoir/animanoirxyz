@@ -2,7 +2,6 @@
 title: ZeYX Lab
 date: "2019-11-11"
 tags: [three.js, virtuality]
-description: Perdición y liberación en la virtualidad
 thumbnail: zeyxCard.jpeg
 ---
 

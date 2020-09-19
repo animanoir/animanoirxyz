@@ -1,8 +1,7 @@
 ---
-title: Alquitrán EP (Experiencia VR)
+title: Alquitrán EP (VR Experience)
 date: "2019-11-11"
 tags: [three.js, interactive, music]
-description: Jardín virtual con orbes musicales.
 thumbnail: ./otono.jpg
 ---
 
