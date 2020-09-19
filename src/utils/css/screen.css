@@ -638,7 +638,7 @@ a:hover {
 
 .post-content-title {
   color: var(--color-base);
-  margin-bottom: 3rem;
+  margin-bottom: 1.3rem;
   font-size: 7rem;
 }
 
@@ -665,10 +665,10 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 1.5rem;
+  font-size: 1.48rem;
   color: rgb(224, 224, 224);
   font-family: var(--font-open);
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 @media (max-width: 500px) {
@@ -1017,7 +1017,7 @@ body::-webkit-scrollbar-thumb {
 
 .post__img {
   width: 50%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 /* ----------------------------- Visual effects ----------------------------- */
@@ -1078,4 +1078,11 @@ body::-webkit-scrollbar-thumb {
   100% {
     opacity: 1;
   }
+}
+
+.div__center {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

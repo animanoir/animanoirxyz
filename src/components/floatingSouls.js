@@ -16,7 +16,6 @@ function Fatline() {
   )
   const [ratio] = useState(() => 0.3 + 0.3 * Math.random())
   const [width] = useState(() => Math.max(0.1, 0.3 * Math.random()))
-  const [isHovered, setIsHovered] = useState(false)
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(

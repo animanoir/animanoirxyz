@@ -3,7 +3,6 @@ import Navbar from "../components/navbar"
 
 const Layout = props => {
   const { children } = props
-  const [toggleNav] = React.useState(false)
 
   return (
     <div className={"site-wrapper"}>

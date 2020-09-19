@@ -8,7 +8,7 @@ import PostCard from "../components/postCard"
 
 class TagPageTemplate extends React.Component {
   render() {
-    const props = this.props
+    // const props = this.props
     const tag = this.props.pageContext.tag
     const posts = this.props.data.allMarkdownRemark.edges
     const siteTitle = this.props.data.site.siteMetadata.title
