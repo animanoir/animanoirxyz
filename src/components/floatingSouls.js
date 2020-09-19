@@ -5,7 +5,7 @@ import * as meshline from "three.meshline"
 
 extend(meshline)
 
-const numLines = 99
+const numLines = 500
 const lines = new Array(numLines).fill()
 const colors = ["#194272", "#7691D7", "#7FEDFB", "#32021B", "#194272"]
 
@@ -15,7 +15,7 @@ function Fatline() {
     () => colors[parseInt(colors.length * Math.random())]
   )
   const [ratio] = useState(() => 0.3 + 0.3 * Math.random())
-  const [width] = useState(() => Math.max(0.1, 0.3 * Math.random()))
+  const [width] = useState(() => Math.max(0.01, 0.03 * Math.random()))
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(
@@ -40,13 +40,13 @@ function Fatline() {
   // Hook into the render loop and decrease the materials dash-offset
   useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0005))
   return (
-    <mesh onHover={e => console.log("hover")}>
+    <mesh>
       {/** MeshLine and CMRCurve are a OOP factories, not scene objects, hence all the imperative code in here :-( */}
       <meshLine onUpdate={self => (self.parent.geometry = self.geometry)}>
         <geometry onUpdate={self => self.parent.setGeometry(self)}>
           <catmullRomCurve3
             args={[curve]}
-            onUpdate={self => (self.parent.vertices = self.getPoints(50))}
+            onUpdate={self => (self.parent.vertices = self.getPoints(55))}
           />
         </geometry>
       </meshLine>
@@ -72,8 +72,8 @@ function Scene() {
   useFrame(() =>
     group.current.rotation.set(
       0,
-      2 * Math.sin(THREE.Math.degToRad((theta += 0.003))),
-      0
+      2 * Math.sin(THREE.Math.degToRad((theta += 0.001))),
+      2 * Math.sin(THREE.Math.degToRad((theta += 0.001)))
     )
   )
   return (
@@ -88,7 +88,7 @@ function Scene() {
 const FloatingSouls = () => (
   <Canvas
     className="custom-canvas fade-in"
-    camera={{ position: [10, 50, 50], fov: 75 }}
+    camera={{ position: [-10, 50, 50], fov: 75 }}
   >
     <Scene />
   </Canvas>
