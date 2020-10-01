@@ -11,7 +11,7 @@ const Navbar = () => {
         <span className="links">.about</span>
       </Link>
       <Link to="/">
-        <span className="links">.blog (coming soon)</span>
+        <span className="links">.blog</span>
       </Link>
       <Link to="https://animanoir.com">
         <span className="links" target="_blank">

@@ -511,7 +511,7 @@ a:hover {
 .post-card-date,
 .post-card-body,
 .post-card-tag-link {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: var(--color-sub-base);
 }
 
@@ -939,7 +939,7 @@ a:hover {
 
 .custom-navbar .links {
   font-family: var(--font-josefin);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-style: italic;
 }
 
