@@ -4,7 +4,7 @@ import Tags from "./tag"
 
 export default props => (
   <article
-    className={`post-card  ${props.postClass} no-image fade-in`}
+    className={`post-card  ${props.postClass} fade-in`}
     style={
       props.node.frontmatter.thumbnail && {
         backgroundImage: `url(${props.node.frontmatter.thumbnail.childImageSharp.fluid.src})`,
@@ -21,14 +21,14 @@ class ContentNoImage extends Component {
     return (
       <div className="post-card-content">
         <div>
-          <Tags tags={props.node.frontmatter.tags} />
-        </div>
-        <div>
           <Link to={props.node.fields.slug} className="post-card-link">
             <h2 className="post-card-title">
               {props.node.frontmatter.title || props.node.fields.slug}
             </h2>
           </Link>
+        </div>
+        <div>
+          <Tags tags={props.node.frontmatter.tags} />
         </div>
       </div>
     )

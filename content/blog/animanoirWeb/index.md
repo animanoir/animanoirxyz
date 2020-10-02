@@ -3,6 +3,7 @@ title: Animanoir.xyz
 date: "2019-11-11"
 tags: [react, gatsby]
 description: Thoughts about creating my new website.
+canonical: "https://animanoir.xyz/animanoirxyz"
 thumbnail: an-fondo.jpg
 ---
 

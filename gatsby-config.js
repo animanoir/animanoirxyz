@@ -80,7 +80,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: ``,
+        trackingId: `UA-96988751-2`,
       },
     },
     `gatsby-plugin-feed`,
@@ -91,7 +91,7 @@ module.exports = {
         short_name: siteConfig.shortName,
         start_url: siteConfig.prefix,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#FF0000`,
         display: `minimal-ui`,
         icon: `content/assets/favicon-32x32.png`,
       },
@@ -99,5 +99,11 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.animanoir.xyz`,
+      },
+    },
   ],
 }

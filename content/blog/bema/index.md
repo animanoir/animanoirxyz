@@ -2,6 +2,7 @@
 title: BEMA | Programming course
 date: "2019-11-11"
 tags: [processing, interactive, courses]
+canonical: "https://animanoir.xyz/bema-programming-course"
 thumbnail: ./bema-1.jpg
 ---
 

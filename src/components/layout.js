@@ -5,11 +5,11 @@ const Layout = props => {
   const { children } = props
 
   return (
-    <div className={"site-wrapper"}>
+    <div>
+      <Navbar />
       <main id="site-main">
         <div id="swup">{children}</div>
       </main>
-      <Navbar />
     </div>
   )
 }

@@ -1,7 +1,8 @@
 ---
 title: ZeYX Lab
 date: "2019-11-11"
-tags: [three.js, virtuality]
+tags: [three.js, virtuality, works]
+canonical: "https://animanoir.xyz/zeyx-lab"
 thumbnail: zeyxCard.jpeg
 ---
 

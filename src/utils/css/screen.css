@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  /* font-family: var(--font-sans-serif); */
   transition: background 1s ease-out;
   background-color: black;
 }
@@ -54,25 +53,18 @@ a:hover {
 .site-wrapper {
   z-index: 1;
   position: relative;
-  height: 100vh;
-  width: 100vw;
-}
-
-#site-main {
+  width: 100%;
   height: 100%;
-  width: inherit;
 }
 
 #swup {
-  width: inherit;
-  min-height: auto;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  padding: 7rem 67rem 7rem 13rem;
 }
 
-@media (max-width: 1270px) {
+/* @media (max-width: 1270px) {
   .site-wrapper {
     padding: 6vw;
   }
@@ -80,11 +72,11 @@ a:hover {
     width: inherit;
     height: inherit;
     display: flex;
-    width: 55vw;
+    width: 100%;
     flex-direction: row;
     padding: 1rem;
   }
-}
+} */
 
 .page-head {
   display: flex;
@@ -458,9 +450,7 @@ a:hover {
   position: relative;
   flex: 1 1 50%;
   display: flex;
-  height: 50%;
-  /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
-  /* based #1d1d1f */
+  min-height: 20vh;
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
   background-size: cover;
   overflow: hidden;
@@ -473,13 +463,6 @@ a:hover {
   filter: invert(100);
 }
 
-@media (max-width: 700px) {
-  .post-card {
-    flex: 1 1 100%;
-    height: 70vw;
-  }
-}
-
 .post-card-large {
   flex: 1 1 100%;
 }
@@ -490,11 +473,11 @@ a:hover {
 }
 
 .post-card-content {
-  position: absolute;
   width: 100%;
   height: auto;
   flex: 1 1 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -533,12 +516,6 @@ a:hover {
   opacity: 0;
 }
 
-@media (max-width: 700px) {
-  .post-card.with-image .post-card-content {
-    opacity: 1;
-  }
-}
-
 .post-card-link:hover .post-card-content {
   opacity: 1;
   transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
@@ -547,7 +524,7 @@ a:hover {
 .post-card-title {
   margin: 0;
   display: inline-block;
-  font-size: 3 rem;
+  font-size: 3rem;
   /* max-width: 70%; */
   text-align: center;
   /* transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1); */
@@ -601,34 +578,6 @@ a:hover {
   }
 }
 
-@media (max-width: 940px) {
-  /* .post-card.no-image .post-card-date, */
-  .post-card.no-image .post-card-body,
-  .post-card.no-image .post-card-readmore {
-    display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .post-card.no-image:before {
-    font-size: 50vw;
-  }
-
-  /* .post-card.no-image .post-card-date, */
-  .post-card.no-image .post-card-body,
-  .post-card.no-image .post-card-readmore {
-    display: block;
-  }
-}
-
-@media (max-width: 430px) {
-  /* .post-card.no-image .post-card-date, */
-  .post-card.no-image .post-card-body,
-  .post-card.no-image .post-card-readmore {
-    display: none;
-  }
-}
-
 /* Post Content
 /* ---------------------------------------------------------- */
 
@@ -665,6 +614,13 @@ a:hover {
 }
 
 .post-content-body {
+  font-size: 1.48rem;
+  color: rgb(224, 224, 224);
+  font-family: var(--font-open);
+  line-height: 1.6em;
+}
+
+.about-container {
   font-size: 1.48rem;
   color: rgb(224, 224, 224);
   font-family: var(--font-open);
@@ -917,30 +873,36 @@ a:hover {
   background-attachment: fixed;
 }
 
+/* --------------------------------- Navbar --------------------------------- */
+
 .custom-navbar {
-  min-width: 20vw;
   width: auto;
-  min-height: 32vh;
-  position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  right: calc(100vw - 99vw);
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 4rem 4rem 4rem 3rem;
-  z-index: 1000;
-  bottom: calc(100% - 99vh);
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
 }
 
 .custom-navbar .title {
   font-family: var(--font-josefin);
   font-size: 4rem;
+  color: white;
+}
+
+.title:hover {
+  color: red;
 }
 
 .custom-navbar .links {
   font-family: var(--font-josefin);
-  font-size: 1.35rem;
-  font-style: italic;
+  font-size: 1.8rem;
+  color: rgb(228, 228, 228);
+}
+
+.links:hover {
+  color: red;
 }
 
 @media (max-width: 500px) {
@@ -962,6 +924,8 @@ a:hover {
     margin-right: 1rem;
   }
 }
+
+/* --------------------------------- /Navbar -------------------------------- */
 
 .gatsby-resp-image-wrapper {
   margin: 1rem !important;

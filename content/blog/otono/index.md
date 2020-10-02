@@ -1,7 +1,8 @@
 ---
 title: Alquitrán EP (VR Experience)
 date: "2019-11-11"
-tags: [three.js, interactive, music]
+tags: [three.js, interactive, music, works]
+canonical: "https://animanoir.xyz/alquitran-vr"
 thumbnail: ./otono.jpg
 ---
 

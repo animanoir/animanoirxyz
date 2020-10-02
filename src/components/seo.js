@@ -11,7 +11,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import opImg from "../../content/assets/op.jpg"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ canonical, description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -34,12 +34,11 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${site.siteMetadata.description}`}
+      link={
+        canonical ? [{ rel: "canonical", key: canonical, href: canonical }] : []
+      }
       meta={[
-        {
-          name: `google-site-verification`,
-          content: `BEBabRjMHyWe521I7Yr6ZElAbDxLo7zIjXwo64QBDwc`,
-        },
         {
           name: `description`,
           content: metaDescription,
@@ -66,7 +65,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: "@geosminu",
         },
         {
           name: `twitter:title`,
@@ -101,6 +100,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
+  canonical: PropTypes.string,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 }

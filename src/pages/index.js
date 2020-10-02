@@ -6,6 +6,7 @@ import PostCard from "../components/postCard"
 import FloatingSouls from "../components/floatingSouls"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+import { keywordsArray } from "../utils/keywordsArray"
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,48 +17,6 @@ const Index = ({ data }, location) => {
   return (
     <React.Fragment>
       <Layout title={siteTitle}>
-        <SEO
-          title={siteDescription}
-          keywords={[
-            `animanoir`,
-            `blog`,
-            `Óscar A. Montiel`,
-            `animación`,
-            `animation`,
-            "interactive",
-            "creative",
-            "developer",
-            "3d",
-            "2d",
-            "idm",
-            "unity",
-            "three js",
-            "aphex twin",
-            "art",
-            "ghosts",
-            "fantasmas",
-            "arte digital",
-            "digital art",
-            "interacción",
-            "frontend",
-            "react",
-            "html 5",
-            "web developer",
-            "creative agencies",
-            "web developer portafolio",
-            "website developer",
-            "creative studio",
-            "web design",
-            "graphic designers",
-            "interactive design",
-            "freelance web developer",
-            "desarrollo web",
-            "diseño interactivo",
-            "web interactiva",
-            "programador",
-            "animador",
-          ]}
-        />
         <div className="post-feed">
           {posts.map(({ node }) => {
             postCounter++
@@ -71,8 +30,12 @@ const Index = ({ data }, location) => {
             )
           })}
         </div>
+        <SEO
+          title={siteTitle}
+          canonical="https://animanoir.xyz"
+          keywords={keywordsArray}
+        />
       </Layout>
-      <FloatingSouls />
     </React.Fragment>
   )
 }

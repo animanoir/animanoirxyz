@@ -15,6 +15,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
+          canonical={post.frontmatter.canonical}
           description={post.frontmatter.description || post.excerpt}
         />
         <article
@@ -51,7 +52,6 @@ class BlogPostTemplate extends React.Component {
         default byline. */}
           </footer>
         </article>
-        <Navbar />
       </Layout>
     )
   }
@@ -75,6 +75,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        canonical
       }
     }
   }

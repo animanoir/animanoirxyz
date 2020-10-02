@@ -7,67 +7,21 @@ import photo from "../../content/assets/oamm.gif"
 import cv from "../../content/assets/C.V.Ó.A.M.2020.pdf"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+import { keywordsArray } from "../utils/keywordsArray"
 
 const AboutPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <>
-      <div className="fondo-gif"></div>
+      <div></div>
       <Layout title={siteTitle}>
-        <SEO
-          title="About"
-          keywords={[
-            `animanoir`,
-            `blog`,
-            `Óscar A. Montiel`,
-            `animación`,
-            `animation`,
-            "interactive",
-            "creative",
-            "developer",
-            "3d",
-            "2d",
-            "idm",
-            "unity",
-            "three js",
-            "aphex twin",
-            "art",
-            "ghosts",
-            "fantasmas",
-            "arte digital",
-            "digital art",
-            "interacción",
-            "frontend",
-            "react",
-            "html 5",
-            "web developer",
-            "creative agencies",
-            "web developer portafolio",
-            "website developer",
-            "creative studio",
-            "web design",
-            "graphic designers",
-            "interactive design",
-            "freelance web developer",
-            "desarrollo web",
-            "diseño interactivo",
-            "web interactiva",
-            "programador",
-            "animador",
-          ]}
-        />
-
-        <Navbar />
-        <article className="post-content page-template no-image">
+        <SEO title="About" keywords={keywordsArray} />
+        <article className="post-content page-template">
           <center>
-            <div className="post-content-body">
-              <div id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-"></div>
+            <div className="about-container">
+              <img src={photo} alt="Animanoir Óscar A. Montiel Animation"></img>
               <h4>
-                <img
-                  src={photo}
-                  alt="Animanoir Óscar A. Montiel Animation"
-                ></img>
                 <div className="about__links">
                   <a href="https://www.linkedin.com/in/oscaramontiel/">
                     <svg
