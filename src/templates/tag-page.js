@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Navbar from "../components/navbar"
+import Sidebar from "../components/Sidebar"
 import PostCard from "../components/postCard"
 
 class TagPageTemplate extends React.Component {
@@ -59,7 +59,7 @@ class TagPageTemplate extends React.Component {
             "animador",
           ]}
         />
-        <Navbar />
+        <Sidebar />
         <header className="tag-page-head">
           <h1 className="page-head-title">. posts by ·</h1>
         </header>

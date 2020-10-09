@@ -16,10 +16,7 @@ class BlogPostTemplate extends React.Component {
           canonical={post.frontmatter.canonical}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article
-          className={`post-content ${post.frontmatter.thumbnail ||
-            `no-image`} post__container`}
-        >
+        <article className="post-content">
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>
@@ -45,9 +42,9 @@ class BlogPostTemplate extends React.Component {
 
           <footer className="post-content-footer">
             {/* There are two options for how we display the byline/author-info.
-        If the post has more than one author, we load a specific template
-        from includes/byline-multiple.hbs, otherwise, we just use the
-        default byline. */}
+      If the post has more than one author, we load a specific template
+      from includes/byline-multiple.hbs, otherwise, we just use the
+      default byline. */}
           </footer>
         </article>
       </Layout>

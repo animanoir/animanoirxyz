@@ -1,12 +1,17 @@
 import React from "react"
-import Navbar from "../components/navbar"
+import Sidebar from "../components/Sidebar"
 
-const Layout = props => {
+const Layout = (props) => {
   const { children } = props
 
   return (
     <main>
-      <div id="site-main">{children}</div>
+      <div id="site-main">
+        <Sidebar />
+        <div className="inner-main">
+          <div className="page">{children}</div>
+        </div>
+      </div>
     </main>
   )
 }

@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Navbar = props => (
-  <nav className="custom-navbar fade-in">
+const Sidebar = (props) => (
+  <nav className="custom-Sidebar fade-in">
     <Link to="/about">
       <span className="links">.about</span>
     </Link>
@@ -20,4 +20,4 @@ const Navbar = props => (
   </nav>
 )
 
-export default Navbar
+export default Sidebar

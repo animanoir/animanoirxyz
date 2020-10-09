@@ -22,32 +22,18 @@ const Index = ({ data }, location) => {
           canonical="https://animanoir.xyz"
           keywords={keywordsArray}
         />
-        <div className="inner-main">
-          <div className="custom-sidebar">
-            <img className="main-logo" src={logo} />
-            <nav>
-              <ul>
-                <li>.contact</li>
-                <li>.about</li>
-                <li>.blog</li>
-              </ul>
-            </nav>
-          </div>
-          <div className="page">
-            <div className="post-feed">
-              {posts.map(({ node }) => {
-                postCounter++
-                return (
-                  <PostCard
-                    key={node.fields.slug}
-                    count={postCounter}
-                    node={node}
-                    postClass={`post`}
-                  />
-                )
-              })}
-            </div>
-          </div>
+        <div className="post-feed">
+          {posts.map(({ node }) => {
+            postCounter++
+            return (
+              <PostCard
+                key={node.fields.slug}
+                count={postCounter}
+                node={node}
+                postClass={`post`}
+              />
+            )
+          })}
         </div>
       </Layout>
     </React.Fragment>
@@ -88,10 +74,10 @@ const indexQuery = graphql`
   }
 `
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={indexQuery}
-    render={data => (
+    render={(data) => (
       <Index location={props.location} props data={data} {...props} />
     )}
   />

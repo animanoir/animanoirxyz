@@ -16,6 +16,7 @@
 
 html {
   font-size: 10px;
+  background-color: var(--bg-dark);
 }
 
 body {
@@ -83,7 +84,8 @@ a:hover {
   height: 100%;
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: center;
+  /* padding: 0 40rem; */
 }
 
 .main-logo {
@@ -91,11 +93,46 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-logo:hover {
+  color: red;
+}
+
 .custom-sidebar {
   min-width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  top: 0;
+  margin: 2rem;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+nav {
+  min-height: 100%;
+}
+
+.custom-menu {
+  list-style-type: none;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 7rem;
+}
+
+.custom-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: var(--font-computers);
 }
 
 /* @media (max-width: 1270px) {
@@ -113,7 +150,7 @@ a:hover {
 } */
 
 .page {
-  min-width: 80%;
+  width: 100%;
 }
 
 .page-head {
@@ -475,6 +512,7 @@ a:hover {
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 25rem;
 }
 
 .home__container {
@@ -484,13 +522,14 @@ a:hover {
 
 .post-card {
   position: relative;
+  font-family: var(--font-computers);
   flex: 1 1 50%;
   display: flex;
-  min-height: 10vh;
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
   background-size: cover;
   overflow: hidden;
   counter-increment: posts;
+  cursor: pointer;
 }
 
 .post-card:hover {
@@ -511,8 +550,8 @@ a:hover {
 .post-card-content {
   width: 100%;
   height: auto;
+  display: none;
   flex: 1 1 auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -527,10 +566,14 @@ a:hover {
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
+.post-card-content:hover {
+  display: flex;
+}
+
 .post-card-date,
 .post-card-body,
 .post-card-tag-link {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--color-sub-base);
 }
 
@@ -554,13 +597,14 @@ a:hover {
 
 .post-card-link:hover .post-card-content {
   opacity: 1;
+  display: flex;
   transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 .post-card-title {
   margin: 0;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -576,23 +620,6 @@ a:hover {
   letter-spacing: -0.1em;
   color: rgba(0, 0, 0, 0.2);
 }
-
-.post-card.no-image .post-card-content {
-  align-items: flex-start;
-  padding: 4vw;
-  flex-direction: column;
-}
-
-.post-card.no-image .post-card-title {
-  font-size: 3.2rem;
-  line-height: 1.15em;
-  text-align: left;
-  color: var(--color-base);
-}
-
-/* .post-card.no-image:hover .post-card-title {
-  text-decoration: none;
-} */
 
 .post-card-title a:hover {
   text-decoration: none;
@@ -610,6 +637,8 @@ a:hover {
 
 .post-content {
   margin: auto;
+  width: 100%;
+  padding: 0 35rem;
 }
 
 .post-content-title {
@@ -641,10 +670,10 @@ a:hover {
 }
 
 .post-content-body {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--text-darkWhite);
   font-family: var(--font-open);
-  line-height: 1.6em;
+  line-height: 2em;
 }
 
 .about-container {
