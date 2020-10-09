@@ -2,11 +2,10 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Navbar from "../components/navbar"
 import photo from "../../content/assets/oamm.gif"
 import cv from "../../content/assets/C.V.Ó.A.M.2020.pdf"
 import "../utils/normalize.css"
-import "../utils/css/screen.css"
+import "../utils/css/main.css"
 import { keywordsArray } from "../utils/keywordsArray"
 
 const AboutPage = ({ data }, location) => {

@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Navbar from "../components/navbar"
 
 class BlogPostTemplate extends React.Component {
   render() {

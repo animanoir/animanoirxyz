@@ -5,12 +5,9 @@ const Layout = props => {
   const { children } = props
 
   return (
-    <div>
-      <Navbar />
-      <main id="site-main">
-        <div id="swup">{children}</div>
-      </main>
-    </div>
+    <main>
+      <div id="site-main">{children}</div>
+    </main>
   )
 }
 

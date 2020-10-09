@@ -3,10 +3,10 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
-import FloatingSouls from "../components/floatingSouls"
 import "../utils/normalize.css"
-import "../utils/css/screen.css"
+import "../utils/css/main.css"
 import { keywordsArray } from "../utils/keywordsArray"
+import logo from "../../content/assets/favicons/animanoir-logo.svg"
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -17,24 +17,38 @@ const Index = ({ data }, location) => {
   return (
     <React.Fragment>
       <Layout title={siteTitle}>
-        <div className="post-feed">
-          {posts.map(({ node }) => {
-            postCounter++
-            return (
-              <PostCard
-                key={node.fields.slug}
-                count={postCounter}
-                node={node}
-                postClass={`post`}
-              />
-            )
-          })}
-        </div>
         <SEO
           title={siteTitle}
           canonical="https://animanoir.xyz"
           keywords={keywordsArray}
         />
+        <div className="inner-main">
+          <div className="custom-sidebar">
+            <img className="main-logo" src={logo} />
+            <nav>
+              <ul>
+                <li>.contact</li>
+                <li>.about</li>
+                <li>.blog</li>
+              </ul>
+            </nav>
+          </div>
+          <div className="page">
+            <div className="post-feed">
+              {posts.map(({ node }) => {
+                postCounter++
+                return (
+                  <PostCard
+                    key={node.fields.slug}
+                    count={postCounter}
+                    node={node}
+                    postClass={`post`}
+                  />
+                )
+              })}
+            </div>
+          </div>
+        </div>
       </Layout>
     </React.Fragment>
   )
