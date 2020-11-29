@@ -1,14 +1,14 @@
-import React from "react"
-import _ from "lodash"
-import { Link } from "gatsby"
-import { graphql, StaticQuery } from "gatsby"
+import React from 'react'
+import _ from 'lodash'
+import { Link } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 // import "../utils/global.scss"
-import "../utils/normalize.css"
-import "../utils/css/main.css"
+import '../utils/normalize.css'
+import '../utils/css/main.css'
 
 const TagIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -21,11 +21,11 @@ const TagIndex = ({ data }) => {
         <h1 className="page-head-title">Tags</h1>
       </header>
       <div className="tag-container">
-        {tags.map(tag => {
+        {tags.map((tag) => {
           return (
             <Link
               key={tag}
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
               <div className="tag-item">· {tag}</div>
@@ -50,6 +50,6 @@ const indexQuery = graphql`
   }
 `
 
-export default props => (
-  <StaticQuery query={indexQuery} render={data => <TagIndex data={data} />} />
+export default (props) => (
+  <StaticQuery query={indexQuery} render={(data) => <TagIndex data={data} />} />
 )

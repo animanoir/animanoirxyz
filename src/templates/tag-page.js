@@ -1,10 +1,10 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Sidebar from "../components/Sidebar"
-import PostCard from "../components/postCard"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Sidebar from '../components/Sidebar'
+import PostCard from '../components/postCard'
 
 class TagPageTemplate extends React.Component {
   render() {
@@ -25,38 +25,38 @@ class TagPageTemplate extends React.Component {
             `Óscar A. Montiel`,
             `animación`,
             `animation`,
-            "interactive",
-            "creative",
-            "developer",
-            "3d",
-            "2d",
-            "idm",
-            "unity",
-            "three js",
-            "aphex twin",
-            "art",
-            "ghosts",
-            "fantasmas",
-            "arte digital",
-            "digital art",
-            "interacción",
-            "frontend",
-            "react",
-            "html 5",
-            "web developer",
-            "creative agencies",
-            "web developer portafolio",
-            "website developer",
-            "creative studio",
-            "web design",
-            "graphic designers",
-            "interactive design",
-            "freelance web developer",
-            "desarrollo web",
-            "diseño interactivo",
-            "web interactiva",
-            "programador",
-            "animador",
+            'interactive',
+            'creative',
+            'developer',
+            '3d',
+            '2d',
+            'idm',
+            'unity',
+            'three js',
+            'aphex twin',
+            'art',
+            'ghosts',
+            'fantasmas',
+            'arte digital',
+            'digital art',
+            'interacción',
+            'frontend',
+            'react',
+            'html 5',
+            'web developer',
+            'creative agencies',
+            'web developer portafolio',
+            'website developer',
+            'creative studio',
+            'web design',
+            'graphic designers',
+            'interactive design',
+            'freelance web developer',
+            'desarrollo web',
+            'diseño interactivo',
+            'web interactiva',
+            'programador',
+            'animador',
           ]}
         />
         <Sidebar />

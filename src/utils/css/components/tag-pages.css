@@ -1,0 +1,47 @@
+/* Tag Pages
+/* ---------------------------------------------------------- */
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.tag-item {
+  flex: 1 1 auto;
+  margin: 0.7vw;
+  padding: 0.5vw;
+  background-color: var(--color-bg);
+  color: var(--color-sub-base);
+  font-size: 5rem;
+  font-family: var(--font-computers);
+  line-height: 1em;
+  white-space: nowrap;
+}
+
+.tag-item:hover {
+  color: var(--color-bg-bright);
+  background-color: var(--color-sub-base);
+  transition: all 0.1s ease-out;
+}
+
+@media (max-width: 700px) {
+  .tag-item {
+    font-size: 2rem;
+    margin: 1.4vw;
+    padding: 1vw;
+  }
+}
+
+.tag-page-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 0;
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+}

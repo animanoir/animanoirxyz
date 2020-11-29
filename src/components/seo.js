@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import opImg from "../../content/assets/op.jpg"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
+import opImg from '../../content/assets/op.jpg'
 
 function SEO({ canonical, description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
@@ -36,7 +36,7 @@ function SEO({ canonical, description, lang, meta, keywords, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.description}`}
       link={
-        canonical ? [{ rel: "canonical", key: canonical, href: canonical }] : []
+        canonical ? [{ rel: 'canonical', key: canonical, href: canonical }] : []
       }
       meta={[
         {
@@ -65,7 +65,7 @@ function SEO({ canonical, description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:creator`,
-          content: "@geosminu",
+          content: '@geosminu',
         },
         {
           name: `twitter:title`,

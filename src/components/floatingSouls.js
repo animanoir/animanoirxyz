@@ -1,13 +1,13 @@
-import React, { useState, useRef } from "react"
-import { Canvas, useFrame, extend } from "react-three-fiber"
-import * as THREE from "three"
-import * as meshline from "three.meshline"
+import React, { useState, useRef } from 'react'
+import { Canvas, useFrame, extend } from 'react-three-fiber'
+import * as THREE from 'three'
+import * as meshline from 'three.meshline'
 
 extend(meshline)
 
 const numLines = 250
 const lines = new Array(numLines).fill()
-const colors = ["#194272", "#7691D7", "#7FEDFB", "#32021B", "#194272"]
+const colors = ['#194272', '#7691D7', '#7FEDFB', '#32021B', '#194272']
 
 function Fatline() {
   const material = useRef()
@@ -42,11 +42,11 @@ function Fatline() {
   return (
     <mesh>
       {/** MeshLine and CMRCurve are a OOP factories, not scene objects, hence all the imperative code in here :-( */}
-      <meshLine onUpdate={self => (self.parent.geometry = self.geometry)}>
-        <geometry onUpdate={self => self.parent.setGeometry(self)}>
+      <meshLine onUpdate={(self) => (self.parent.geometry = self.geometry)}>
+        <geometry onUpdate={(self) => self.parent.setGeometry(self)}>
           <catmullRomCurve3
             args={[curve]}
-            onUpdate={self => (self.parent.vertices = self.getPoints(55))}
+            onUpdate={(self) => (self.parent.vertices = self.getPoints(55))}
           />
         </geometry>
       </meshLine>

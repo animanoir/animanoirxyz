@@ -1,12 +1,13 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostCard from "../components/postCard"
-import "../utils/normalize.css"
-import "../utils/css/main.css"
-import { keywordsArray } from "../utils/keywordsArray"
-import logo from "../../content/assets/favicons/animanoir-logo.svg"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import PostCard from '../components/postCard'
+import '../utils/normalize.css'
+import '../utils/css/main.css'
+
+import { keywordsArray } from '../utils/keywordsArray'
+import logo from '../../content/assets/favicons/animanoir-logo.svg'
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,12 +17,12 @@ const Index = ({ data }, location) => {
 
   return (
     <React.Fragment>
+      <SEO
+        title={siteTitle}
+        canonical="https://animanoir.xyz"
+        keywords={keywordsArray}
+      />
       <Layout title={siteTitle}>
-        <SEO
-          title={siteTitle}
-          canonical="https://animanoir.xyz"
-          keywords={keywordsArray}
-        />
         <div className="post-feed">
           {posts.map(({ node }) => {
             postCounter++

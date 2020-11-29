@@ -1,6 +1,6 @@
-import React, { Component } from "react"
-import _ from "lodash"
-import { Link } from "gatsby"
+import React, { Component } from 'react'
+import _ from 'lodash'
+import { Link } from 'gatsby'
 
 class Tags extends Component {
   render() {
@@ -8,9 +8,9 @@ class Tags extends Component {
     return (
       <div className="post-card-tags">
         {tags &&
-          tags.map(tag => (
+          tags.map((tag) => (
             <span key={tag}>
-              {" "}
+              {' '}
               <Link
                 className="post-card-tag-link"
                 key={tag}

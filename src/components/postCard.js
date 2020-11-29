@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
-import Tags from "./tag"
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import Tags from './tag'
 
-export default props => (
+export default (props) => (
   <article
     className={`post-card  ${props.postClass} fade-in`}
     style={
