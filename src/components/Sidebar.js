@@ -7,7 +7,7 @@ const Sidebar = () => {
     <nav className="custom-sidebar">
       <div>
         <Link className="logo-link" to="/">
-          <img className="main-logo" src={logo} />
+          <img className="main-logo" src={logo} alt="Animanoir Logo" />
         </Link>
       </div>
       <ul className="custom-menu">

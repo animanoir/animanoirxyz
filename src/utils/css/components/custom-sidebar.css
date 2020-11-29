@@ -4,12 +4,12 @@
   left: 80vw;
   flex-direction: column;
   top: calc(100vh - 300px);
-  width: 20vw;
+  width: 10vw;
+  height: 10vh;
 }
 
 .main-logo {
   max-width: 100px;
-  margin-bottom: 1rem;
 }
 
 .custom-link a {

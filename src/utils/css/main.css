@@ -16,11 +16,6 @@ body {
   color: var(--text-darkWhite);
 }
 
-#site-main {
-  width: 99vw;
-  height: 100vw;
-}
-
 .img {
   display: block;
   width: 100%;
@@ -103,7 +98,9 @@ ul {
 
 .page {
   position: relative;
-  width: 99vw;
+  padding-top: 3.5rem;
+  padding-left: 3.5rem;
+  padding-bottom: 3rem;
 }
 
 .page-head-title {

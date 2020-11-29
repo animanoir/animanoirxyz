@@ -5,7 +5,7 @@ const Layout = (props) => {
   const { children } = props
 
   return (
-    <main id="site-main">
+    <main>
       <div className="page"> {children} </div>
       <Sidebar />
     </main>

@@ -9,29 +9,12 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 700px) {
-  .post-feed {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #site-main {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .post-card {
-    min-height: 100vh;
-    flex: 1 !important;
-  }
-}
-
 .post-card {
   position: relative;
-  font-family: var(--font-computers);
+  font-family: 'Open Sans', sans-serif;
   flex: 1 1 50%;
   display: flex;
-  background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
+  background: linear-gradient(135deg, #242426 0%, #dd0000 100%) center center;
   background-size: cover;
   overflow: hidden;
   counter-increment: posts;
@@ -48,11 +31,6 @@
   flex: 1 1 100%;
 }
 
-.post-card-link {
-  flex: 1 1 auto;
-  display: block;
-}
-
 .post-card-content {
   width: 100%;
   height: auto;
@@ -67,27 +45,17 @@
   bottom: 0;
   left: 0;
   color: var(--text-darkWhite);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
-/* .post-card-date,
-.post-card-body,
 .post-card-tag-link {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--color-sub-base);
-} */
-
-/* .post-card-readmore {
-  margin-top: 11.2px;
-  font-size: 1.6rem;
-} */
-
-/* .post-card-date {
-  margin-top: 10px;
-  font-style: italic;
-} */
+  font-family: var(--font-open);
+  text-decoration: none;
+}
 
 .post-card-link:hover .post-card-content {
   opacity: 1;
@@ -95,9 +63,11 @@
 }
 
 .post-card-title {
+  background-color: var(--bg-dark);
+  padding: 0.3rem;
   margin: 0;
+  font-size: 1.7rem;
   display: inline-block;
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -122,5 +92,22 @@
 @media (max-width: 600px) {
   .post-card-title {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .post-feed {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #site-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .post-card {
+    min-height: 100vh;
+    flex: 1 !important;
   }
 }
