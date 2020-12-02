@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
           canonical={post.frontmatter.canonical}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article className="post-content">
+        <article className="post-content fade-in">
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>

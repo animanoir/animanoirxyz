@@ -82,6 +82,13 @@ ul {
   padding: 3.5rem 8rem;
 }
 
+@media (max-width: 1280px) {
+  .page {
+    position: relative;
+    padding: 3.5rem 5rem;
+  }
+}
+
 .page-head-title {
   margin: 0;
   font-size: 4.2rem;
@@ -269,7 +276,7 @@ body::-webkit-scrollbar-thumb {
 body:hover::-webkit-scrollbar-thumb {
   cursor: pointer;
 
-  background-color: white;
+  background-color: var(--text-darkWhite);
   cursor: pointer;
 }
 
@@ -362,7 +369,7 @@ body:hover::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
   .post-content-title {
     font-size: calc(14px + (60 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
@@ -371,4 +378,4 @@ body:hover::-webkit-scrollbar-thumb {
   .post-content-title {
     font-size: calc(14px + (60 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
-}
+} */

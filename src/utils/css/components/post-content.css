@@ -12,8 +12,17 @@
   word-wrap: break-word;
   color: var(--color-base);
   font-family: 'Montserrat', sans-serif;
-  font-size: 10rem;
-  margin-bottom: 0.5rem;
+  font-size: 5rem;
+  margin-bottom: 50vh;
+  margin-top: 50vh;
+}
+
+@media (max-width: 1280px) {
+  .post-content-title {
+    font-size: 4rem;
+    margin-bottom: 55vh;
+    margin-top: 45vh;
+  }
 }
 
 .post-content-excerpt {
@@ -156,26 +165,6 @@
   box-shadow: #fff 0 0 0 5px;
   transform: rotate(45deg);
 } */
-
-.footnotes-sep {
-  margin-bottom: 30px;
-}
-
-.footnotes {
-  font-size: 1.5rem;
-}
-
-.footnotes p {
-  margin: 0;
-}
-
-.footnote-backref {
-  color: var(--color-primary) !important;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none !important;
-  box-shadow: none !important;
-}
 
 @media (max-width: 500px) {
   .post-content-excerpt {

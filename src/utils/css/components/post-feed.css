@@ -3,7 +3,8 @@
 
 .post-feed {
   height: 1000px;
-  /* width: 60vw; */
+  margin: auto;
+  width: 80%;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -65,10 +66,11 @@
 
 .post-card-title {
   background-color: var(--bg-dark);
+  font-family: 'Montserrat', sans-serif;
   padding: 0.7rem;
   font-weight: bold;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: inline-block;
   text-align: center;
 }
