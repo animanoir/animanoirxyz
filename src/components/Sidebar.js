@@ -5,25 +5,11 @@ import logo from '../../content/assets/favicons/animanoir-logo.svg'
 const Sidebar = () => {
   return (
     <nav className="custom-sidebar">
-      <div>
-        <Link className="logo-link" to="/">
-          <img className="main-logo" src={logo} alt="Animanoir Logo" />
+      <div className="main-logo">
+        <Link to="/">
+          <img src={logo} alt="Animanoir Logo" />
         </Link>
       </div>
-      <ul className="custom-menu">
-        <li className="custom-link">
-          <Link to="/about">about</Link>
-        </li>
-        <li className="custom-link">
-          <Link to="/contact">contact</Link>
-        </li>
-        <li className="custom-link">
-          <Link to="/blog">blog</Link>
-        </li>
-        <li className="custom-link">
-          <Link>stuff</Link>
-        </li>
-      </ul>
     </nav>
   )
 }

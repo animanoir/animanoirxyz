@@ -19,7 +19,13 @@ const AboutPage = ({ data }, location) => {
         <article className="page-template">
           <div className="about-container">
             <h1 className="about-title">Óscar A. Montiel</h1>
-            <h3>Creative developer, front end, software</h3>
+            <h3 className="about-subtitle">
+              Creative developer, front end, software
+            </h3>
+            <p className="about-description">
+              Óscar A. Montiel is a software engineer focused on the artistic
+              approach of systems and interaction.
+            </p>
             <img src={photo} alt="Animanoir Óscar A. Montiel Animation"></img>
             <h4>
               <div className="about__links">

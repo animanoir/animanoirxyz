@@ -1,13 +1,11 @@
 ---
 title: Animanoir.xyz
-date: "2019-11-11"
+date: '2019-11-11'
 tags: [react, gatsby]
 description: Thoughts about creating my new website.
-canonical: "https://animanoir.xyz/animanoirxyz"
+canonical: 'https://animanoir.xyz/animanoirxyz'
 thumbnail: an-fondo.jpg
 ---
-
-<hr>
 
 I've been prolonging my desire to write (I like to write a lot) concisely these weeks, but normally time doesn't permits me to write as consciously as I really want. First of all, I've been thinking in which language I should write these posts, and as you can see I've decided for english.
 

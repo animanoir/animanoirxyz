@@ -1,10 +1,9 @@
 ---
-title: Sobre las redes sociales...
-date: "2019-11-11"
+title: '@neofilosofias (twitter bot)'
+date: '2019-11-11'
 tags: [blog]
+description: 'Bot de Twitter que descubre nuevas filosofías.'
 ---
-
-<hr>
 
 I've been prolonging my desire to write (I like to write a lot) concisely these weeks, but normally time doesn't permits me to write as consciously as I really want. First of all, I've been thinking in which language I should write these posts, and as you can see I've decided for english.
 

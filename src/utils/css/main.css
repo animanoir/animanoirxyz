@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import '../normalize.css';
 @import 'vars.css';
 @import 'components/custom-sidebar.css';
@@ -12,10 +15,6 @@ html {
   background-color: var(--bg-dark);
 }
 
-body {
-  color: var(--text-darkWhite);
-}
-
 .img {
   display: block;
   width: 100%;
@@ -26,27 +25,13 @@ body {
 }
 
 a {
-  color: white;
+  color: var(--text-darkWhite);
 }
 
 a:hover {
   color: rgb(236, 0, 0);
   text-decoration: none;
 }
-
-.site-wrapper {
-  z-index: 1;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-@media main and (max-width: 600px) {
-  #site-main {
-    padding: 0 2rem;
-  }
-}
-
 .centrar {
   position: absolute;
   top: 50%;
@@ -66,10 +51,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main-logo:hover {
-  color: red;
 }
 
 nav {
@@ -98,9 +79,7 @@ ul {
 
 .page {
   position: relative;
-  padding-top: 3.5rem;
-  padding-left: 3.5rem;
-  padding-bottom: 3rem;
+  padding: 3.5rem 8rem;
 }
 
 .page-head-title {
@@ -131,8 +110,6 @@ ul {
 .site-foot {
   margin: 1.5vw 0 1vw;
   text-align: center;
-  font-family: var(--font-josefin);
-  color: color(var(--color-border) l(-20%));
   font-size: 1.3rem;
 }
 
@@ -141,7 +118,6 @@ ul {
 }
 
 .site-foot span {
-  font-family: var(--font-josefin);
   font-weight: 300;
   color: var(--color-border);
 }
@@ -199,7 +175,6 @@ ul {
   padding: 10px 12px;
   font-size: 1rem;
   color: var(--color-base);
-  font-family: var(--font-computers);
   font-weight: normal;
   opacity: 0.4;
 }
@@ -220,7 +195,6 @@ ul {
 .site-head-logo {
   flex-shrink: 0;
   display: block;
-  font-family: var(--font-computers);
   padding: 10px;
   color: var(--color-base);
   font-size: 2.7rem !important;
@@ -258,59 +232,6 @@ ul {
   background-attachment: fixed;
 }
 
-/* --------------------------------- Navbar --------------------------------- */
-
-.navbar-logo {
-  min-width: 10rem;
-}
-
-.custom-navbar {
-  width: 20%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 25rem;
-}
-
-.custom-navbar .title {
-  font-family: var(--font-josefin);
-  font-size: 4rem;
-  color: white;
-}
-
-.title:hover {
-  color: red;
-}
-
-.custom-navbar .links {
-  font-family: var(--font-josefin);
-  font-size: 1.8rem;
-  color: rgb(228, 228, 228);
-}
-
-.links:hover {
-  color: red;
-}
-
-@media (max-width: 600px) {
-  .custom-navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 2rem 2rem;
-  }
-
-  .custom-navbar .links {
-    font-family: var(--font-josefin);
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-}
-
-/* --------------------------------- /Navbar -------------------------------- */
-
 .gatsby-resp-image-wrapper {
   margin: 1rem !important;
 }
@@ -332,17 +253,24 @@ ul {
   color: red;
 }
 
-body::-webkit-scrollbar {
-  width: 0.5em;
+body:hover::-webkit-scrollbar {
+  background-color: black;
+  cursor: pointer;
 }
 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+body::-webkit-scrollbar {
+  background-color: red;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(97, 97, 97);
-  outline: 1px solid rgb(51, 51, 51);
+  background-color: black;
+}
+body:hover::-webkit-scrollbar-thumb {
+  cursor: pointer;
+
+  background-color: white;
+  cursor: pointer;
 }
 
 .about__subtitle {
@@ -425,5 +353,22 @@ body::-webkit-scrollbar-thumb {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media main and (max-width: 600px) {
+  #site-main {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .post-content-title {
+    font-size: calc(14px + (60 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .post-content-title {
+    font-size: calc(14px + (60 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 }

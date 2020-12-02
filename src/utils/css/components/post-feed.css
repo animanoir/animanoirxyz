@@ -2,8 +2,8 @@
 /* ---------------------------------------------------------- */
 
 .post-feed {
-  height: 80vh;
-  width: 60vw;
+  height: 1000px;
+  /* width: 60vw; */
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -44,6 +44,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  cursor: copy;
   color: var(--text-darkWhite);
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 1;
@@ -64,9 +65,10 @@
 
 .post-card-title {
   background-color: var(--bg-dark);
-  padding: 0.3rem;
+  padding: 0.7rem;
+  font-weight: bold;
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   display: inline-block;
   text-align: center;
 }

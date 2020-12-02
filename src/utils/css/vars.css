@@ -1,6 +1,10 @@
 /* Variables
 /* ---------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 @font-face {
   font-family: 'Computers';
@@ -10,28 +14,14 @@
 
 :root {
   /* Colours */
-  --color-primary: #2997ff;
-  --color-base: #f5f5f7;
-  --color-sub-base: rgb(230, 230, 230);
-  --color-border: #a1a1a6;
-  --color-bg-bright: #191919;
 
-  --bg-dark: #080808;
-  --text-darkWhite: #dadada;
+  --bg-dark: rgb(7, 7, 7);
+  --text-darkWhite: rgb(236, 236, 236);
 
-  /* --color-spare1: #66bbff;
-  --color-spare2: #cccccc;
-  --color-spare3: #000000;
-  --color-spare4: #000000; */
-
-  /* Fonts */
-  --font-light: 100;
-  --font-normal: 400;
-  --font-bold: 700;
-  --font-heavy: 800;
+  /* --------------------------------- Fuentes -------------------------------- */
 
   --font-computers: 'Computers';
-  --fonts-open: "Open Sans', sans-serif";
+  --font-open: "Open Sans', sans-serif";
 
   /* Breakpoints */
   --xlarge: 1680px;
