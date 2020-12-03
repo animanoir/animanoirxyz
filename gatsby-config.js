@@ -1,5 +1,5 @@
-const urljoin = require("url-join")
-const siteConfig = require("./siteConfig")
+const urljoin = require('url-join')
+const siteConfig = require('./siteConfig')
 
 module.exports = {
   siteMetadata: {
@@ -33,18 +33,13 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1360,
+              maxWidth: 500,
               withWebp: true,
-              showCaptions: true,
               quality: 100,
-              wrapperStyle: `margin: 7vw 0;`,
             },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
@@ -59,10 +54,10 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require("postcss-easy-import")(),
-          require("postcss-custom-properties")({ preserve: false }),
-          require("postcss-color-function")(),
-          require("autoprefixer")({ browsers: ["last 2 versions"] }),
+          require('postcss-easy-import')(),
+          require('postcss-custom-properties')({ preserve: false }),
+          require('postcss-color-function')(),
+          require('autoprefixer')({ browsers: ['last 2 versions'] }),
         ],
       },
     },
@@ -73,8 +68,8 @@ module.exports = {
         develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['whitelist'], // Don't remove this selector
-        ignore: ["/ignored.css", "prismjs/", "/prism.css", "docsearch.js/"], // Ignore files/folders
-        purgeOnly: ["components/", "/main.css", "bootstrap/"], // Purge only these files/folders
+        ignore: ['/ignored.css', 'prismjs/', '/prism.css', 'docsearch.js/'], // Ignore files/folders
+        purgeOnly: ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     },
     {

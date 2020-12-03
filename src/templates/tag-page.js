@@ -61,7 +61,9 @@ class TagPageTemplate extends React.Component {
         />
         <Sidebar />
         <header className="tag-page-head">
-          <h1 className="page-head-title">. posts by ·</h1>
+          <h1 className="tag-head-title">{`#${
+            tag.charAt(0).toUpperCase() + tag.slice(1)
+          }`}</h1>
         </header>
         <div className="post-feed">
           {posts.map(({ node }) => {

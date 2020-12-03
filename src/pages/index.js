@@ -7,11 +7,9 @@ import '../utils/normalize.css'
 import '../utils/css/main.css'
 
 import { keywordsArray } from '../utils/keywordsArray'
-import logo from '../../content/assets/favicons/animanoir-logo.svg'
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
-  const siteDescription = data.site.siteMetadata.description
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
 

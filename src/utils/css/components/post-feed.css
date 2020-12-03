@@ -2,9 +2,9 @@
 /* ---------------------------------------------------------- */
 
 .post-feed {
-  height: 1000px;
+  height: auto;
   margin: auto;
-  width: 80%;
+  width: 70%;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -19,7 +19,7 @@
   background-size: cover;
   overflow: hidden;
   counter-increment: posts;
-  cursor: pointer;
+  height: 300px;
 }
 
 .post-card:hover {
@@ -55,7 +55,7 @@
 .post-card-tag-link {
   font-size: 0.7rem;
   color: var(--color-sub-base);
-  font-family: var(--font-open);
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 

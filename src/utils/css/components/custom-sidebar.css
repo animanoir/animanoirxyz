@@ -4,7 +4,6 @@
   flex-direction: column;
   left: calc(100vw - 12%);
   top: calc(100vh - 18%);
-  /* transform: translate(-50%, -50%); */
   width: 10vw;
   align-items: center;
   /* height: 200px; */
@@ -14,10 +13,12 @@
 .main-logo {
   border-radius: 100%;
   width: 77%;
-  box-shadow: 0px 5px 10px black;
+  transition: filter 0.5s;
+  box-shadow: 0px 0px 100px black;
 }
 
 .main-logo:hover {
+  transition: filter 0.5s;
   filter: invert(100);
 }
 

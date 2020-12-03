@@ -3,7 +3,7 @@
 
 .post-content {
   /* margin: auto; */
-  width: 65%;
+  width: 90%;
   margin: auto;
   color: var(--text-darkWhite);
 }
@@ -12,14 +12,15 @@
   word-wrap: break-word;
   color: var(--color-base);
   font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
+  font-weight: bold;
+  font-size: 4.7rem;
   margin-bottom: 50vh;
   margin-top: 50vh;
 }
 
 @media (max-width: 1280px) {
   .post-content-title {
-    font-size: 4rem;
+    font-size: 3.7rem;
     margin-bottom: 55vh;
     margin-top: 45vh;
   }
@@ -27,7 +28,7 @@
 
 .post-content-excerpt {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.6em;
   color: var(--color-base);
   opacity: 0.5;
@@ -42,10 +43,16 @@
 
 .post-content-body {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: var(--font-open);
   line-height: 2em;
   font-family: 'Open Sans', sans-serif;
+}
+
+.post-gallery {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  grid-auto-flow: row !important;
 }
 
 .about-container {

@@ -6,6 +6,7 @@ const Layout = (props) => {
 
   return (
     <main>
+      <div className="foreground" />
       <div className="page"> {children} </div>
       <Sidebar />
     </main>
