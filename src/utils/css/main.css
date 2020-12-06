@@ -7,7 +7,7 @@
 @import 'components/md.css';
 @import 'components/mobile-navmenu.css';
 @import 'components/post-content.css';
-@import 'components/post-feed.css';
+@import 'components/page-feed.css';
 @import 'components/tag-pages.css';
 
 html {
@@ -86,6 +86,10 @@ ul {
 .page {
   position: relative;
   padding: 3.5rem 8rem;
+}
+
+.custom-page {
+  position: relative;
 }
 
 @media (max-width: 1280px) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -25,6 +25,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.description}
             </p>
           )}
+          <Link to="/about">por Óscar A. Montiel</Link>
           <div
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}

@@ -1,10 +1,10 @@
 /* Post Feed
 /* ---------------------------------------------------------- */
 
-.post-feed {
+.page-feed {
   height: auto;
   margin: auto;
-  width: 70%;
+  width: 100%;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   flex: 1 1 100%;
 }
 
-.post-card-content {
+.page-card-content {
   width: 100%;
   height: auto;
   display: flex;
@@ -59,12 +59,12 @@
   text-decoration: none;
 }
 
-.post-card-link:hover .post-card-content {
+.post-card-link:hover .page-card-content {
   opacity: 1;
   transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
-.post-card-title {
+.page-card-title {
   background-color: var(--bg-dark);
   font-family: 'Montserrat', sans-serif;
   padding: 0.7rem;
@@ -75,32 +75,19 @@
   text-align: center;
 }
 
-/* Posts without images */
-.post-card.no-image:before {
-  display: block;
-  position: absolute;
-  bottom: -0.15em;
-  right: 5vw;
-  font-size: 28vw;
-  line-height: 1em;
-  font-weight: var(--font-heavy);
-  letter-spacing: -0.1em;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.post-card-title a:hover {
+.page-card-title a:hover {
   text-decoration: none;
   color: blue;
 }
 
 @media (max-width: 600px) {
-  .post-card-title {
+  .page-card-title {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .post-feed {
+  .page-feed {
     display: flex;
     flex-direction: column;
   }

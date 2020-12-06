@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Sidebar from '../components/Sidebar'
-import PostCard from '../components/postCard'
+import PostCard from '../components/Pagecard'
 
 class TagPageTemplate extends React.Component {
   render() {
@@ -65,7 +65,7 @@ class TagPageTemplate extends React.Component {
             tag.charAt(0).toUpperCase() + tag.slice(1)
           }`}</h1>
         </header>
-        <div className="post-feed">
+        <div className="page-feed">
           {posts.map(({ node }) => {
             return (
               <PostCard key={node.fields.slug} node={node} postClass={`post`} />
