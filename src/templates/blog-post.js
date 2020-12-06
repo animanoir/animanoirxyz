@@ -19,13 +19,11 @@ class BlogPostTemplate extends React.Component {
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>
-
-          {post.frontmatter.description && (
-            <p className="post-content-excerpt">
-              {post.frontmatter.description}
-            </p>
-          )}
-          <Link to="/about">por Óscar A. Montiel</Link>
+          <div className="post-author">
+            <Link to="/about">
+              <span>por Óscar A. Montiel</span>
+            </Link>
+          </div>
           <div
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}

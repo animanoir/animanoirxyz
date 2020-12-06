@@ -1,0 +1,32 @@
+.post-content {
+  width: 70%;
+}
+
+.post-content-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #e9e9e94f;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.post-content-body p {
+  margin: 1rem 0;
+  color: #e9e9e9e0;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.post-author {
+  padding-top: 1rem;
+}
+
+.post-author span {
+  color: #e9e9e94f;
+}
+
+.post-author a {
+  text-decoration: none;
+}
+
+.post-author a:hover {
+  text-decoration: underline;
+}

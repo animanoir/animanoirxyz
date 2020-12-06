@@ -6,6 +6,7 @@
 @import 'components/page-feed.css';
 @import 'components/tag-pages.css';
 @import 'components/page-content.css';
+@import 'components/post-content.css';
 
 html {
   font-size: 16px;
@@ -21,8 +22,38 @@ html {
   border-radius: 100%;
 }
 
+.blog-feed-container {
+  height: auto;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+}
+
 a {
   color: var(--text-darkWhite);
+}
+
+.main-p-alt {
+  color: var(--text-darkWhite);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.main-blog-link {
+  text-decoration: none;
+}
+
+.main-blog-link a:hover {
+  color: red;
+}
+
+.main-p {
+  color: var(--text-darkWhite);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 a:hover {

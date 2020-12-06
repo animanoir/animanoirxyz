@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Pagecard from '../components/Pagecard'
@@ -13,15 +13,17 @@ import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.jpg'
 
 import { keywordsArray } from '../utils/keywordsArray'
 
+const emojiArray = ['💔', '💀', '👻', '👹', '👽', '😃']
+
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  let postCounter = 0
 
   return (
     <React.Fragment>
       <SEO
         title={siteTitle}
+        description={data.site.siteMetadata.description}
         canonical="https://animanoir.xyz"
         keywords={keywordsArray}
       />
@@ -48,6 +50,23 @@ const Index = ({ data }, location) => {
             link="/Animanoirxyz"
             bgImage={animanoirxyzBg}
           />
+        </div>
+        <div id="blog-section" className="blog-feed-container">
+          <h2 className="main-p">Blog Posts:</h2>
+          {posts.map(({ node }) => {
+            return (
+              <ul>
+                <Link className="main-blog-link" to={node.fields.slug}>
+                  <li className="main-p-alt" key={node.fields.slug}>
+                    💔 {node.frontmatter.title}
+                  </li>
+                </Link>
+              </ul>
+            )
+          })}
+          <Link className="main-blog-link" to="/about">
+            <h2 className="main-p">Acerca</h2>
+          </Link>
         </div>
       </Layout>
     </React.Fragment>
