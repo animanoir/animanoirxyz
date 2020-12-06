@@ -8,8 +8,8 @@ import '../utils/css/main.css'
 import zeyxLabbg from '../../content/assets/projects/zeyx/zeyxCard.jpeg'
 import bemaBg from '../../content/assets/projects/bema/bemabg.jpg'
 import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.jpg'
-import jardinesBg from '../../content/assets/projects/jardines/jardinesBg.jpg'
 import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.jpg'
+import jardinesBg from '../../content/assets/projects/jardines/jardinesBg.jpg'
 
 import { keywordsArray } from '../utils/keywordsArray'
 

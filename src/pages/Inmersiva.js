@@ -5,9 +5,6 @@ import 'aos/dist/aos.css'
 import PageLayout from '../components/PageLayout'
 import SEO from '../components/seo'
 import '../utils/css/main.css'
-import img1 from '../../content/assets/projects/zeyx/zeyx-img1.jpeg'
-import img2 from '../../content/assets/projects/zeyx/zeyx-img2.jpeg'
-import img3 from '../../content/assets/projects/zeyx/zeyx-img3.webp'
 
 const ZeyxLab = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title

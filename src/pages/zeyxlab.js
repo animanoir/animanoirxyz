@@ -9,7 +9,6 @@ import FloatingSouls from '../components/FloatingSouls'
 
 import img1 from '../../content/assets/projects/zeyx/zeyx-img1.jpeg'
 import img2 from '../../content/assets/projects/zeyx/zeyx-img2.jpeg'
-import img3 from '../../content/assets/projects/zeyx/zeyx-img3.webp'
 
 const ZeyxLab = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title

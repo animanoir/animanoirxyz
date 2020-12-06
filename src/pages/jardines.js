@@ -7,10 +7,6 @@ import SEO from '../components/seo'
 import '../utils/css/main.css'
 import ReactPlayer from 'react-player'
 
-import img1 from '../../content/assets/projects/zeyx/zeyx-img1.jpeg'
-import img2 from '../../content/assets/projects/zeyx/zeyx-img2.jpeg'
-import img3 from '../../content/assets/projects/zeyx/zeyx-img3.webp'
-
 import vid1 from '../../content/assets/projects/jardines/emma.webm'
 
 const ZeyxLab = ({ data }) => {
@@ -35,6 +31,7 @@ const ZeyxLab = ({ data }) => {
         <h2 className="page-subtitle">
           Un jardín sonoro, con música de{' '}
           <a
+            rel="noreferrer"
             target="_blank"
             href="https://otonolabel.bandcamp.com/album/alquitr-n"
           >
@@ -43,11 +40,15 @@ const ZeyxLab = ({ data }) => {
         </h2>
         <p className="page-p">
           En colaboración con{' '}
-          <a target="_blank" href="http://maremoto.mx/">
+          <a rel="noreferrer" target="_blank" href="http://maremoto.mx/">
             Maremoto
           </a>{' '}
           y{' '}
-          <a target="_blank" href="https://otono.space/jardines/">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://otono.space/jardines/"
+          >
             OTONO Records
           </a>{' '}
           creamos un jardín virtual donde el oyente (cosmonauta) puede perderse
