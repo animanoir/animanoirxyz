@@ -1,0 +1,221 @@
+/* page Content
+/* ---------------------------------------------------------- */
+
+.page-full {
+  padding-bottom: 3.5rem;
+}
+
+.page-content {
+  /* margin: auto; */
+  width: 90%;
+  margin: auto;
+  overflow: scroll;
+  overflow-x: hidden !important;
+  color: var(--text-darkWhite);
+}
+
+.page-title {
+  padding-left: 5rem;
+  word-wrap: break-word;
+  color: var(--text-darkWhite);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 4.3rem;
+  margin-bottom: 50vh;
+  margin-top: 50vh;
+}
+
+.page-img {
+  width: 70%;
+  margin-bottom: 5rem;
+}
+
+.page-img-left {
+  width: 70%;
+  align-self: flex-end;
+}
+
+.page-img-container {
+  overflow-x: hidden !important;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.page-subtitle {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  line-height: 1.2em;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-darkWhite);
+}
+
+.page-txt-container {
+  padding-left: 4.3rem;
+  height: auto;
+  width: 60%;
+  text-align: justify;
+}
+
+.page-iframe {
+  padding: 0 5rem;
+  width: 800px;
+  height: 500px;
+}
+
+.page-video {
+  width: 100%;
+}
+
+.page-p {
+  color: rgba(255, 255, 255, 0.308);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width: 1280px) {
+  .page-title {
+    font-size: 3.7rem;
+    margin-bottom: 55vh;
+    margin-top: 45vh;
+  }
+}
+
+.page-content-excerpt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  color: var(--color-base);
+  opacity: 0.5;
+}
+
+.page-content-image {
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  transform: translateX(calc(50vw - 50%));
+}
+
+.page-content-body {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-family: var(--font-open);
+  line-height: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page-gallery {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  grid-auto-flow: row !important;
+}
+
+.about-container {
+  font-size: 1.48rem;
+}
+
+@media (max-width: 500px) {
+  .page-content-body {
+    font-size: 1.7rem;
+  }
+}
+
+.page-content-body h1,
+.page-content-body h2,
+.page-content-body h3,
+.page-content-body h4,
+.page-content-body h5,
+.page-content-body h6 {
+  color: var(--color-base);
+  margin: 0;
+}
+
+.page-content-body li {
+  word-break: break-word;
+}
+
+.page-content-body li p {
+  margin: 0;
+}
+
+.page-content-body iframe {
+  margin: 0 auto !important;
+}
+
+.page-content-body blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 1.5em;
+  /* border-left: #3eb0ef 3px solid; */
+  border-left: var(--color-primary) 3px solid;
+}
+
+.page-content-body blockquote p {
+  margin: 0 0 1em 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: italic;
+}
+
+.page-content-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.page-content-body code {
+  padding: 0 5px 2px;
+  font-size: 0.8em;
+  line-height: 1em;
+  font-weight: 400 !important;
+  /* background: var(--color-bg); */
+  background: var(--color-bg-dark) !important;
+  border-radius: 3px !important;
+}
+
+.page-content-body p code {
+  word-break: break-all;
+}
+
+.page-content-body pre {
+  overflow-x: auto;
+  margin: 1.5em 0 3em;
+  padding: 20px;
+  max-width: 100%;
+  /* border: color(var(--color-base) l(-10%)) 1px solid; */
+  border: color(var(--color-bg-bright) l(-0%)) 1px solid !important;
+  /* color: var(--color-bg); */
+  color: var(--color-base);
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  /* background: color(var(--color-base) l(-3%)); */
+  background: var(--color-bg-dark) !important;
+  border-radius: 5px;
+}
+
+.page-content-body pre code {
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+}
+
+.page-content-body pre code :not(span) {
+  color: inherit;
+}
+
+.page-content-body .fluid-width-video-wrapper {
+  margin: 1.5em 0 3em;
+}
+
+.page-content-body hr {
+  margin: 1vw 0;
+}
+
+@media (max-width: 500px) {
+  .page-content-excerpt {
+    font-size: 1.8rem;
+  }
+}

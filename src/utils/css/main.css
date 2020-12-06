@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import '../normalize.css';
 @import 'vars.css';
 @import 'components/custom-sidebar.css';
@@ -9,6 +6,7 @@
 @import 'components/post-content.css';
 @import 'components/page-feed.css';
 @import 'components/tag-pages.css';
+@import 'components/page-content.css';
 
 html {
   font-size: 16px;
@@ -229,7 +227,7 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 .custom-canvas {
-  position: absolute !important;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -316,6 +314,13 @@ body:hover::-webkit-scrollbar-thumb {
   -moz-animation: fadeIn ease 0.3s;
   -o-animation: fadeIn ease 0.3s;
   -ms-animation: fadeIn ease 0.3s;
+}
+.fade-in-slow {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
 }
 
 .foreground {

@@ -1,13 +1,14 @@
 import React, { useState, useRef } from 'react'
 import { Canvas, useFrame, extend } from 'react-three-fiber'
+import '../utils/css/main.css'
 import * as THREE from 'three'
 import * as meshline from 'three.meshline'
 
 extend(meshline)
 
-const numLines = 250
+const numLines = 100
 const lines = new Array(numLines).fill()
-const colors = ['#194272', '#7691D7', '#7FEDFB', '#32021B', '#194272']
+const colors = ['#ff0080', '#3eff3f']
 
 function Fatline() {
   const material = useRef()
@@ -87,8 +88,8 @@ function Scene() {
 
 const FloatingSouls = () => (
   <Canvas
-    className="custom-canvas fade-in"
-    camera={{ position: [-10, 50, 50], fov: 75 }}
+    className="custom-canvas fade-in-slow"
+    camera={{ position: [-10, 50, 10], fov: 75 }}
   >
     <Scene />
   </Canvas>

@@ -5,9 +5,6 @@ import SEO from '../components/seo'
 import Pagecard from '../components/Pagecard'
 import '../utils/normalize.css'
 import '../utils/css/main.css'
-
-import { Link } from 'gatsby'
-
 import zeyxLabbg from '../../content/assets/projects/zeyx/zeyxCard.jpeg'
 import bemaBg from '../../content/assets/projects/bema/bemabg.jpg'
 import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.jpg'
@@ -33,22 +30,22 @@ const Index = ({ data }, location) => {
           <Pagecard title="Zeyx Lab" link="/zeyxlab" bgImage={zeyxLabbg} />
           <Pagecard
             title="Jardines [VR Experience]"
-            link="/zeyxlab"
+            link="/jardines"
             bgImage={jardinesBg}
           />
           <Pagecard
             title="BEMA [programming course]"
-            link="/bema"
+            link="/Bema"
             bgImage={bemaBg}
           />
           <Pagecard
             title="INMERSIVA [+twitterbot]"
-            link="/bema"
+            link="/Inmersiva"
             bgImage={inmersivaBg}
           />
           <Pagecard
             title="Animanoir.xyz"
-            link="/bema"
+            link="/Animanoirxyz"
             bgImage={animanoirxyzBg}
           />
         </div>
