@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -10,14 +10,76 @@ import bemaBg from '../../content/assets/projects/bema/bemabg.jpg'
 import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.jpg'
 import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.jpg'
 import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.jpg'
-
 import { keywordsArray } from '../utils/keywordsArray'
 
-const emojiArray = ['💔', '💀', '👻', '👹', '👽', '😃']
+// const emojiArray = ['💔', '💀', '👻', '👹', '👽', '😃']
+
+const colores = [
+  '#FF6633',
+  '#FFB399',
+  '#FF33FF',
+  '#FFFF99',
+  '#00B3E6',
+  '#E6B333',
+  '#3366E6',
+  '#999966',
+  '#99FF99',
+  '#B34D4D',
+  '#80B300',
+  '#809900',
+  '#E6B3B3',
+  '#6680B3',
+  '#66991A',
+  '#FF99E6',
+  '#CCFF1A',
+  '#FF1A66',
+  '#E6331A',
+  '#33FFCC',
+  '#66994D',
+  '#B366CC',
+  '#4D8000',
+  '#B33300',
+  '#CC80CC',
+  '#66664D',
+  '#991AFF',
+  '#E666FF',
+  '#4DB3FF',
+  '#1AB399',
+  '#E666B3',
+  '#33991A',
+  '#CC9999',
+  '#B3B31A',
+  '#00E680',
+  '#4D8066',
+  '#809980',
+  '#E6FF80',
+  '#1AFF33',
+  '#999933',
+  '#FF3380',
+  '#CCCC00',
+  '#66E64D',
+  '#4D80CC',
+  '#9900B3',
+  '#E64D66',
+  '#4DB380',
+  '#FF4D4D',
+  '#99E6E6',
+  '#6666FF',
+]
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  const [colorI, setColorI] = useState()
+  const [colorN, setColorN] = useState()
+  const [colorT, setColorT] = useState()
+  const [colorE, setColorE] = useState()
+  const [colorR, setColorR] = useState()
+  const [colorA, setColorA] = useState()
+  const [colorC, setColorC] = useState()
+  const [colorV, setColorV] = useState()
+
+  const randomColor = () => colores[Math.floor(Math.random() * colores.length)]
 
   return (
     <React.Fragment>
@@ -47,26 +109,104 @@ const Index = ({ data }, location) => {
           />
           <Pagecard
             title="Animanoir.xyz"
-            link="/Animanoirxyz"
+            link="/Animanoirxyzweb"
             bgImage={animanoirxyzBg}
           />
         </div>
         <div id="blog-section" className="blog-feed-container">
-          <h2 className="main-p">Blog Posts:</h2>
-          {posts.map(({ node }) => {
-            return (
-              <ul>
-                <Link className="main-blog-link" to={node.fields.slug}>
-                  <li className="main-p-alt" key={node.fields.slug}>
-                    💔 {node.frontmatter.title}
-                  </li>
-                </Link>
-              </ul>
-            )
-          })}
+          <h1 className="main-p-title">
+            Animanoir | Creative development.
+            <span
+              onMouseEnter={() => setColorI(randomColor)}
+              style={{ color: colorI }}
+            >
+              {' '}
+              I
+            </span>
+            <span
+              onMouseEnter={() => setColorN(randomColor)}
+              style={{ color: colorN }}
+            >
+              n
+            </span>
+            <span
+              onMouseEnter={() => setColorT(randomColor)}
+              style={{ color: colorT }}
+            >
+              t
+            </span>
+            <span
+              onMouseEnter={() => setColorE(randomColor)}
+              style={{ color: colorE }}
+            >
+              e
+            </span>
+            <span
+              onMouseEnter={() => setColorR(randomColor)}
+              style={{ color: colorR }}
+            >
+              r
+            </span>
+            <span
+              onMouseEnter={() => setColorA(randomColor)}
+              style={{ color: colorA }}
+            >
+              a
+            </span>
+            <span
+              onMouseEnter={() => setColorC(randomColor)}
+              style={{ color: colorC }}
+            >
+              c
+            </span>
+            <span
+              onMouseEnter={() => setColorT(randomColor)}
+              style={{ color: colorT }}
+            >
+              t
+            </span>
+            <span
+              onMouseEnter={() => setColorI(randomColor)}
+              style={{ color: colorI }}
+            >
+              i
+            </span>
+            <span
+              onMouseEnter={() => setColorV(randomColor)}
+              style={{ color: colorV }}
+            >
+              v
+            </span>
+            <span
+              onMouseEnter={() => setColorE(randomColor)}
+              style={{ color: colorE }}
+            >
+              e{' '}
+            </span>
+            design. Multimedia wizardry.
+          </h1>
           <Link className="main-blog-link" to="/about">
             <h2 className="main-p">Acerca</h2>
           </Link>
+          <h2 className="main-p">Blog Posts:</h2>
+          <ul>
+            {posts.map(({ node }) => {
+              return (
+                <Link
+                  key={node.fields.slug}
+                  className="main-blog-link"
+                  to={node.fields.slug}
+                >
+                  <li className="main-p-alt">
+                    <span role="img" aria-label="Ésto rompe mi corazón :(">
+                      💔
+                    </span>{' '}
+                    {node.frontmatter.title}
+                  </li>
+                </Link>
+              )
+            })}
+          </ul>
         </div>
       </Layout>
     </React.Fragment>

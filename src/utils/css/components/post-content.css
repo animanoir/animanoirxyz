@@ -1,17 +1,18 @@
 .post-content {
-  width: 70%;
+  width: 53vw;
 }
 
 .post-content-title {
   font-weight: 700;
   font-size: 3.5rem;
-  color: #e9e9e94f;
+  color: #e9e9e950;
   font-family: 'Open Sans', sans-serif;
 }
 
 .post-content-body p {
   margin: 1rem 0;
-  color: #e9e9e9e0;
+  color: #e9e9e9ea;
+  text-align: justify;
   font-size: 1.3rem;
   line-height: 1.5;
 }
@@ -20,7 +21,7 @@
 }
 
 .post-author span {
-  color: #e9e9e94f;
+  color: #e9e9e950;
 }
 
 .post-author a {

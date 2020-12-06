@@ -2,8 +2,8 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  left: calc(100vw - 12%);
-  top: calc(100vh - 18%);
+  left: calc(100vw - 13%);
+  top: calc(100vh - 19%);
   width: 10vw;
   align-items: center;
   /* height: 200px; */

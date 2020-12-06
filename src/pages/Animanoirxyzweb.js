@@ -6,7 +6,7 @@ import PageLayout from '../components/PageLayout'
 import SEO from '../components/seo'
 import '../utils/css/main.css'
 
-const ZeyxLab = ({ data }) => {
+const Animanoirxyz = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const ZeyxLab = ({ data }) => {
   )
 }
 
-export default ZeyxLab
+export default Animanoirxyz
 
 export const pageQuery = graphql`
   query {
