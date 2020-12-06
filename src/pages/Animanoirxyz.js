@@ -31,18 +31,7 @@ const ZeyxLab = ({ data }) => {
       </div>
       <div data-aos={'fade-up'} className="page-txt-container">
         <h2 className="page-subtitle">Evolución 2 de Animanoir en la web</h2>
-        <p className="page-p">
-          "El Templo de Obsidiana es un eEspacio1 eArquitectónico donde se
-          invoca a una red de narrativas hipermediales para dar presencia a la
-          inteligencia colectiva, en un IPoliedro2 vasto y elástico de
-          profundidad inconmensurable y de una oscuridad tal que al adentrarse
-          se reconfigura el propio reflejo.
-        </p>
-        <p className="page-p">
-          Se desarrollo un <a href="https://hiperoraculo.glitch.me/">oráculo</a>{' '}
-          cuya base de datos almacena Twitter donde se alimenta de las
-          respuestas que nosotros, humanos, le damos...
-        </p>
+        <p className="page-p">Más información pronto...</p>
       </div>
     </PageLayout>
   )

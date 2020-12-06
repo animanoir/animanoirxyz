@@ -34,7 +34,8 @@ const ZeyxLab = ({ data }) => {
         <p className="page-p">
           Se desarrollo un <a href="https://hiperoraculo.glitch.me/">oráculo</a>{' '}
           cuya base de datos almacena Twitter donde se alimenta de las
-          respuestas que nosotros, humanos, le damos...
+          respuestas que nosotros, humanos, le damos... Más información
+          pronto...
         </p>
       </div>
     </PageLayout>
