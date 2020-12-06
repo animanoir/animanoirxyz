@@ -35,7 +35,7 @@ const Index = ({ data }, location) => {
           />
           <Pagecard
             title="BEMA [programming course]"
-            link="/Bema"
+            link="/BemaClases"
             bgImage={bemaBg}
           />
           <Pagecard
