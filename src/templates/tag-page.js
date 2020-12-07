@@ -33,7 +33,6 @@ class TagPageTemplate extends React.Component {
             'idm',
             'unity',
             'three js',
-            'aphex twin',
             'art',
             'ghosts',
             'fantasmas',
