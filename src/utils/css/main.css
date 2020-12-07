@@ -54,6 +54,7 @@ a {
   line-height: 1.2em;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 .main-p-title {
   color: var(--text-darkWhite);
   margin-bottom: 1rem;
@@ -68,6 +69,7 @@ a:hover {
   color: rgb(236, 0, 0);
   text-decoration: none;
 }
+
 .centrar {
   position: absolute;
   top: 50%;
@@ -121,18 +123,18 @@ ul {
 
 .page {
   position: relative;
-  padding: 3.5rem 8rem;
+  padding: 3.5rem 5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .page {
+    position: relative;
+    padding: 1rem;
+  }
 }
 
 .custom-page {
   position: relative;
-}
-
-@media (max-width: 1280px) {
-  .page {
-    position: relative;
-    padding: 3.5rem 5rem;
-  }
 }
 
 .page-head-title {
@@ -157,27 +159,6 @@ ul {
 @media (max-width: 500px) {
   .page-head-description {
     font-size: 1.6rem;
-  }
-}
-
-.site-foot {
-  margin: 1.5vw 0 1vw;
-  text-align: center;
-  font-size: 1.3rem;
-}
-
-.site-foot a {
-  color: var(--color-base);
-}
-
-.site-foot span {
-  font-weight: 300;
-  color: var(--color-border);
-}
-
-@media (max-width: 320px) {
-  .site-foot {
-    font-size: 1rem;
   }
 }
 
@@ -319,6 +300,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: black;
 }
+
 body:hover::-webkit-scrollbar-thumb {
   cursor: pointer;
 
@@ -350,6 +332,15 @@ body:hover::-webkit-scrollbar-thumb {
   background: yellow;
 }
 
+.letra-interactiva {
+  cursor: crosshair;
+}
+
+.emoji {
+  font-size: 1rem;
+  vertical-align: text-top;
+}
+
 ::selection {
   color: black;
   background: rgba(255, 255, 255, 0.87);
@@ -364,6 +355,7 @@ body:hover::-webkit-scrollbar-thumb {
   -o-animation: fadeIn ease 0.3s;
   -ms-animation: fadeIn ease 0.3s;
 }
+
 .fade-in-slow {
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;

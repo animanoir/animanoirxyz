@@ -9,6 +9,7 @@ import FloatingSouls from '../components/FloatingSouls'
 
 import img1 from '../../content/assets/projects/zeyx/zeyx-img1.jpeg'
 import img2 from '../../content/assets/projects/zeyx/zeyx-img2.jpeg'
+import img3 from '../../content/assets/projects/zeyx/zeyx1-4.jpg'
 
 const ZeyxLab = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -44,6 +45,24 @@ const ZeyxLab = ({ data }) => {
           ZeYX Lab es un proyecto desarrollado entre Salvador Herrera, Emmanuel
           Martínez y yo, donde exploramos las posibilidades post-2020 de
           apreciar arte en un mundo cada vez más virtualizado.
+        </p>
+      </div>
+      <div className="page-img-container-ind">
+        <img
+          data-aos={'fade-up'}
+          className="page-img"
+          src={img3}
+          alt="ZeYX Lab Animanoir"
+        />
+      </div>
+      <div data-aos={'fade-up'} className="page-txt-container">
+        <p className="page-p">
+          Usando{' '}
+          <a target="_blank" rel="noreferrer" href="https://threejs.org/">
+            three.js
+          </a>
+          , construímos un palacio virtual producto del sueño de algún andoide
+          en apoteosis.
         </p>
       </div>
     </PageLayout>

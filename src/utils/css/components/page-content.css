@@ -43,6 +43,12 @@
   flex-direction: column;
   margin-bottom: 5rem;
 }
+
+.page-img-container-ind {
+  overflow-x: hidden !important;
+  height: auto;
+  width: 100%;
+}
 .page-subtitle {
   font-size: 3rem;
   padding-bottom: 1rem;

@@ -102,3 +102,17 @@
     flex: 1 !important;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .post-card {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    flex: 1 1 50%;
+    display: flex;
+    background: linear-gradient(135deg, #242426 0%, #dd0000 100%) center center;
+    background-size: cover;
+    overflow: hidden;
+    counter-increment: posts;
+    height: 100vh;
+  }
+}

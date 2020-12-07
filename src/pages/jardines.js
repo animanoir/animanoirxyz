@@ -53,6 +53,13 @@ const ZeyxLab = ({ data }) => {
           </a>{' '}
           creamos un jardín virtual donde el oyente (cosmonauta) puede perderse
           buscando el origen de sus sentimientos...
+          <p>
+            Entra{' '}
+            <a target="_blank" rel="noreferrer" href="https://maremoto.mx/">
+              aquí
+            </a>{' '}
+            para experimentarlo.
+          </p>
         </p>
         <div
           dangerouslySetInnerHTML={{

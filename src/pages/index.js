@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import Pagecard from '../components/Pagecard'
 import '../utils/normalize.css'
@@ -117,6 +117,7 @@ const Index = ({ data }, location) => {
           <h1 className="main-p-title">
             Animanoir | Creative development.
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorI(randomColor)}
               style={{ color: colorI }}
             >
@@ -124,60 +125,70 @@ const Index = ({ data }, location) => {
               I
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorN(randomColor)}
               style={{ color: colorN }}
             >
               n
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorT(randomColor)}
               style={{ color: colorT }}
             >
               t
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorE(randomColor)}
               style={{ color: colorE }}
             >
               e
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorR(randomColor)}
               style={{ color: colorR }}
             >
               r
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorA(randomColor)}
               style={{ color: colorA }}
             >
               a
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorC(randomColor)}
               style={{ color: colorC }}
             >
               c
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorT(randomColor)}
               style={{ color: colorT }}
             >
               t
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorI(randomColor)}
               style={{ color: colorI }}
             >
               i
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorV(randomColor)}
               style={{ color: colorV }}
             >
               v
             </span>
             <span
+              className="letra-interactiva"
               onMouseEnter={() => setColorE(randomColor)}
               style={{ color: colorE }}
             >
@@ -185,7 +196,7 @@ const Index = ({ data }, location) => {
             </span>
             design. Multimedia wizardry.
           </h1>
-          <Link className="main-blog-link" to="/about">
+          <Link className="main-blog-link" to="/Acerca">
             <h2 className="main-p">Acerca</h2>
           </Link>
           <h2 className="main-p">Blog Posts:</h2>
@@ -198,7 +209,11 @@ const Index = ({ data }, location) => {
                   to={node.fields.slug}
                 >
                   <li className="main-p-alt">
-                    <span role="img" aria-label="Ésto rompe mi corazón :(">
+                    <span
+                      class="emoji"
+                      role="img"
+                      aria-label="Ésto rompe mi corazón :("
+                    >
                       💔
                     </span>{' '}
                     {node.frontmatter.title}
