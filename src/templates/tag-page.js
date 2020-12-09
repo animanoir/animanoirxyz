@@ -86,10 +86,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { tags: { in: [$tag] } } }) {
       totalCount
       edges {
         node {
@@ -98,7 +95,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
             description
             tags

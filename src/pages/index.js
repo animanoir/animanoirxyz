@@ -1,18 +1,16 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState } from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import Pagecard from '../components/Pagecard'
 import '../utils/normalize.css'
 import '../utils/css/main.css'
-import zeyxLabbg from '../../content/assets/projects/zeyx/zeyxCard.jpeg'
-import bemaBg from '../../content/assets/projects/bema/bemabg.jpg'
-import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.jpg'
-import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.jpg'
-import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.jpg'
+import zeyxLabbg from '../../content/assets/projects/zeyx/zeyxCard.webp'
+import bemaBg from '../../content/assets/projects/bema/bemabg.webp'
+import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.webp'
+import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.webp'
+import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.webp'
 import { keywordsArray } from '../utils/keywordsArray'
-
-// const emojiArray = ['💔', '💀', '👻', '👹', '👽', '😃']
 
 const colores = [
   '#FF6633',
@@ -199,7 +197,7 @@ const Index = ({ data }, location) => {
           <Link className="main-blog-link" to="/Acerca">
             <h2 className="main-p">Acerca</h2>
           </Link>
-          <h2 className="main-p">Blog Posts:</h2>
+          <h2 className="main-p">Blog posts:</h2>
           <ul>
             {posts.map(({ node }) => {
               return (
@@ -236,7 +234,7 @@ const indexQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark {
       edges {
         node {
           excerpt
@@ -244,7 +242,6 @@ const indexQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM D, YYYY")
             title
             description
             tags

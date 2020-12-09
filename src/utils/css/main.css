@@ -107,29 +107,21 @@ ul {
   list-style-type: none;
 }
 
-/* @media (max-width: 1270px) {
-  .site-wrapper {
-    padding: 6vw;
-  }
-  #swup {
-    width: inherit;
-    height: inherit;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    padding: 1rem;
-  }
-} */
-
 .page {
   position: relative;
   padding: 3.5rem 5rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
   .page {
     position: relative;
-    padding: 1rem;
+    padding: 1rem 2.6rem;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .page {
+    position: relative;
+    padding: 1rem 1.7rem;
   }
 }
 

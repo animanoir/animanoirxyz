@@ -1,5 +1,5 @@
 const path = require(`path`)
-const _ = require("lodash")
+const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
@@ -11,10 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+        allMarkdownRemark(limit: 1000) {
           edges {
             node {
               fields {
@@ -29,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     if (result.errors) {
       throw result.errors
     }
@@ -44,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       // Get tags for tags pages.
       if (post.node.frontmatter.tags) {
-        post.node.frontmatter.tags.forEach(tag => {
+        post.node.frontmatter.tags.forEach((tag) => {
           tagSet.add(tag)
         })
       }
@@ -61,7 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create tags pages.
-    tagSet.forEach(tag => {
+    tagSet.forEach((tag) => {
       createPage({
         path: `/tags/${_.kebabCase(tag)}/`,
         component: tagPage,

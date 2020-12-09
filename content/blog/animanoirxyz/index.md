@@ -6,8 +6,6 @@ canonical: 'https://animanoir.xyz/animanoirxyz-aspectos'
 thumbnail: an-fondo.jpg
 ---
 
-Han pasado cerca de 5 años desde la primer iteración de Animanoir en internet. El primer sitio, [Animanoir.com](https://animanoir.com/), nació por 3 cosas principalmente:
+> Hace algún tiempo platiqué con un par de amigos sobre ROMA, el filme de Cuarón. Uno de ellos me comentó que una de las razones por las cuales ha pegado tanto es porque es una historia muy personal. Es decir, es algo que nadie sabía, o sentido, con anterioridad. ¿Alguien de aquí conoce a Alfonso personalmente? Ése es el punto, a través de su obra extrapola su ser.
 
-1. Mi necesidad por escribir.
-2. Tener un portafolio en línea.
-3. Tener un espacio **mío**, verdaderamente mío en internet.
+Con este párrafo inicié el primer post que hice en mi primer sitio web/portafolio que realicé, éso como por el año 2015. Tras 5 años, por fin actualicé mi sitio a los nuevos "estándares" tecnológicos, pero esta idea se mantiene.

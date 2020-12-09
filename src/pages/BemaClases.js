@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 import PageLayout from '../components/PageLayout'
 import SEO from '../components/seo'
 import '../utils/css/main.css'
-import img1 from '../../content/assets/projects/bema/bemabg.jpg'
+import img1 from '../../content/assets/projects/bema/bemabg.webp'
 
 const Bema = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
