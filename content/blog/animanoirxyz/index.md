@@ -4,7 +4,7 @@ tags: [web, animanoir]
 description: Aspectos creativos y técnicos sobre el desarrollo de la nueva versión de Animanoir web.
 canonical: 'https://animanoir.xyz/animanoirxyz-aspectos'
 thumbnail: an-fondo.jpg
-date: '2020-8-12'
+date: '2020-08-12'
 ---
 
 > Hace algún tiempo platiqué con un par de amigos sobre ROMA, el filme de Cuarón. Uno de ellos me comentó que una de las razones por las cuales ha pegado tanto es porque es una historia muy personal. Es decir, es algo que nadie sabía, o sentido, con anterioridad. ¿Alguien de aquí conoce a Alfonso personalmente? Ése es el punto, a través de su obra extrapola su ser.
