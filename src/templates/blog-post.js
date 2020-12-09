@@ -49,6 +49,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        date(formatString: "MMMM D, YYYY")
         title
         description
         canonical

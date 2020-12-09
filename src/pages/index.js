@@ -236,7 +236,7 @@ const indexQuery = graphql`
         description
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -244,6 +244,7 @@ const indexQuery = graphql`
             slug
           }
           frontmatter {
+            date(formatString: "MMMM D, YYYY")
             title
             description
             tags
