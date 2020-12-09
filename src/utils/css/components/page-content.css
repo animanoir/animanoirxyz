@@ -23,6 +23,7 @@
   font-size: 4.3rem;
   margin-bottom: 50vh;
   margin-top: 50vh;
+  text-shadow: 0px 5px 10px var(--color-dark);
 }
 
 .page-img {
@@ -121,10 +122,6 @@
   grid-auto-flow: row !important;
 }
 
-.about-container {
-  font-size: 1.48rem;
-}
-
 @media (max-width: 500px) {
   .page-content-body {
     font-size: 1.7rem;
@@ -178,7 +175,7 @@
   line-height: 1em;
   font-weight: 400 !important;
   /* background: var(--color-bg); */
-  background: var(--color-bg-dark) !important;
+  background: var(--color-color-dark) !important;
   border-radius: 3px !important;
 }
 
@@ -198,7 +195,7 @@
   font-size: 1.4rem;
   line-height: 1.5em;
   /* background: color(var(--color-base) l(-3%)); */
-  background: var(--color-bg-dark) !important;
+  background: var(--color-color-dark) !important;
   border-radius: 5px;
 }
 

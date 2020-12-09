@@ -10,7 +10,7 @@
 
 html {
   font-size: 16px;
-  background-color: var(--bg-dark);
+  background-color: var(--color-dark);
 }
 
 .img {
@@ -34,9 +34,11 @@ a {
 .main-p-alt {
   color: var(--text-darkWhite);
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  font-style: italic;
   line-height: 1.2em;
-  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-blog-link {
@@ -44,15 +46,16 @@ a {
 }
 
 .main-blog-link *:hover {
-  color: red;
+  color: var(--color-red);
 }
 
 .main-p {
   color: var(--text-darkWhite);
   margin-bottom: 1rem;
-  font-size: 2rem;
-  line-height: 1.2em;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-p-title {
@@ -60,9 +63,8 @@ a {
   margin-bottom: 1rem;
   font-size: 3rem;
   line-height: 1.2em;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  letter-spacing: 3px;
 }
 
 a:hover {
@@ -276,7 +278,7 @@ ul {
 }
 
 .md-link a:hover {
-  color: red;
+  color: var(--color-red);
 }
 
 body:hover::-webkit-scrollbar {
@@ -285,7 +287,7 @@ body:hover::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar {
-  background-color: red;
+  background-color: var(--color-red);
   width: 0.5rem;
 }
 
@@ -320,7 +322,7 @@ body:hover::-webkit-scrollbar-thumb {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: red;
+  color: var(--color-red);
   background: yellow;
 }
 

@@ -7,3 +7,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.about-container {
+  font-size: 1.48rem;
+}

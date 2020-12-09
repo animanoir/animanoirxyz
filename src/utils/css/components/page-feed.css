@@ -65,7 +65,7 @@
 }
 
 .page-card-title {
-  background-color: var(--bg-dark);
+  background-color: var(--color-dark);
   font-family: 'Montserrat', sans-serif;
   padding: 0.7rem;
   font-weight: bold;

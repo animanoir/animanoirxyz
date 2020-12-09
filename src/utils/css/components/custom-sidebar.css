@@ -1,11 +1,8 @@
 .custom-sidebar {
   position: fixed;
-  display: flex;
-  flex-direction: column;
   left: calc(100vw - 13%);
   top: calc(100vh - 19%);
   width: 10vw;
-  align-items: center;
   /* height: 200px; */
   cursor: help;
 }
@@ -22,15 +19,16 @@
   filter: invert(100);
 }
 
-.sidebar-name {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.custom-menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.5rem;
+@media (max-width: 1024px) {
+  .custom-sidebar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    top: initial;
+    left: initial;
+    margin: auto;
+    cursor: help;
+    margin-bottom: 1.5rem;
+  }
 }

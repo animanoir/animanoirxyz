@@ -15,25 +15,26 @@ const Acerca = ({ data }, location) => {
       <Layout title={siteTitle}>
         <SEO title="About" keywords={keywordsArray} />
         <article>
-          <div className="about-container"></div>
-          <h1 className="page-subtitle">Óscar A. Montiel</h1>
-          <p className="page-p">
-            Software developer, (tryhard) multimedia artist
-          </p>
-          <div className="page-p">
-            <p>
-              <b>Current interests:</b>
+          <div className="about-container">
+            <h1 className="page-subtitle">Óscar A. Montiel</h1>
+            <p className="page-p">
+              Creative Multimedia .Interactive Design .Web/Software Development
             </p>
-            <p>
-              3D in web, virtuality, philosophy, JS, general computing
-              knowledge.
-            </p>
+            <div className="page-p">
+              <p>
+                <b>Current interests:</b>
+              </p>
+              <p>
+                3D in web, virtuality, philosophy, JS, general computing
+                knowledge.
+              </p>
+            </div>
+            <img
+              className="about-img"
+              src={photo}
+              alt="Animanoir Óscar A. Montiel Animation"
+            />
           </div>
-          <img
-            className="about-img"
-            src={photo}
-            alt="Animanoir Óscar A. Montiel Animation"
-          />
         </article>
       </Layout>
     </>

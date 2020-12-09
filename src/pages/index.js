@@ -197,7 +197,9 @@ const Index = ({ data }, location) => {
           <Link className="main-blog-link" to="/Acerca">
             <h2 className="main-p">Acerca</h2>
           </Link>
-          <h2 className="main-p">Blog posts:</h2>
+          <h2 className="main-p" style={{ fontStyle: 'initial' }}>
+            Blog posts:
+          </h2>
           <ul>
             {posts.map(({ node }) => {
               return (
@@ -206,7 +208,7 @@ const Index = ({ data }, location) => {
                   className="main-blog-link"
                   to={node.fields.slug}
                 >
-                  <li className="main-p-alt">
+                  <li className="main-p-alt" style={{ marginTop: '2rem' }}>
                     <span
                       class="emoji"
                       role="img"
