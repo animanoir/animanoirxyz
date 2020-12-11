@@ -1,22 +1,21 @@
 .post-content {
-  width: 50vw;
+  width: 55vw;
   margin: auto;
 }
 
 .post-content-title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 3.5rem;
   color: var(--color-dark);
-  background-color: var(--text-darkWhite);
+  background-color: var(--color-darkWhite);
   font-family: 'Josefin Sans', sans-serif;
   padding: 0.5rem;
 }
 
 .post-content-body p {
-  margin: 1.4rem 0;
+  margin: 1.7rem 0;
   color: #e9e9e9ea;
-  text-align: justify;
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 .post-author {
@@ -33,7 +32,7 @@
 }
 
 .post-author span:hover {
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
 }
 
 @media (max-width: 1024px) {

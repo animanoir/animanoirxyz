@@ -11,13 +11,13 @@
   margin: auto;
   overflow: scroll;
   overflow-x: hidden !important;
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
 }
 
 .page-title {
   padding-left: 5rem;
   word-wrap: break-word;
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 4.3rem;
@@ -56,7 +56,7 @@
   line-height: 1.2em;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
 }
 
 .page-txt-container {

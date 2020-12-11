@@ -1,16 +1,22 @@
 @import '../normalize.css';
 @import 'vars.css';
 @import 'components/custom-sidebar.css';
-@import 'components/md.css';
-@import 'components/mobile-navmenu.css';
 @import 'components/page-feed.css';
-@import 'components/tag-pages.css';
 @import 'components/page-content.css';
 @import 'components/post-content.css';
 
 html {
   font-size: 16px;
   background-color: var(--color-dark);
+}
+
+a {
+  color: var(--color-darkWhite);
+}
+
+a:hover {
+  color: rgb(236, 0, 0);
+  text-decoration: none;
 }
 
 .img {
@@ -27,12 +33,8 @@ html {
   margin-top: 50vh;
 }
 
-a {
-  color: var(--text-darkWhite);
-}
-
 .main-p-alt {
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
   margin-bottom: 1rem;
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
@@ -50,7 +52,7 @@ a {
 }
 
 .main-p {
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 300;
@@ -59,17 +61,12 @@ a {
 }
 
 .main-p-title {
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
   margin-bottom: 1rem;
   font-size: 3rem;
   line-height: 1.2em;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-}
-
-a:hover {
-  color: rgb(236, 0, 0);
-  text-decoration: none;
 }
 
 .centrar {
@@ -81,32 +78,9 @@ a:hover {
 }
 
 .tag-head-title {
-  color: var(--text-darkWhite);
+  color: var(--color-darkWhite);
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
-}
-
-.inner-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* padding: 0 40rem; */
-}
-
-.logo-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-nav {
-  min-height: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .page {
@@ -123,63 +97,8 @@ ul {
 @media only screen and (max-width: 740px) {
   .page {
     position: relative;
-    padding: 1rem 1.7rem;
+    padding: 0 0;
   }
-}
-
-.custom-page {
-  position: relative;
-}
-
-.page-head-title {
-  margin: 0;
-  font-size: 4.2rem;
-  color: var(--color-base);
-}
-
-@media (max-width: 500px) {
-  .page-head-title {
-    font-size: 2rem;
-  }
-}
-
-.page-head-description {
-  margin: 0 0 1.6vw;
-  color: color(var(--color-border) l(-20%));
-  font-size: 2.2rem;
-  line-height: 1.35em;
-}
-
-@media (max-width: 500px) {
-  .page-head-description {
-    font-size: 1.6rem;
-  }
-}
-
-/* Site Navigation
-/* ---------------------------------------------------------- */
-
-.site-head {
-  position: relative;
-  z-index: 300;
-  margin-top: -10px;
-  margin-bottom: 1.5rem;
-  font-size: 1.35rem;
-}
-
-.site-head-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-head-left {
-  position: relative;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  white-space: nowrap;
 }
 
 .nav {
@@ -188,47 +107,6 @@ ul {
   margin: 0 0 0 -12px;
   padding: 0;
   list-style: none;
-}
-
-.site-head li {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.site-head-left a,
-.site-head-right a {
-  display: block;
-  margin: 0;
-  padding: 10px 12px;
-  font-size: 1rem;
-  color: var(--color-base);
-  font-weight: normal;
-  opacity: 0.4;
-}
-
-.nav-current a,
-.site-head a:hover {
-  text-decoration: none;
-  opacity: 1;
-}
-
-.site-head-center {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.site-head-logo {
-  flex-shrink: 0;
-  display: block;
-  padding: 10px;
-  color: var(--color-base);
-  font-size: 2.7rem !important;
-  line-height: 1em;
-  font-weight: 700;
-  letter-spacing: 1.5px;
 }
 
 .social-links {
@@ -260,10 +138,6 @@ ul {
   background-attachment: fixed;
 }
 
-.gatsby-resp-image-wrapper {
-  margin: 1rem !important;
-}
-
 .md-link {
   color: grey;
   font-size: 1.45rem;
@@ -281,49 +155,36 @@ ul {
   color: var(--color-red);
 }
 
+/* -------------------------------- Scrollbar ------------------------------- */
+
 body:hover::-webkit-scrollbar {
   background-color: black;
   cursor: pointer;
 }
 
 body::-webkit-scrollbar {
-  background-color: var(--color-red);
+  background-color: var(--color-dark);
   width: 0.5rem;
+  cursor: move;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: var(--color-red);
 }
 
 body:hover::-webkit-scrollbar-thumb {
-  cursor: pointer;
-
-  background-color: var(--text-darkWhite);
-  cursor: pointer;
-}
-
-.about__subtitle {
-  margin-top: 1.5rem;
-  font-family: var(--font-computers);
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.about__links {
-  display: flex;
-  margin-top: 1.5rem;
-  width: 50%;
-  justify-content: space-evenly;
-}
-
-.about__links a {
-  font-weight: 200;
+  background-color: var(--color-darkWhite);
 }
 
 ::-moz-selection {
   /* Code for Firefox */
   color: var(--color-red);
   background: yellow;
+}
+
+::selection {
+  color: black;
+  background: rgba(255, 255, 255, 0.87);
 }
 
 .letra-interactiva {
@@ -335,29 +196,9 @@ body:hover::-webkit-scrollbar-thumb {
   vertical-align: text-top;
 }
 
-::selection {
-  color: black;
-  background: rgba(255, 255, 255, 0.87);
-}
-
 /* ----------------------------- Visual effects ----------------------------- */
 
-.fade-in {
-  animation: fadeIn ease 0.3s;
-  -webkit-animation: fadeIn ease 0.3s;
-  -moz-animation: fadeIn ease 0.3s;
-  -o-animation: fadeIn ease 0.3s;
-  -ms-animation: fadeIn ease 0.3s;
-}
-
-.fade-in-slow {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
-
+/* Fondo noise (thx to Omar (@OmarOlae) por encontrar la solución :~)) */
 .foreground {
   top: -10rem;
   left: -10rem;
@@ -424,6 +265,22 @@ body:hover::-webkit-scrollbar-thumb {
   }
 }
 
+.fade-in {
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
+}
+
+.fade-in-slow {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -471,12 +328,6 @@ body:hover::-webkit-scrollbar-thumb {
 
   100% {
     opacity: 1;
-  }
-}
-
-@media main and (max-width: 600px) {
-  #site-main {
-    padding: 0 2rem;
   }
 }
 

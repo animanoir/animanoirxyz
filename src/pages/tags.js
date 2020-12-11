@@ -18,7 +18,7 @@ const TagIndex = ({ data }) => {
     <Layout title={siteTitle}>
       <SEO title="Tags" />
       <header className="tag-page-head">
-        <h1 className="page-head-title">Tags</h1>
+        <h1 className="post-content-title">Tags</h1>
       </header>
       <div className="tag-container">
         {tags.map((tag) => {
