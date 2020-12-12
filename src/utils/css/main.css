@@ -11,6 +11,10 @@ html {
   background-color: var(--color-dark);
 }
 
+i {
+  font-style: italic;
+}
+
 a {
   color: var(--color-darkWhite);
 }
