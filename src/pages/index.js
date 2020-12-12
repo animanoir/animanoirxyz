@@ -210,7 +210,7 @@ const Index = ({ data }, location) => {
                 >
                   <li className="main-p-alt" style={{ marginTop: '2rem' }}>
                     <span
-                      class="emoji"
+                      className="emoji"
                       role="img"
                       aria-label="Ésto rompe mi corazón :("
                     >

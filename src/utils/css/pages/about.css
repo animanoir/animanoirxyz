@@ -10,4 +10,46 @@
 
 .about-container {
   font-size: 1.48rem;
+  color: var(--color-darkWhite);
+}
+
+.about-title {
+  font-size: 3.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.img-nowPlaying {
+  margin-left: 0.7rem;
+}
+
+.about-div_lastfm {
+  font-size: 1rem;
+  display: flex;
+  align-items: baseline;
+  margin: 0.7rem 0;
+}
+
+.actualmente-escuchando {
+  color: rgba(255, 255, 255, 0.308);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-contenido {
+  line-height: 1.3;
+}
+
+.about-contenido li {
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-contenido_title {
+  font-style: italic;
+  font-size: 1.75rem;
+  color: rgba(255, 255, 255, 0.308);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-work {
+  margin: 0.9rem 0;
 }

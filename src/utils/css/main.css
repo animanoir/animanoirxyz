@@ -4,6 +4,7 @@
 @import 'components/page-feed.css';
 @import 'components/page-content.css';
 @import 'components/post-content.css';
+@import 'pages/about.css';
 
 html {
   font-size: 16px;
