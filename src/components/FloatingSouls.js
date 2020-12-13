@@ -6,23 +6,76 @@ import * as meshline from 'three.meshline'
 
 extend(meshline)
 
-const numLines = 100
+const colors = [
+  '#FF6633',
+  '#FFB399',
+  '#FF33FF',
+  '#FFFF99',
+  '#00B3E6',
+  '#E6B333',
+  '#3366E6',
+  '#999966',
+  '#99FF99',
+  '#B34D4D',
+  '#80B300',
+  '#809900',
+  '#E6B3B3',
+  '#6680B3',
+  '#66991A',
+  '#FF99E6',
+  '#CCFF1A',
+  '#FF1A66',
+  '#E6331A',
+  '#33FFCC',
+  '#66994D',
+  '#B366CC',
+  '#4D8000',
+  '#B33300',
+  '#CC80CC',
+  '#66664D',
+  '#991AFF',
+  '#E666FF',
+  '#4DB3FF',
+  '#1AB399',
+  '#E666B3',
+  '#33991A',
+  '#CC9999',
+  '#B3B31A',
+  '#00E680',
+  '#4D8066',
+  '#809980',
+  '#E6FF80',
+  '#1AFF33',
+  '#999933',
+  '#FF3380',
+  '#CCCC00',
+  '#66E64D',
+  '#4D80CC',
+  '#9900B3',
+  '#E64D66',
+  '#4DB380',
+  '#FF4D4D',
+  '#99E6E6',
+  '#6666FF',
+]
+
+const numLines = 250
 const lines = new Array(numLines).fill()
-const colors = ['#ff0080', '#3eff3f']
+// const colors = ['#fd4c4c', '#fffffff3']
 
 function Fatline() {
   const material = useRef()
   const [color] = useState(
     () => colors[parseInt(colors.length * Math.random())]
   )
-  const [ratio] = useState(() => 0.3 + 0.3 * Math.random())
-  const [width] = useState(() => Math.max(0.01, 0.03 * Math.random()))
+  const [ratio] = useState(() => 0.5 + 0.3 * Math.random())
+  const [width] = useState(() => Math.max(0.02, 0.03 * Math.random()))
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(
-      33 - 60 * Math.random(),
-      -5,
-      30 - 63 * Math.random()
+      10 - 100 * Math.random(),
+      10 - 100 * Math.random(),
+      10 - 100 * Math.random()
     )
     return new Array(30)
       .fill()
@@ -39,7 +92,7 @@ function Fatline() {
       )
   })
   // Hook into the render loop and decrease the materials dash-offset
-  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0005))
+  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0002))
   return (
     <mesh>
       {/** MeshLine and CMRCurve are a OOP factories, not scene objects, hence all the imperative code in here :-( */}
@@ -47,7 +100,7 @@ function Fatline() {
         <geometry onUpdate={(self) => self.parent.setGeometry(self)}>
           <catmullRomCurve3
             args={[curve]}
-            onUpdate={(self) => (self.parent.vertices = self.getPoints(55))}
+            onUpdate={(self) => (self.parent.vertices = self.getPoints(69))}
           />
         </geometry>
       </meshLine>
@@ -59,7 +112,7 @@ function Fatline() {
         depthTest={false}
         lineWidth={width}
         color={color}
-        dashArray={0.7}
+        dashArray={Math.random() * 0.9}
         dashRatio={ratio}
       />
     </mesh>
@@ -72,9 +125,9 @@ function Scene() {
   // Hook into the render loop and rotate the scene a bit
   useFrame(() =>
     group.current.rotation.set(
-      0,
-      2 * Math.sin(THREE.Math.degToRad((theta += 0.001))),
-      2 * Math.sin(THREE.Math.degToRad((theta += 0.001)))
+      20,
+      14,
+      -15 * Math.sin(THREE.Math.degToRad((theta += 0.0001)))
     )
   )
   return (
@@ -89,7 +142,7 @@ function Scene() {
 const FloatingSouls = () => (
   <Canvas
     className="custom-canvas fade-in-slow"
-    camera={{ position: [-10, 50, 10], fov: 75 }}
+    camera={{ position: [20, 2, 50], fov: 100 }}
   >
     <Scene />
   </Canvas>
