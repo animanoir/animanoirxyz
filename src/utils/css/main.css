@@ -96,6 +96,18 @@ b {
 }
 
 @media only screen and (max-width: 1024px) {
+  .blog-feed-container {
+    padding: 2rem;
+  }
+
+  .page-feed {
+    margin-bottom: 2rem;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
   .page {
     position: relative;
     padding: 1rem 2.6rem;

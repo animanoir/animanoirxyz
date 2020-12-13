@@ -5,7 +5,6 @@ import 'aos/dist/aos.css'
 import PageLayout from '../components/PageLayout'
 import SEO from '../components/seo'
 import '../utils/css/main.css'
-import FloatingSouls from '../components/FloatingSouls'
 
 import img1 from '../../content/assets/projects/zeyx/zeyx-img1.webp'
 import img2 from '../../content/assets/projects/zeyx/zeyx-img2.webp'
@@ -22,7 +21,6 @@ const ZeyxLab = ({ data }) => {
 
   return (
     <PageLayout title={siteTitle}>
-      <FloatingSouls />
       <SEO title="ZeYX Lab" />
       <h1 className="page-title fade-in">ZeYX Lab</h1>
       <div className="page-img-container">
