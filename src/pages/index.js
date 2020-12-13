@@ -11,6 +11,7 @@ import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.webp'
 import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.webp'
 import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.webp'
 import { keywordsArray } from '../utils/keywordsArray'
+import FloatingSouls from '../components/FloatingSouls'
 
 const colores = [
   '#FF6633',
@@ -88,30 +89,8 @@ const Index = ({ data }, location) => {
         keywords={keywordsArray}
       />
       <Layout title={siteTitle}>
-        <div className="page-feed">
-          <Pagecard title="Zeyx Lab" link="/zeyxlab" bgImage={zeyxLabbg} />
-          <Pagecard
-            title="Jardines [VR Experience]"
-            link="/jardines"
-            bgImage={jardinesBg}
-          />
-          <Pagecard
-            title="BEMA [programming course]"
-            link="/BemaClases"
-            bgImage={bemaBg}
-          />
-          <Pagecard
-            title="INMERSIVA [+twitterbot]"
-            link="/Inmersiva"
-            bgImage={inmersivaBg}
-          />
-          <Pagecard
-            title="Animanoir.xyz"
-            link="/Animanoirxyzweb"
-            bgImage={animanoirxyzBg}
-          />
-        </div>
-        <div id="blog-section" className="blog-feed-container">
+        <FloatingSouls />
+        <div className="blog-feed-container fade-in">
           <h1 className="main-p-title">
             Animanoir | Creative development.
             <span
@@ -194,11 +173,22 @@ const Index = ({ data }, location) => {
             </span>
             design. Multimedia wizardry.
           </h1>
-          <Link className="main-blog-link" to="/Acerca">
-            <h2 className="main-p">Acerca</h2>
-          </Link>
           <h2 className="main-p" style={{ fontStyle: 'initial' }}>
-            Blog posts:
+            Homesite for works&personal projects by{' '}
+            <b>
+              <Link
+                className="main-blog-link"
+                to="/Acerca"
+                style={{ fontStyle: 'italic' }}
+              >
+                Óscar A. Montiel [ frontend & creative developer ]
+              </Link>
+            </b>
+            .
+          </h2>
+
+          <h2 className="main-p" style={{ fontStyle: 'initial' }}>
+            Blog posts (in spanish) :
           </h2>
           <ul>
             {posts.map(({ node }) => {
@@ -208,8 +198,9 @@ const Index = ({ data }, location) => {
                   className="main-blog-link"
                   to={node.fields.slug}
                 >
-                  <li className="main-p-alt" style={{ marginTop: '2rem' }}>
+                  <li className="main-p-alt">
                     <span
+                      style={{ fontStyle: 'initial' }}
                       className="emoji"
                       role="img"
                       aria-label="Ésto rompe mi corazón :("
@@ -222,6 +213,29 @@ const Index = ({ data }, location) => {
               )
             })}
           </ul>
+        </div>
+        <div className="page-feed">
+          <Pagecard title="Zeyx Lab" link="/zeyxlab" bgImage={zeyxLabbg} />
+          <Pagecard
+            title="Jardines [VR Experience]"
+            link="/jardines"
+            bgImage={jardinesBg}
+          />
+          <Pagecard
+            title="BEMA [programming course]"
+            link="/BemaClases"
+            bgImage={bemaBg}
+          />
+          <Pagecard
+            title="INMERSIVA [+twitterbot]"
+            link="/Inmersiva"
+            bgImage={inmersivaBg}
+          />
+          <Pagecard
+            title="Animanoir.xyz"
+            link="/Animanoirxyzweb"
+            bgImage={animanoirxyzBg}
+          />
         </div>
       </Layout>
     </React.Fragment>

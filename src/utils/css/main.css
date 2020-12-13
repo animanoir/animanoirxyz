@@ -24,6 +24,10 @@ a:hover {
   text-decoration: none;
 }
 
+b {
+  font-weight: bold;
+}
+
 .img {
   display: block;
   width: 100%;
@@ -34,15 +38,13 @@ a:hover {
 }
 
 .blog-feed-container {
-  height: auto;
-  margin-top: 50vh;
+  height: 100vh;
 }
 
 .main-p-alt {
   color: var(--color-darkWhite);
   margin-bottom: 1rem;
-  letter-spacing: 0.1rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.2em;
   font-family: 'Montserrat', sans-serif;
@@ -59,7 +61,7 @@ a:hover {
 .main-p {
   color: var(--color-darkWhite);
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
@@ -67,8 +69,8 @@ a:hover {
 
 .main-p-title {
   color: var(--color-darkWhite);
-  margin-bottom: 1rem;
-  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
   line-height: 1.2em;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
@@ -90,7 +92,7 @@ a:hover {
 
 .page {
   position: relative;
-  padding: 3.5rem 5rem;
+  padding: 5rem 5rem;
 }
 
 @media only screen and (max-width: 1024px) {

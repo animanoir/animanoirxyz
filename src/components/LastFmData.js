@@ -43,7 +43,7 @@ export const LastFmData = () => {
           style={{ color: 'rgba(255, 255, 255, 0.308)' }}
           className="about-div_lastfm fade-in"
         >
-          Cargando desde el API de Last.FM...
+          Loading from Last.FM servers...
         </p>
       )
     }
@@ -55,10 +55,10 @@ export const LastFmData = () => {
     return (
       <div className="about-div_lastfm fade-in">
         <h3 style={{ marginRight: '.5rem' }} className="actualmente-escuchando">
-          Actualmente escuchando:
+          Right now listening to
         </h3>
         <h3>
-          {songName} <span className="actualmente-escuchando">de</span>{' '}
+          {songName} <span className="actualmente-escuchando">by</span>{' '}
           {artistName}
         </h3>
         <img
