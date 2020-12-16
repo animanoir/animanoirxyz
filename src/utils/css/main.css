@@ -351,9 +351,9 @@ body:hover::-webkit-scrollbar-thumb {
 
   .acerca-contenedor {
     display: block;
-    width: 100vw;
-    min-width: 100vw;
-    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    min-width: initial;
   }
 
   .centrar {
@@ -361,6 +361,24 @@ body:hover::-webkit-scrollbar-thumb {
     top: none;
     left: none;
     transform: none;
+  }
+
+  .about-div_lastfm {
+    padding-right: initial;
+    align-items: center;
+  }
+
+  .about-links {
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 0;
+  }
+  .about-img {
+    max-width: 100%;
+  }
+
+  .main-logo {
+    width: 100%;
   }
 }
 
