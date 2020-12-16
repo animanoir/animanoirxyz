@@ -18,17 +18,3 @@
   transition: filter 0.5s;
   filter: invert(100);
 }
-
-@media (max-width: 1024px) {
-  .custom-sidebar {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    top: initial;
-    left: initial;
-    margin: auto;
-    cursor: help;
-    margin-bottom: 1.5rem;
-  }
-}

@@ -55,17 +55,17 @@ export const LastFmData = () => {
     return (
       <div className="about-div_lastfm fade-in">
         <h3 style={{ marginRight: '.5rem' }} className="actualmente-escuchando">
-          Right now listening to
+          Right now listening to:
         </h3>
         <h3>
           {songName} <span className="actualmente-escuchando">by</span>{' '}
           {artistName}
+          <img
+            className="img-nowPlaying"
+            src={gif}
+            alt="Ahora sonando, do do do..."
+          />
         </h3>
-        <img
-          className="img-nowPlaying"
-          src={gif}
-          alt="Ahora sonando, do do do..."
-        />
       </div>
     )
   }

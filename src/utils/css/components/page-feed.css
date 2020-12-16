@@ -79,35 +79,3 @@
   text-decoration: none;
   color: blue;
 }
-
-@media (max-width: 600px) {
-  .page-card-title {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .page-feed {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .post-card {
-    min-height: 100vh;
-    flex: 1 !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .post-card {
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-    flex: 1 1 50%;
-    display: flex;
-    background: linear-gradient(135deg, #242426 0%, #dd0000 100%) center center;
-    background-size: cover;
-    overflow: hidden;
-    counter-increment: posts;
-    height: 100vh;
-  }
-}

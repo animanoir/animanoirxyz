@@ -85,21 +85,13 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-@media (max-width: 1280px) {
-  .page-title {
-    font-size: 3.7rem;
-    margin-bottom: 55vh;
-    margin-top: 45vh;
-  }
-}
-
-.page-content-excerpt {
+/* .page-content-excerpt {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   line-height: 1.6em;
   color: var(--color-base);
   opacity: 0.5;
-}
+} */
 
 .page-content-image {
   position: relative;
@@ -120,12 +112,6 @@
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr !important;
   grid-auto-flow: row !important;
-}
-
-@media (max-width: 500px) {
-  .page-content-body {
-    font-size: 1.7rem;
-  }
 }
 
 .page-content-body h1,
@@ -216,10 +202,4 @@
 
 .page-content-body hr {
   margin: 1vw 0;
-}
-
-@media (max-width: 500px) {
-  .page-content-excerpt {
-    font-size: 1.8rem;
-  }
 }

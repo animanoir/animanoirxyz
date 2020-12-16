@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -25,7 +25,7 @@ const Index = ({ data }, location) => {
         canonical="https://animanoir.xyz"
         keywords={keywordsArray}
       />
-      <Layout title={siteTitle}>
+      <Layout title={siteTitle} className="page">
         <FloatingSouls />
         <div className="blog-feed-container fade-in">
           <h1 className="main-p-title">
@@ -45,7 +45,6 @@ const Index = ({ data }, location) => {
             </b>
             .
           </h2>
-
           <h2 className="main-p" style={{ fontStyle: 'initial' }}>
             Blog posts (in spanish) :
           </h2>

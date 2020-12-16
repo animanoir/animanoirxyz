@@ -1,20 +1,22 @@
-.about-container {
+.about-page {
+  height: 100vh;
+}
+
+.acerca-contenedor {
   font-size: 1.48rem;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   color: var(--color-darkWhite);
+  display: flex;
+  align-items: center;
+  min-width: 920px;
+  max-width: 920px;
+  word-break: break-all;
 }
 
 .about-img {
-  max-width: 54%;
-  margin-top: 3rem;
-  user-select: none;
-  margin-bottom: 2rem;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  max-width: 50%;
 }
 
 .about-title {
@@ -30,6 +32,9 @@
   font-size: 1rem;
   display: flex;
   align-items: baseline;
+  flex-direction: column;
+  padding-right: 1rem;
+  line-height: 1.2;
 }
 
 .actualmente-escuchando {

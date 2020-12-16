@@ -9,7 +9,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} className="page">
         <SEO
           title={post.frontmatter.title}
           canonical={post.frontmatter.canonical}

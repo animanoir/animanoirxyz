@@ -61,7 +61,6 @@ const colors = [
 
 const numLines = 250
 const lines = new Array(numLines).fill()
-// const colors = ['#fd4c4c', '#fffffff3']
 
 function Fatline() {
   const material = useRef()
@@ -69,7 +68,7 @@ function Fatline() {
     () => colors[parseInt(colors.length * Math.random())]
   )
   const [ratio] = useState(() => 0.5 + 0.3 * Math.random())
-  const [width] = useState(() => Math.max(0.02, 0.03 * Math.random()))
+  const [width] = useState(() => Math.max(0.06, 0.03 * Math.random()))
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(

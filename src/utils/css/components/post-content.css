@@ -13,7 +13,7 @@
 }
 
 .post-content-body p {
-  margin: 1.7rem 0;
+  margin: 1.5rem 0;
   color: #e9e9e9ea;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -33,28 +33,4 @@
 
 .post-author span:hover {
   color: var(--color-darkWhite);
-}
-
-@media (max-width: 1024px) {
-  .post-content {
-    width: 100%;
-  }
-
-  .post-content-title {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 740px) {
-  .post-content {
-    width: 100%;
-  }
-
-  .post-content-title {
-    font-size: 3rem;
-  }
-  .post-content-body p {
-    font-size: 1.3rem;
-    line-height: 1.4;
-  }
 }

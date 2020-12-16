@@ -27,14 +27,6 @@
   transition: all 0.1s ease-out;
 }
 
-@media (max-width: 700px) {
-  .tag-item {
-    font-size: 2rem;
-    margin: 1.4vw;
-    padding: 1vw;
-  }
-}
-
 .tag-page-head {
   display: flex;
   flex-direction: column;

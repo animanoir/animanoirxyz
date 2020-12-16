@@ -80,10 +80,10 @@ const Acerca = ({ data }, location) => {
 
   return (
     <>
-      <Layout title={siteTitle}>
+      <Layout title={siteTitle} className="about-page">
         <SEO title="About" keywords={keywordsArray} />
-        <main>
-          <div className="about-container">
+        <main className="fade-in centrar">
+          <div className="acerca-contenedor">
             <div className="about-contact">
               <h1 className="main-p-title">
                 <span
@@ -91,7 +91,7 @@ const Acerca = ({ data }, location) => {
                   onMouseEnter={() => setColorO(randomColor)}
                   style={{ color: colorO }}
                 >
-                  O
+                  Ó
                 </span>
                 <span
                   className="letra-interactiva"
@@ -183,7 +183,10 @@ const Acerca = ({ data }, location) => {
               <div></div>
               <LastFmData />
               <div className="about-links">
-                <a target="_blank" href="https://twitter.com/geosminu">
+                <a
+                  target="_blank"
+                  href="https://twitter.com/intent/user?screen_name=geosminu"
+                >
                   <svg
                     viewBox="0 0 15 15"
                     fill="none"
