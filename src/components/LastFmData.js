@@ -54,10 +54,8 @@ export const LastFmData = () => {
 
     return (
       <div className="about-div_lastfm fade-in">
-        <h3 style={{ marginRight: '.5rem' }} className="actualmente-escuchando">
-          Right now listening to:
-        </h3>
-        <h3>
+        <p className="actualmente-escuchando">Right now listening to:</p>
+        <p className="artista">
           {songName} <span className="actualmente-escuchando">by</span>{' '}
           {artistName}
           <img
@@ -65,7 +63,7 @@ export const LastFmData = () => {
             src={gif}
             alt="Ahora sonando, do do do..."
           />
-        </h3>
+        </p>
       </div>
     )
   }

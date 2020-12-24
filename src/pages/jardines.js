@@ -29,7 +29,7 @@ const ZeyxLab = ({ data }) => {
       </h1>
       <div data-aos={'fade-up'} className="page-txt-container">
         <h2 className="page-subtitle">
-          Un jardín sonoro, con música de{' '}
+          A virtual, musical garden, with music by{' '}
           <a
             rel="noreferrer"
             target="_blank"
@@ -39,11 +39,11 @@ const ZeyxLab = ({ data }) => {
           </a>
         </h2>
         <p className="page-p">
-          En colaboración con{' '}
+          In colaboration with{' '}
           <a rel="noreferrer" target="_blank" href="http://maremoto.mx/">
             Maremoto
           </a>{' '}
-          y{' '}
+          and{' '}
           <a
             rel="noreferrer"
             target="_blank"
@@ -51,14 +51,14 @@ const ZeyxLab = ({ data }) => {
           >
             OTONO Records
           </a>{' '}
-          creamos un jardín virtual donde el oyente (cosmonauta) puede perderse
-          buscando el origen de sus sentimientos...
+          we developed a sonic world where the cosmonaut (you) can get lost
+          searching the origin of our sentiments.
           <p>
-            Entra{' '}
+            Enter{' '}
             <a target="_blank" rel="noreferrer" href="https://maremoto.mx/">
-              aquí
+              here
             </a>{' '}
-            para experimentarlo.
+            to live it.
           </p>
         </p>
         <div

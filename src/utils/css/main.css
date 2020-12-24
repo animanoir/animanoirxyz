@@ -1,4 +1,6 @@
-@import '../normalize.css';
+/* --------------------------- Archivos importados -------------------------- */
+
+@import './reset.css';
 @import 'vars.css';
 @import 'components/custom-sidebar.css';
 @import 'components/page-feed.css';
@@ -6,13 +8,21 @@
 @import 'components/post-content.css';
 @import 'pages/about.css';
 
+/* ----------------------- Fin de Archivos importados ----------------------- */
+
+/* -------------------------- Estilo crudos de HTML ------------------------- */
+
 html {
   font-size: 16px;
-  background-color: var(--color-dark);
+  background-color: var(--color-dark) !important;
 }
 
 i {
   font-style: italic;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 a {
@@ -27,6 +37,8 @@ a:hover {
 b {
   font-weight: bold;
 }
+
+/* ---------------------- Fin de Estilos crudos de HTML --------------------- */
 
 .img {
   display: block;
@@ -48,6 +60,7 @@ b {
   font-style: italic;
   line-height: 1.2em;
   font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
 }
 
 .main-blog-link {
@@ -69,6 +82,7 @@ b {
 }
 
 .main-p-title {
+  margin-top: 0;
   color: var(--color-darkWhite);
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -104,13 +118,7 @@ b {
   list-style: none;
 }
 
-.social-links {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-}
-
-/* -------------------------------------------------------------------------- */
+/* ------------------------ Canvas y alguna otra cosa ----------------------- */
 
 .custom-canvas {
   position: fixed !important;
@@ -133,22 +141,7 @@ b {
   background-attachment: fixed;
 }
 
-.md-link {
-  color: grey;
-  font-size: 1.45rem;
-}
-
-.md-link a {
-  color: rgb(160, 160, 160);
-}
-
-.md-link p {
-  margin-bottom: 0;
-}
-
-.md-link a:hover {
-  color: var(--color-red);
-}
+/* -------------------- Fin de Canvas y alguna otra cosa -------------------- */
 
 /* -------------------------------- Scrollbar ------------------------------- */
 
@@ -171,6 +164,10 @@ body:hover::-webkit-scrollbar-thumb {
   background-color: var(--color-darkWhite);
 }
 
+/* ---------------------------- Fin de Scrollbar ---------------------------- */
+
+/* -------------------------- Colores de Selection -------------------------- */
+
 ::-moz-selection {
   /* Code for Firefox */
   color: var(--color-red);
@@ -186,14 +183,16 @@ body:hover::-webkit-scrollbar-thumb {
   cursor: crosshair;
 }
 
+/* ----------------------- Fin de Colores de Selection ---------------------- */
+
 .emoji {
   font-size: 1rem;
   vertical-align: text-top;
 }
 
-/* ----------------------------- Visual effects ----------------------------- */
+/* ----------------------------- Efectos visuales ----------------------------- */
 
-/* Fondo noise (thx to Omar (@OmarOlae) por encontrar la solución :~)) */
+/* Fondo noise (thx to Omar (@OmarOlaes) por encontrar la solución :~)) */
 .foreground {
   top: -10rem;
   left: -10rem;
@@ -320,6 +319,10 @@ body:hover::-webkit-scrollbar-thumb {
   }
 }
 
+/* ------------------------- Fin de Efectos Visuales ------------------------ */
+
+/* ------------------------------ Media Queries ----------------------------- */
+
 @media (max-width: 740px) {
   .page {
     padding: 1.5rem;
@@ -387,3 +390,5 @@ body:hover::-webkit-scrollbar-thumb {
     display: none;
   }
 }
+
+/* -------------------------- Fin de Media Queries -------------------------- */

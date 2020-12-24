@@ -40,9 +40,13 @@ const ZeyxLab = ({ data }) => {
       <div data-aos={'fade-up'} className="page-txt-container">
         <h2 className="page-subtitle">Experimentos con 3D</h2>
         <p className="page-p">
-          ZeYX Lab es un proyecto desarrollado entre Salvador Herrera, Emmanuel
-          Martínez y yo, donde exploramos las posibilidades post-2020 de
-          apreciar arte en un mundo cada vez más virtualizado.
+          ZeYX Lab is an on-going experiment teamed up by{' '}
+          <a
+            href="https://www.instagram.com/salvador_herrera_art/"
+            target="_blank"
+          />
+          , Emmanuel Martínez and myself where we try to expand the notion of
+          art into the cyberspace, focused in 3D modelling.
         </p>
       </div>
       <div className="page-img-container-ind">
@@ -55,12 +59,9 @@ const ZeyxLab = ({ data }) => {
       </div>
       <div data-aos={'fade-up'} className="page-txt-container">
         <p className="page-p">
-          Usando{' '}
-          <a target="_blank" rel="noreferrer" href="https://threejs.org/">
-            three.js
-          </a>
-          , construímos un palacio virtual producto del sueño de algún andoide
-          en apoteosis.
+          Using a variety of JavaScript frameworks (three.js, A-Frame, etc.) we
+          invite artists to join this project, a dream of an android during
+          apotheosis.
         </p>
       </div>
     </PageLayout>

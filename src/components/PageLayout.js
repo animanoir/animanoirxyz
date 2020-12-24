@@ -1,7 +1,5 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-import '../utils/normalize.css'
-import '../utils/css/main.css'
 
 const PageLayout = (props) => {
   const { children } = props

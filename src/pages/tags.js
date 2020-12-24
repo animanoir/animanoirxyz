@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
 // import "../utils/global.scss"
-import '../utils/normalize.css'
 import '../utils/css/main.css'
 
 const TagIndex = ({ data }) => {

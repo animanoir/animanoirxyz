@@ -1,8 +1,8 @@
-/* page Content
-/* ---------------------------------------------------------- */
+/* ----------------------- Proyecto individual (Page) ----------------------- */
 
 .page-full {
   padding-bottom: 3.5rem;
+  overflow: hidden;
 }
 
 .page-content {
@@ -20,7 +20,7 @@
   color: var(--color-darkWhite);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 4.3rem;
+  font-size: 4.5rem;
   margin-bottom: 50vh;
   margin-top: 50vh;
   text-shadow: 0px 5px 10px var(--color-dark);
@@ -93,113 +93,10 @@
   opacity: 0.5;
 } */
 
-.page-content-image {
-  position: relative;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  transform: translateX(calc(50vw - 50%));
-}
-
-.page-content-body {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  font-family: var(--font-open);
-  line-height: 2em;
-  font-family: 'Open Sans', sans-serif;
-}
-
 .page-gallery {
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr !important;
   grid-auto-flow: row !important;
 }
 
-.page-content-body h1,
-.page-content-body h2,
-.page-content-body h3,
-.page-content-body h4,
-.page-content-body h5,
-.page-content-body h6 {
-  color: var(--color-base);
-  margin: 0;
-}
-
-.page-content-body li {
-  word-break: break-word;
-}
-
-.page-content-body li p {
-  margin: 0;
-}
-
-.page-content-body iframe {
-  margin: 0 auto !important;
-}
-
-.page-content-body blockquote {
-  margin: 0 0 1.5em;
-  padding: 0 1.5em;
-  /* border-left: #3eb0ef 3px solid; */
-  border-left: var(--color-primary) 3px solid;
-}
-
-.page-content-body blockquote p {
-  margin: 0 0 1em 0;
-  color: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-style: italic;
-}
-
-.page-content-body blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-.page-content-body code {
-  padding: 0 5px 2px;
-  font-size: 0.8em;
-  line-height: 1em;
-  font-weight: 400 !important;
-  /* background: var(--color-bg); */
-  background: var(--color-color-dark) !important;
-  border-radius: 3px !important;
-}
-
-.page-content-body p code {
-  word-break: break-all;
-}
-
-.page-content-body pre {
-  overflow-x: auto;
-  margin: 1.5em 0 3em;
-  padding: 20px;
-  max-width: 100%;
-  /* border: color(var(--color-base) l(-10%)) 1px solid; */
-  border: color(var(--color-bg-bright) l(-0%)) 1px solid !important;
-  /* color: var(--color-bg); */
-  color: var(--color-base);
-  font-size: 1.4rem;
-  line-height: 1.5em;
-  /* background: color(var(--color-base) l(-3%)); */
-  background: var(--color-color-dark) !important;
-  border-radius: 5px;
-}
-
-.page-content-body pre code {
-  padding: 0;
-  font-size: inherit;
-  line-height: inherit;
-  background: transparent;
-}
-
-.page-content-body pre code :not(span) {
-  color: inherit;
-}
-
-.page-content-body .fluid-width-video-wrapper {
-  margin: 1.5em 0 3em;
-}
-
-.page-content-body hr {
-  margin: 1vw 0;
-}
+/* --------------------- Fin Proyecto individual (Page) --------------------- */

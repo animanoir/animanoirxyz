@@ -6129,6 +6129,26 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
+fontsource-josefin-sans@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/fontsource-josefin-sans/-/fontsource-josefin-sans-3.1.6.tgz#9c00f9e33039c80e78177f98081acc88c3b9c047"
+  integrity sha512-rfZAUnFXUv3ac6qw/5JdsaJ8c9L1U6zo/JaFqv8iHqQFHuRjifWX5tJG6EnMHGGuWBt7lk6v4pnDgrKUXoQxwQ==
+
+fontsource-montserrat@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-montserrat/-/fontsource-montserrat-3.1.5.tgz#766d71f9255a4abe9abb628e47e95a8912b45897"
+  integrity sha512-wLmozvb4j/yDbPEBrzHmkAM2PDHp+GV7l6T/GzrmiM8rHeLDIQuUfWJ3b05pAu7q5xRhuG2cDqr+bCagaKws0w==
+
+fontsource-open-sans@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-open-sans/-/fontsource-open-sans-3.1.5.tgz#93d0040633d37215658d72565bd2a12d9a8fa854"
+  integrity sha512-tculQB3D6GHLPcbY1+WduZJM3bitV7GptWuKBAU7emfagJ/D5jtMCMd4i4JOGEzk0n416fdo5vLC0zYHxBYxzg==
+
+fontsource-roboto-condensed@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-roboto-condensed/-/fontsource-roboto-condensed-3.1.5.tgz#665f424d3589830f89114385dfb2b605c5f62fa4"
+  integrity sha512-U+4OSZQbfGr/DeSArMJnvrEIANLbnZ/GgQQ1yyr5CX3zP1mhyyWr/9UZNZesH8bZ+WgN6+4XOqE99kiFmK3XSQ==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -6582,6 +6602,13 @@ gatsby-plugin-sitemap@^2.4.13:
     minimatch "^3.0.4"
     pify "^3.0.0"
     sitemap "^1.13.0"
+
+gatsby-plugin-twitter@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.7.0.tgz#492bc9abfb0c3eb8b5edd731a7fe51e4673dfdec"
+  integrity sha512-KHSS2M+BX7VHWfSYxkmzsTCG6G/NP+AVc15uZN0eu2gPKHcqwp/Ko53FAsnxI3avsEfbdz8kff0y8WgHmMjUpQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-typescript@^2.8.0:
   version "2.8.0"
@@ -14469,26 +14496,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typeface-alegreya@^0.0.69:
-  version "0.0.69"
-  resolved "https://registry.yarnpkg.com/typeface-alegreya/-/typeface-alegreya-0.0.69.tgz#92d82f3e68360d5d5cee01be812f5aeb19ade8a7"
-  integrity sha512-02wj0QZEaxnDH37ZX3fsCu6vlKdaH8f1bzJxuymXNCoEcN3tFKMLC9omAtx8G+EbChb1gm5Nw+9XmPIYzi93fA==
-
-typeface-merriweather@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
-  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
-
-typeface-montserrat@0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.54.tgz#3fc338db6428d73485b75aa7bd2af8c9a55b9ab3"
-  integrity sha512-Typhap0PWT299+Va0G/8ZtycHMXrH4gBWKfiW977KEBx5rXUUCa70gvqLx1fdA0WAo6bhSAQmo8uc+QFAmjPww==
-
-typeface-nunito@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-0.0.72.tgz#152e7b8fc35452bacffc1313f322cbbd8034fc30"
-  integrity sha512-id43vYQiM9emQ6sbysLDRp8fb39Dk5yW/q6uSPHJnE1XVDSfrxYWFg/YiSoiaK+kO7wbuWb2HSjCAfH96Mabvg==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"

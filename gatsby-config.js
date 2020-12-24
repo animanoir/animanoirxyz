@@ -33,15 +33,18 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 1360,
               withWebp: true,
-              quality: 70,
+              showCaptions: false,
+              quality: 75,
+              wrapperStyle: `margin: 2vw 0;`,
             },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
           },
           `gatsby-remark-prismjs`,
+          `gatsby-plugin-twitter`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -67,7 +70,20 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
+        whitelist: [
+          'h3',
+          'h4',
+          'h5',
+          'h6',
+          'ol',
+          'blockquote',
+          'blockquote:before',
+          'table',
+          'sub',
+          'sup',
+          'mark',
+          'button',
+        ], // Don't remove this selector
         ignore: ['/ignored.css', 'prismjs/', '/prism.css', 'docsearch.js/'], // Ignore files/folders
         purgeOnly: ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },

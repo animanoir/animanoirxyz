@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 import LastFmData from '../components/LastFmData'
 import SEO from '../components/seo'
 import photo from '../../content/assets/oamm.gif'
-import '../utils/normalize.css'
 import { keywordsArray } from '../utils/keywordsArray'
 import cv2021 from '../../content/assets/C.V.Ó.A.M.2020.pdf'
 

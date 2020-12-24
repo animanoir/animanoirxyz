@@ -3,10 +3,8 @@ import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import Pagecard from '../components/Pagecard'
-import '../utils/normalize.css'
-import '../utils/css/main.css'
+
 import zeyxLabbg from '../../content/assets/projects/zeyx/zeyxCard.webp'
-import bemaBg from '../../content/assets/projects/bema/bemabg.webp'
 import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.webp'
 import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.webp'
 import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.webp'
@@ -78,11 +76,6 @@ const Index = ({ data }, location) => {
             title="Jardines [VR Experience]"
             link="/jardines"
             bgImage={jardinesBg}
-          />
-          <Pagecard
-            title="BEMA [programming course]"
-            link="/BemaClases"
-            bgImage={bemaBg}
           />
           <Pagecard
             title="INMERSIVA [+twitterbot]"

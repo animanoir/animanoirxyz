@@ -27,8 +27,8 @@ const Animanoirxyz = ({ data }) => {
         ></iframe>
       </div>
       <div data-aos={'fade-up'} className="page-txt-container">
-        <h2 className="page-subtitle">Evolución 2 de Animanoir en la web</h2>
-        <p className="page-p">Más información pronto...</p>
+        <h2 className="page-subtitle">Evolution of this website.</h2>
+        <p className="page-p">More info soon...</p>
       </div>
     </PageLayout>
   )
