@@ -6,10 +6,10 @@
   width: 100%;
   display: flex;
   position: relative;
-  flex-wrap: wrap;
 }
 
 .post-card {
+  margin-right: 1.5rem;
   position: relative;
   font-family: 'Open Sans', sans-serif;
   flex: 1 1 100%;
@@ -65,11 +65,11 @@
 
 .page-card-title {
   background-color: var(--color-dark);
-  font-family: 'Open Sans';
+  font-family: 'Josefin Sans', sans-serif;
   padding: 0.7rem;
   font-weight: bold;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.55rem;
   display: inline-block;
   text-align: center;
 }

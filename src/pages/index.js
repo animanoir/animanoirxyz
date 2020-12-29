@@ -43,7 +43,10 @@ const Index = ({ data }, location) => {
             </b>
             .
           </h2>
-          <h2 className="main-p" style={{ fontStyle: 'initial' }}>
+          <h2
+            className="main-p"
+            style={{ fontWeight: 'bold', marginBottom: '1rem' }}
+          >
             Blog posts (in spanish) :
           </h2>
           <ul>
@@ -70,6 +73,12 @@ const Index = ({ data }, location) => {
             })}
           </ul>
         </div>
+        <h2
+          className="main-p"
+          style={{ fontWeight: 'bold', marginBottom: '1rem' }}
+        >
+          Proyects:
+        </h2>
         <div className="page-feed">
           <Pagecard title="Zeyx Lab" link="/zeyxlab" bgImage={zeyxLabbg} />
           <Pagecard
