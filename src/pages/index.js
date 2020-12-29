@@ -77,7 +77,7 @@ const Index = ({ data }, location) => {
           className="main-p"
           style={{ fontWeight: 'bold', marginBottom: '1rem' }}
         >
-          Proyects:
+          Projects:
         </h2>
         <div className="page-feed">
           <Pagecard title="Zeyx Lab" link="/zeyxlab" bgImage={zeyxLabbg} />
