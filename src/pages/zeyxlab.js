@@ -44,7 +44,9 @@ const ZeyxLab = ({ data }) => {
           <a
             href="https://www.instagram.com/salvador_herrera_art/"
             target="_blank"
-          />
+          >
+            Salvador Herrera
+          </a>
           , Emmanuel Martínez and myself where we try to expand the notion of
           art into the cyberspace, focused in 3D modelling.
         </p>
