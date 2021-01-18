@@ -25,53 +25,58 @@ const Index = ({ data }, location) => {
       />
       <Layout title={siteTitle} className="page">
         <FloatingSouls />
-        <div className="blog-feed-container fade-in">
-          <h1 className="main-p-title">
-            Animanoir | Creative development. Interactive design. Multimedia
-            wizardry.
-          </h1>
-          <h2 className="main-p" style={{ fontStyle: 'initial' }}>
-            Homesite for works&personal projects by{' '}
-            <b>
-              <Link
-                className="main-blog-link"
-                to="/Acerca"
-                style={{ fontStyle: 'italic' }}
-              >
-                Óscar A. Montiel [ frontend & creative developer ]
-              </Link>
-            </b>
-            .
-          </h2>
-          <h2
-            className="main-p"
-            style={{ fontWeight: 'bold', marginBottom: '1rem' }}
-          >
-            Blog posts (in spanish) :
-          </h2>
-          <ul>
-            {posts.map(({ node }) => {
-              return (
+        <div className="fade-in">
+          <div className="main-index-container ">
+            <h1 className="main-p-title">
+              Animanoir | Creative development. Interactive design. Multimedia
+              wizardry.
+            </h1>
+            <h2 className="main-p" style={{ fontStyle: 'initial' }}>
+              Homesite for works&personal projects by{' '}
+              <b>
                 <Link
-                  key={node.fields.slug}
                   className="main-blog-link"
-                  to={node.fields.slug}
+                  to="/Acerca"
+                  style={{ fontStyle: 'italic' }}
                 >
-                  <li className="main-p-alt">
-                    <span
-                      style={{ fontStyle: 'initial' }}
-                      className="emoji"
-                      role="img"
-                      aria-label="Ésto rompe mi corazón :("
-                    >
-                      💔
-                    </span>{' '}
-                    {node.frontmatter.title}
-                  </li>
+                  Óscar A. Montiel [ frontend & creative developer ]
                 </Link>
-              )
-            })}
-          </ul>
+              </b>
+              .
+            </h2>
+          </div>
+
+          <div>
+            <h2
+              className="main-p"
+              style={{ fontWeight: 'bold', marginBottom: '1rem' }}
+            >
+              Blog posts (in spanish) :
+            </h2>
+            <ul>
+              {posts.map(({ node }) => {
+                return (
+                  <Link
+                    key={node.fields.slug}
+                    className="main-blog-link"
+                    to={node.fields.slug}
+                  >
+                    <li className="main-p-alt">
+                      <span
+                        style={{ fontStyle: 'initial' }}
+                        className="emoji"
+                        role="img"
+                        aria-label="Ésto rompe mi corazón :("
+                      >
+                        💔
+                      </span>{' '}
+                      {node.frontmatter.title}
+                    </li>
+                  </Link>
+                )
+              })}
+            </ul>
+          </div>
         </div>
         <h2
           className="main-p"

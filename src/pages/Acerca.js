@@ -83,7 +83,7 @@ const Acerca = ({ data }, location) => {
         <main className="fade-in centrar">
           <div className="acerca-contenedor">
             <div className="about-contact">
-              <h1 className="main-p-title">
+              <h1 className="about-title">
                 <span
                   className="letra-interactiva"
                   onMouseEnter={() => setColorO(randomColor)}
