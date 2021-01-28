@@ -59,7 +59,7 @@ const colors = [
   '#6666FF',
 ]
 
-const numLines = 250
+const numLines = 300
 const lines = new Array(numLines).fill()
 
 function Fatline() {
@@ -67,8 +67,8 @@ function Fatline() {
   const [color] = useState(
     () => colors[parseInt(colors.length * Math.random())]
   )
-  const [ratio] = useState(() => 0.5 + 0.3 * Math.random())
-  const [width] = useState(() => Math.max(0.06, 0.03 * Math.random()))
+  const [ratio] = useState(() => 0.5 + 0.8 * Math.random())
+  const [width] = useState(() => Math.max(0.5 * Math.random()))
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(
@@ -125,8 +125,8 @@ function Scene() {
   useFrame(() =>
     group.current.rotation.set(
       20,
-      14,
-      -15 * Math.sin(THREE.Math.degToRad((theta += 0.0001)))
+      20,
+      Math.sin(THREE.Math.degToRad((theta += 0.0001)))
     )
   )
   return (
@@ -141,7 +141,7 @@ function Scene() {
 const FloatingSouls = () => (
   <Canvas
     className="custom-canvas fade-in-slow"
-    camera={{ position: [20, 2, 50], fov: 100 }}
+    camera={{ position: [0, 2, 50], fov: 100 }}
   >
     <Scene />
   </Canvas>

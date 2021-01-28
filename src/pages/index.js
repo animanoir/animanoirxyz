@@ -27,25 +27,26 @@ const Index = ({ data }, location) => {
         <FloatingSouls />
         <div className="fade-in">
           <div className="main-index-container ">
-            <h1 className="main-p-title">
-              <b>Animanoir</b> | Creative development. Interactive design.
-              Multimedia wizardry.
-            </h1>
-            <h2 className="main-p" style={{ fontStyle: 'initial' }}>
-              Homesite for works&personal projects by{' '}
-              <b>
-                <Link
-                  className="main-blog-link"
-                  to="/About"
-                  style={{ fontStyle: 'italic' }}
-                >
-                  Óscar A. Montiel [ frontend & creative developer ]
-                </Link>
-              </b>
-              .
-            </h2>
+            <div style={{ backgroundColor: 'rgba(0,0,0,.5)', padding: '1rem' }}>
+              <h1 className="main-p-title">
+                <b>Animanoir</b> | Creative development. Interactive design.
+                Multimedia wizardry.
+              </h1>
+              <h2 className="main-p" style={{ fontStyle: 'initial' }}>
+                Homesite for works&personal projects by{' '}
+                <b>
+                  <Link
+                    className="main-blog-link"
+                    to="/About"
+                    style={{ fontStyle: 'italic' }}
+                  >
+                    Óscar A. Montiel [ frontend & creative developer ]
+                  </Link>
+                </b>
+                .
+              </h2>
+            </div>
           </div>
-
           <div>
             <h2
               className="main-p"

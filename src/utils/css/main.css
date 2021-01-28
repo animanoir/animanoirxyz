@@ -98,6 +98,12 @@ b {
   font-family: 'Montserrat', sans-serif;
 }
 
+.main-index-div {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .centrar {
   position: absolute;
   top: 50%;
