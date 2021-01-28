@@ -28,15 +28,15 @@ const Index = ({ data }, location) => {
         <div className="fade-in">
           <div className="main-index-container ">
             <h1 className="main-p-title">
-              Animanoir | Creative development. Interactive design. Multimedia
-              wizardry.
+              <b>Animanoir</b> | Creative development. Interactive design.
+              Multimedia wizardry.
             </h1>
             <h2 className="main-p" style={{ fontStyle: 'initial' }}>
               Homesite for works&personal projects by{' '}
               <b>
                 <Link
                   className="main-blog-link"
-                  to="/Acerca"
+                  to="/About"
                   style={{ fontStyle: 'italic' }}
                 >
                   Óscar A. Montiel [ frontend & creative developer ]

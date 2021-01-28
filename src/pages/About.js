@@ -178,8 +178,12 @@ const Acerca = ({ data }, location) => {
                 </span>
                 , MX
               </h1>
-              <div></div>
               <LastFmData />
+              <div className="about-bio">
+                Creative developer, frontend and software engineer focused in
+                the creation of digital experiences to make life more analogous.
+              </div>
+
               <div className="about-links">
                 <a
                   target="_blank"
@@ -247,14 +251,14 @@ const Acerca = ({ data }, location) => {
                   </svg>
                 </a>
               </div>
-              <div className="about-contenido">
-                <h3 className="about-contenido_title">
+              <div className="about-social">
+                <h3 className="about-social_title">
                   {' '}
                   <a target="_blank" href="mailto:omontiel@animanoir.xyz">
                     omontiel@animanoir.xyz
                   </a>
                 </h3>
-                <h3 className="about-contenido_title">
+                <h3 className="about-social_title">
                   {' '}
                   <a target="_blank" href={cv2021}>
                     FULL C.V.

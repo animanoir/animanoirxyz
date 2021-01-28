@@ -81,20 +81,19 @@ b {
 .main-p-title {
   margin-top: 0;
   color: var(--color-darkWhite);
-  margin-bottom: 0.5rem;
-  font-size: 4rem;
+  font-size: 4.3rem;
   line-height: 1.2em;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .main-p {
   color: var(--color-darkWhite);
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1em;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
 }
