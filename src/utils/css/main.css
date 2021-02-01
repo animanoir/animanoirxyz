@@ -63,7 +63,7 @@ b {
 .main-p-alt {
   color: var(--color-darkWhite);
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 4.3rem;
   font-style: italic;
   line-height: 1.2em;
   font-family: 'Montserrat', sans-serif;
@@ -97,13 +97,6 @@ b {
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
 }
-
-.main-index-div {
-  width: 100%;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .centrar {
   position: absolute;
   top: 50%;
@@ -141,19 +134,6 @@ b {
   height: 100%;
   z-index: -1;
 }
-
-.fondo-gif {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  filter: blur(1px);
-  background-repeat: round;
-  background-attachment: fixed;
-}
-
 /* -------------------- Fin de Canvas y alguna otra cosa -------------------- */
 
 /* -------------------------------- Scrollbar ------------------------------- */
@@ -339,11 +319,6 @@ body:hover::-webkit-scrollbar-thumb {
 @media (max-width: 740px) {
   .page {
     padding: 1.5rem;
-  }
-
-  .page-feed {
-    display: flex;
-    flex-direction: column;
   }
 
   .post-card {

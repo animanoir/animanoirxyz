@@ -3,6 +3,7 @@
 .page-feed {
   height: auto;
   margin: auto;
+  margin-bottom: 50vh;
   width: 100%;
   display: flex;
   position: relative;

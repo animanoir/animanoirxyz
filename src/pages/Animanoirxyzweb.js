@@ -23,7 +23,7 @@ const Animanoirxyz = ({ data }) => {
         <iframe
           className="page-iframe"
           title="static_html"
-          src="https://animanoir.com/"
+          src="https://animanoir.github.io/"
         ></iframe>
       </div>
       <div data-aos={'fade-up'} className="page-txt-container">

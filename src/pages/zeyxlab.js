@@ -22,7 +22,6 @@ const ZeyxLab = ({ data }) => {
   return (
     <PageLayout title={siteTitle}>
       <SEO title="ZeYX Lab" />
-      <h1 className="page-title fade-in">ZeYX Lab</h1>
       <div className="page-img-container">
         <img
           data-aos={'fade-right'}
@@ -37,6 +36,7 @@ const ZeyxLab = ({ data }) => {
           alt="ZeYX Lab Animanoir"
         />
       </div>
+      <h1 className="page-title fade-in">ZeYX Lab</h1>
       <div data-aos={'fade-up'} className="page-txt-container">
         <h2 className="page-subtitle">Experimentos con 3D</h2>
         <p className="page-p">
@@ -44,6 +44,7 @@ const ZeyxLab = ({ data }) => {
           <a
             href="https://www.instagram.com/salvador_herrera_art/"
             target="_blank"
+            rel="noreferrer"
           >
             Salvador Herrera
           </a>

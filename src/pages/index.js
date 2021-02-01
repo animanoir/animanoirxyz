@@ -47,42 +47,8 @@ const Index = ({ data }, location) => {
               </h2>
             </div>
           </div>
-          <div>
-            <h2
-              className="main-p"
-              style={{ fontWeight: 'bold', marginBottom: '1rem' }}
-            >
-              Blog posts (in spanish) :
-            </h2>
-            <ul>
-              {posts.map(({ node }) => {
-                return (
-                  <Link
-                    key={node.fields.slug}
-                    className="main-blog-link"
-                    to={node.fields.slug}
-                  >
-                    <li className="main-p-alt">
-                      <span
-                        style={{ fontStyle: 'initial' }}
-                        className="emoji"
-                        role="img"
-                        aria-label="Ésto rompe mi corazón :("
-                      >
-                        💔
-                      </span>{' '}
-                      {node.frontmatter.title}
-                    </li>
-                  </Link>
-                )
-              })}
-            </ul>
-          </div>
         </div>
-        <h2
-          className="main-p"
-          style={{ fontWeight: 'bold', marginBottom: '1rem' }}
-        >
+        <h2 className="main-p" style={{ marginBottom: '1rem' }}>
           Projects:
         </h2>
         <div className="page-feed">
@@ -102,6 +68,34 @@ const Index = ({ data }, location) => {
             link="/Animanoirxyzweb"
             bgImage={animanoirxyzBg}
           />
+        </div>
+        <div>
+          <h2 className="main-p" style={{ marginBottom: '1rem' }}>
+            Blog posts (in spanish) :
+          </h2>
+          <ul>
+            {posts.map(({ node }) => {
+              return (
+                <Link
+                  key={node.fields.slug}
+                  className="main-blog-link"
+                  to={node.fields.slug}
+                >
+                  <li className="main-p-alt">
+                    <span
+                      style={{ fontStyle: 'initial', fontSize: '4.3rem' }}
+                      className="emoji"
+                      role="img"
+                      aria-label="Ésto rompe mi corazón :("
+                    >
+                      💔
+                    </span>{' '}
+                    {node.frontmatter.title}
+                  </li>
+                </Link>
+              )
+            })}
+          </ul>
         </div>
       </Layout>
     </React.Fragment>
