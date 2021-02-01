@@ -28,11 +28,11 @@ const Index = ({ data }, location) => {
         <div className="fade-in">
           <div className="main-index-container ">
             <div style={{ backgroundColor: 'rgba(0,0,0,.5)', padding: '1rem' }}>
-              <h1 className="main-p-title">
+              <h1 className="index-title">
                 <b>Animanoir</b> | Creative development. Interactive design.
                 Multimedia wizardry.
               </h1>
-              <h2 className="main-p" style={{ fontStyle: 'initial' }}>
+              <h2 className="index-p" style={{ fontStyle: 'initial' }}>
                 Homesite for works&personal projects by{' '}
                 <b>
                   <Link
@@ -48,7 +48,7 @@ const Index = ({ data }, location) => {
             </div>
           </div>
         </div>
-        <h2 className="main-p" style={{ marginBottom: '1rem' }}>
+        <h2 className="index-p" style={{ marginBottom: '1rem' }}>
           Projects:
         </h2>
         <div className="page-feed">
@@ -63,14 +63,18 @@ const Index = ({ data }, location) => {
             link="/Inmersiva"
             bgImage={inmersivaBg}
           />
-          <Pagecard
-            title="Animanoir.xyz"
-            link="/Animanoirxyzweb"
-            bgImage={animanoirxyzBg}
-          />
         </div>
-        <div>
-          <h2 className="main-p" style={{ marginBottom: '1rem' }}>
+        <div
+          className="index-postContainer"
+          style={{ backgroundColor: 'rgba(0,0,0,.5)', padding: '1rem' }}
+        >
+          <div className="index-about">
+            <h3>Óscar A. Montiel | omontiel@animanoir.xyz</h3>
+            Creative developer, frontend and software engineer focused in the
+            creation of digital experiences to make life more analogous.{' '}
+            <Link to="/About">Feel free to contact me.</Link>
+          </div>
+          <h2 className="index-p" style={{ marginBottom: '1rem' }}>
             Blog posts (in spanish) :
           </h2>
           <ul>
@@ -81,9 +85,9 @@ const Index = ({ data }, location) => {
                   className="main-blog-link"
                   to={node.fields.slug}
                 >
-                  <li className="main-p-alt">
+                  <li className="index-p-alt">
                     <span
-                      style={{ fontStyle: 'initial', fontSize: '4.3rem' }}
+                      style={{ fontStyle: 'initial', fontSize: '2rem' }}
                       className="emoji"
                       role="img"
                       aria-label="Ésto rompe mi corazón :("

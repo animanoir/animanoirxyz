@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
 import LastFmData from '../components/LastFmData'
 import SEO from '../components/seo'
-import photo from '../../content/assets/oamm.gif'
+import oamm2 from '../../content/assets/oamm2.png'
 import { keywordsArray } from '../utils/keywordsArray'
 import cv2021 from '../../content/assets/C.V.Ó.A.M.2020.pdf'
 
@@ -183,7 +183,6 @@ const Acerca = ({ data }, location) => {
                 Creative developer, frontend and software engineer focused in
                 the creation of digital experiences to make life more analogous.
               </div>
-
               <div className="about-links">
                 <a
                   target="_blank"
@@ -268,7 +267,7 @@ const Acerca = ({ data }, location) => {
             </div>
             <img
               className="about-img"
-              src={photo}
+              src={oamm2}
               alt="Animanoir Óscar A. Montiel Animation"
             />
           </div>
