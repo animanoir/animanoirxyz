@@ -180,8 +180,9 @@ const Acerca = ({ data }, location) => {
               </h1>
               <LastFmData />
               <div className="about-bio">
-                Creative developer, frontend and software engineer focused in
-                the creation of digital experiences to make life more analogous.
+                Multimedia Developer, Front-end and Software Engineer focused in
+                the creation of digital experiences to make life analogous
+                again.
               </div>
               <div className="about-links">
                 <a

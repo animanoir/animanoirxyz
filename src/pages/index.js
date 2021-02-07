@@ -29,21 +29,20 @@ const Index = ({ data }, location) => {
           <div className="main-index-container ">
             <div style={{ backgroundColor: 'rgba(0,0,0,.5)', padding: '1rem' }}>
               <h1 className="index-title">
-                <b>Animanoir</b> | Creative development. Interactive design.
-                Multimedia wizardry.
+                <b>Animanoir</b>{' '}
+                <span style={{ color: 'rgba(255,255,255,.8)' }}>
+                  {' '}
+                  | Creative development. Interactive design. Multimedia
+                  wizardry.
+                </span>
               </h1>
               <h2 className="index-p" style={{ fontStyle: 'initial' }}>
-                Homesite for works&personal projects by{' '}
                 <b>
-                  <Link
-                    className="main-blog-link"
-                    to="/About"
-                    style={{ fontStyle: 'italic' }}
-                  >
-                    Óscar A. Montiel [ frontend & creative developer ]
+                  <Link className="main-blog-link" to="/About">
+                    『 Óscar A. Montiel 』
                   </Link>
                 </b>
-                .
+                〘 Multimedia Developer, Front-end and Software Engineer 〙
               </h2>
             </div>
           </div>
@@ -52,10 +51,10 @@ const Index = ({ data }, location) => {
           Projects:
         </h2>
         <div className="page-feed">
-          <Pagecard title="Zeyx Lab" link="/zeyxlab" bgImage={zeyxLabbg} />
+          <Pagecard title="Zeyx Lab" link="/Zeyxlab" bgImage={zeyxLabbg} />
           <Pagecard
             title="Jardines [VR Experience]"
-            link="/jardines"
+            link="/Jardines"
             bgImage={jardinesBg}
           />
           <Pagecard
@@ -69,37 +68,40 @@ const Index = ({ data }, location) => {
           style={{ backgroundColor: 'rgba(0,0,0,.5)', padding: '1rem' }}
         >
           <div className="index-about">
-            <h3>Óscar A. Montiel | omontiel@animanoir.xyz</h3>
-            Creative developer, frontend and software engineer focused in the
-            creation of digital experiences to make life more analogous.{' '}
-            <Link to="/About">Feel free to contact me.</Link>
+            <h3>Óscar A. Montiel, MX</h3>
+            <b>Multimedia Developer</b>, <b>Front-end</b> and{' '}
+            <b>Software Engineer</b> focused in the creation of digital
+            experiences to make life analogous again.{' '}
+            <p>
+              <Link to="/About">Contact + Links</Link>
+            </p>
+            <h2 className="index-p" style={{ marginBottom: '1rem' }}>
+              Blog posts (in spanish) :
+            </h2>
+            <ul>
+              {posts.map(({ node }) => {
+                return (
+                  <Link
+                    key={node.fields.slug}
+                    className="main-blog-link"
+                    to={node.fields.slug}
+                  >
+                    <li className="index-p-alt">
+                      <span
+                        style={{ fontStyle: 'initial', fontSize: '2rem' }}
+                        className="emoji"
+                        role="img"
+                        aria-label="Ésto rompe mi corazón :("
+                      >
+                        💔
+                      </span>{' '}
+                      {node.frontmatter.title}
+                    </li>
+                  </Link>
+                )
+              })}
+            </ul>
           </div>
-          <h2 className="index-p" style={{ marginBottom: '1rem' }}>
-            Blog posts (in spanish) :
-          </h2>
-          <ul>
-            {posts.map(({ node }) => {
-              return (
-                <Link
-                  key={node.fields.slug}
-                  className="main-blog-link"
-                  to={node.fields.slug}
-                >
-                  <li className="index-p-alt">
-                    <span
-                      style={{ fontStyle: 'initial', fontSize: '2rem' }}
-                      className="emoji"
-                      role="img"
-                      aria-label="Ésto rompe mi corazón :("
-                    >
-                      💔
-                    </span>{' '}
-                    {node.frontmatter.title}
-                  </li>
-                </Link>
-              )
-            })}
-          </ul>
         </div>
       </Layout>
     </React.Fragment>

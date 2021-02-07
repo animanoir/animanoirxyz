@@ -22,6 +22,29 @@ const ZeyxLab = ({ data }) => {
   return (
     <PageLayout title={siteTitle}>
       <SEO title="ZeYX Lab" />
+      <h1 className="page-title fade-in">ZeYX Lab</h1>
+      <div className="fade-in page-txt-container">
+        <h2 className="page-subtitle">Third-dimension web creation.</h2>
+        <p className="page-p">
+          <a href="https://zeyxlab.com/">ZeYX Lab</a> is an on-going experiment
+          teamed up by{' '}
+          <a
+            href="https://www.instagram.com/salvador_herrera_art/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Salvador Herrera
+          </a>
+          , Emmanuel Martínez and myself where we try to expand the notion of
+          art in the cyberspace, focused in 3D experimentation.
+        </p>
+
+        <p className="page-p">
+          Mostly using libraries such <b>Three.js</b>, <b>A-Frame</b> and alike,
+          plus technology that let´s us imagine, we try to deform the mind of
+          the cyber-voyagers.
+        </p>
+      </div>
       <div className="page-img-container">
         <img
           data-aos={'fade-right'}
@@ -35,37 +58,6 @@ const ZeyxLab = ({ data }) => {
           src={img2}
           alt="ZeYX Lab Animanoir"
         />
-      </div>
-      <h1 className="page-title fade-in">ZeYX Lab</h1>
-      <div data-aos={'fade-up'} className="page-txt-container">
-        <h2 className="page-subtitle">Experimentos con 3D</h2>
-        <p className="page-p">
-          ZeYX Lab is an on-going experiment teamed up by{' '}
-          <a
-            href="https://www.instagram.com/salvador_herrera_art/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Salvador Herrera
-          </a>
-          , Emmanuel Martínez and myself where we try to expand the notion of
-          art into the cyberspace, focused in 3D modelling.
-        </p>
-      </div>
-      <div className="page-img-container-ind">
-        <img
-          data-aos={'fade-up'}
-          className="page-img"
-          src={img3}
-          alt="ZeYX Lab Animanoir"
-        />
-      </div>
-      <div data-aos={'fade-up'} className="page-txt-container">
-        <p className="page-p">
-          Using a variety of JavaScript frameworks (three.js, A-Frame, etc.) we
-          invite artists to join this project, a dream of an android during
-          apotheosis.
-        </p>
       </div>
     </PageLayout>
   )

@@ -59,7 +59,7 @@ const colors = [
   '#6666FF',
 ]
 
-const numLines = 300
+const numLines = 350
 const lines = new Array(numLines).fill()
 
 function Fatline() {
