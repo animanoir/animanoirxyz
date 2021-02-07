@@ -79,7 +79,7 @@ b {
 .index-about h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .index-blogPosts {
@@ -337,12 +337,54 @@ body:hover::-webkit-scrollbar-thumb {
 
 /* ------------------------------ Media Queries ----------------------------- */
 
-@media (max-width: 740px) {
+@media (max-width: 1400px) {
   .page {
-    padding: 1.5rem;
+    padding: 3rem 7rem;
+  }
+  .index-title {
+    font-size: 3.5rem;
+    line-height: 1em;
+  }
+  .index-p {
+    font-size: 1.1rem;
+  }
+  .index-about h3 {
+    font-size: 3rem;
+  }
+  .index-about {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .page-feed {
+    flex-direction: column;
+  }
+
+  .index-title {
+    font-size: 3rem;
+    line-height: 1em;
+  }
+  .index-p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+  }
+  .index-about h3 {
+    font-size: 3rem;
+  }
+  .index-about {
+    font-size: 1.5rem;
+  }
+  .page {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
   }
 
   .post-card {
+    margin: 0;
     min-height: 100vh;
     flex: 1 !important;
   }
