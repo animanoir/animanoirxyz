@@ -357,6 +357,9 @@ body:hover::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 740px) {
+  .about-contact {
+    margin-right: 0;
+  }
   .page-feed {
     flex-direction: column;
   }
@@ -378,7 +381,12 @@ body:hover::-webkit-scrollbar-thumb {
   .page {
     padding: 1.5rem 0.5rem;
   }
-
+  .page-full {
+    padding: 3.5rem 2rem;
+  }
+  .page-txt-container {
+    width: 100%;
+  }
   .about-title {
     font-size: 1.5rem;
   }

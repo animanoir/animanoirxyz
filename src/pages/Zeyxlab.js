@@ -35,14 +35,18 @@ const ZeyxLab = ({ data }) => {
           >
             Salvador Herrera
           </a>
-          , Emmanuel Martínez and myself where we try to expand the notion of
-          art in the cyberspace, focused in 3D experimentation.
+          ,{' '}
+          <a target="_blank" rel="noreferrer" href="https://maremoto.mx/">
+            Emmanuel Martínez
+          </a>{' '}
+          and myself where we try to expand the notion of art in the cyberspace,
+          focused in 3D experimentation.
         </p>
 
         <p className="page-p">
           Mostly using libraries such <b>Three.js</b>, <b>A-Frame</b> and alike,
           plus technology that let´s us imagine, we try to deform the mind of
-          the cyber-voyagers.
+          cyber-voyagers.
         </p>
       </div>
       <div className="page-img-container">

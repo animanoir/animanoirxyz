@@ -21,9 +21,6 @@ const ZeyxLab = ({ data }) => {
   return (
     <PageLayout title={siteTitle}>
       <SEO title="Jardines | Alquitrán [VR Experience]" />
-      <div className="fade-in">
-        <ReactPlayer width="100%" height="100%" loop playing muted url={vid1} />
-      </div>
       <h1 className="page-title fade-in">
         Jardines | Alquitrán [VR Experience]
       </h1>
@@ -39,7 +36,7 @@ const ZeyxLab = ({ data }) => {
           </a>
         </h2>
         <p className="page-p">
-          In colaboration with{' '}
+          In collaboration with{' '}
           <a rel="noreferrer" target="_blank" href="http://maremoto.mx/">
             Maremoto
           </a>{' '}
@@ -61,6 +58,16 @@ const ZeyxLab = ({ data }) => {
             to live it.
           </p>
         </p>
+        <div className="fade-in" style={{ paddingBottom: '1rem' }}>
+          <ReactPlayer
+            width="100%"
+            height="100%"
+            loop
+            playing
+            muted
+            url={vid1}
+          />
+        </div>
         <div
           dangerouslySetInnerHTML={{
             __html: `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3124227393/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://otonolabel.bandcamp.com/album/alquitr-n">Alquitrán by Jardines</a></iframe>`,
