@@ -56,7 +56,7 @@
     "react-three-fiber": "^4.2.13",
     "react-transition-group": "^4.4.1",
     "teenyicons": "^0.3.0",
-    "three": "^0.120.0",
+    "three": "^0.125.0",
     "three.meshline": "^1.2.0",
     "url-join": "^4.0.1"
   },
