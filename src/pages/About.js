@@ -5,7 +5,7 @@ import LastFmData from '../components/LastFmData'
 import SEO from '../components/seo'
 import oamm2 from '../../content/assets/oamm2.png'
 import { keywordsArray } from '../utils/keywordsArray'
-import cv2021 from '../../content/assets/C.V.Ó.A.M.2020.pdf'
+import cv2021 from '../../content/assets/C.V.Ó.A.M.2020v4.pdf'
 
 const colores = [
   '#FF6633',
