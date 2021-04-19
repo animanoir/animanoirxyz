@@ -72,13 +72,14 @@ b {
 
 .index-about {
   color: var(--color-darkWhite);
-  font-size: 1.7rem;
+  font-size: 1rem;
+  width: 50%;
   font-family: 'Montserrat', sans-serif;
 }
 
 .index-about h3 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 1rem 0;
 }
 
