@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import Sidebar from '../components/Sidebar'
+import FloatingLogo from '../components/FloatingLogo'
 import PostCard from '../components/Pagecard'
 
 class TagPageTemplate extends React.Component {
@@ -58,7 +58,7 @@ class TagPageTemplate extends React.Component {
             'animador',
           ]}
         />
-        <Sidebar />
+        <FloatingLogo />
         <header className="tag-page-head">
           <h1 className="tag-head-title">{`#${
             tag.charAt(0).toUpperCase() + tag.slice(1)

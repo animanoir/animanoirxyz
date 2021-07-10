@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
-import LastFmData from '../components/LastFmData'
 import SEO from '../components/seo'
 import oamm2 from '../../content/assets/oamm2.png'
 import { keywordsArray } from '../utils/keywordsArray'
@@ -78,10 +77,10 @@ const Acerca = ({ data }, location) => {
 
   return (
     <>
-      <Layout title={siteTitle} className="about-page">
+      <Layout title={siteTitle} className="about-page acerca-contenedor">
         <SEO title="About" keywords={keywordsArray} />
-        <main className="fade-in centrar">
-          <div className="acerca-contenedor">
+        <main className="fade-in">
+          <div>
             <div className="about-contact">
               <h1 className="about-title">
                 <span
@@ -178,7 +177,7 @@ const Acerca = ({ data }, location) => {
                 </span>
                 , MX
               </h1>
-              <LastFmData />
+              {/*<LastFmData />*/}
               <div className="about-bio">
                 Multimedia Developer, Front-end and Software Engineer focused in
                 the creation of digital experiences to make life analogous
@@ -246,6 +245,8 @@ const Acerca = ({ data }, location) => {
                 </h3>
               </div>
             </div>
+          </div>
+          <div className="acerca-contenedor-right">
             <img
               className="about-img"
               src={oamm2}

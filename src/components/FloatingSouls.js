@@ -6,60 +6,9 @@ import * as meshline from 'three.meshline'
 
 extend(meshline)
 
-const colors = [
-  '#FF6633',
-  '#FFB399',
-  '#FF33FF',
-  '#FFFF99',
-  '#00B3E6',
-  '#E6B333',
-  '#3366E6',
-  '#999966',
-  '#99FF99',
-  '#B34D4D',
-  '#80B300',
-  '#809900',
-  '#E6B3B3',
-  '#6680B3',
-  '#66991A',
-  '#FF99E6',
-  '#CCFF1A',
-  '#FF1A66',
-  '#E6331A',
-  '#33FFCC',
-  '#66994D',
-  '#B366CC',
-  '#4D8000',
-  '#B33300',
-  '#CC80CC',
-  '#66664D',
-  '#991AFF',
-  '#E666FF',
-  '#4DB3FF',
-  '#1AB399',
-  '#E666B3',
-  '#33991A',
-  '#CC9999',
-  '#B3B31A',
-  '#00E680',
-  '#4D8066',
-  '#809980',
-  '#E6FF80',
-  '#1AFF33',
-  '#999933',
-  '#FF3380',
-  '#CCCC00',
-  '#66E64D',
-  '#4D80CC',
-  '#9900B3',
-  '#E64D66',
-  '#4DB380',
-  '#FF4D4D',
-  '#99E6E6',
-  '#6666FF',
-]
+const colors = ['#821A26', '#700423', '#4C0524', '#ff0000']
 
-const numLines = 350
+const numLines = 500
 const lines = new Array(numLines).fill()
 
 function Fatline() {
@@ -67,24 +16,24 @@ function Fatline() {
   const [color] = useState(
     () => colors[parseInt(colors.length * Math.random())]
   )
-  const [ratio] = useState(() => 0.5 + 0.8 * Math.random())
-  const [width] = useState(() => Math.max(0.5 * Math.random()))
+  const [ratio] = useState(() => 20 * Math.random())
+  const [width] = useState(() => Math.max(0.2 * Math.random()))
   // Calculate wiggly curve
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(
-      10 - 100 * Math.random(),
-      10 - 100 * Math.random(),
-      10 - 100 * Math.random()
+      10 - 2 * Math.random(),
+      10 - 2 * Math.random(),
+      10 - 2 * Math.random()
     )
-    return new Array(30)
+    return new Array(50)
       .fill()
       .map(() =>
         pos
           .add(
             new THREE.Vector3(
-              2 - Math.random() * 4,
-              4 - Math.random() * 2,
-              5 - Math.random() * 7
+              2 - Math.random() * 20,
+              4 - Math.random() * 100,
+              5 - Math.random() * 20
             )
           )
           .clone()
@@ -111,7 +60,7 @@ function Fatline() {
         depthTest={false}
         lineWidth={width}
         color={color}
-        dashArray={Math.random() * 0.9}
+        dashArray={Math.random() * 20}
         dashRatio={ratio}
       />
     </mesh>
@@ -141,7 +90,7 @@ function Scene() {
 const FloatingSouls = () => (
   <Canvas
     className="custom-canvas fade-in-slow"
-    camera={{ position: [0, 2, 50], fov: 100 }}
+    camera={{ position: [-10, 20, 50], fov: 20 }}
   >
     <Scene />
   </Canvas>

@@ -54,7 +54,7 @@ export const LastFmData = () => {
 
     return (
       <div className="about-div_lastfm fade-in">
-        <p className="actualmente-escuchando">Right now listening to:</p>
+        <p className="actualmente-escuchando">Listening now to::</p>
         <p className="artista">
           {songName} <span className="actualmente-escuchando">by</span>{' '}
           {artistName}

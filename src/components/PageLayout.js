@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
+import FloatingLogo from '../components/FloatingLogo'
 
 const PageLayout = (props) => {
   const { children } = props
@@ -7,8 +7,8 @@ const PageLayout = (props) => {
   return (
     <main>
       <div className="foreground" />
+      <FloatingLogo />
       <div className="page-full"> {children} </div>
-      <Sidebar />
     </main>
   )
 }

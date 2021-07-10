@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../../content/assets/favicons/animanoir-logo.svg'
 
-const Sidebar = () => {
+const FloatingLogo = () => {
   return (
     <nav className="custom-sidebar">
       <div className="main-logo">
@@ -14,4 +14,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default FloatingLogo
