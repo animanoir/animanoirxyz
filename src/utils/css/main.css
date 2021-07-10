@@ -399,7 +399,7 @@ b {
 .about-links {
   display: flex;
   width: 20%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-direction: row;
   justify-content: space-between;
 }
