@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import oamm2 from '../../content/assets/oamm2.png'
 import { keywordsArray } from '../utils/keywordsArray'
-import cv2021 from '../../content/assets/C.V.Ó.A.M.2020v4.pdf'
+import cv2021 from '../../content/assets/C.V.Ó.A.M.2021v1.pdf'
 
 const colores = [
   '#FF6633',

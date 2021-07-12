@@ -12,7 +12,7 @@ import yoGif from '../../content/assets/yo.gif'
 import yoGif2 from '../../content/assets/animav3.gif'
 import FloatingName from '../components/FloatingName'
 import LastFmData from '../components/LastFmData'
-import cv2021 from '../../content/assets/C.V.Ó.A.M.2020v4.pdf'
+import cv2021 from '../../content/assets/C.V.Ó.A.M.2021v1.pdf'
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title

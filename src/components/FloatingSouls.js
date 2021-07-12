@@ -8,7 +8,7 @@ extend(meshline)
 
 const colors = ['#821A26', '#700423', '#4C0524', '#ff0000']
 
-const numLines = 500
+const numLines = 600
 const lines = new Array(numLines).fill()
 
 function Fatline() {
