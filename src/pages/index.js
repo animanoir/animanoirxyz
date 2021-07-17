@@ -10,6 +10,7 @@ import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.webp'
 import { keywordsArray } from '../utils/keywordsArray'
 import oammGifBW from '../../content/assets/yo.gif'
 import oammGifAfx from '../../content/assets/oamm-afx.gif'
+import oammGifRed from '../../content/assets/animav3.gif'
 import FloatingName from '../components/FloatingName'
 import LastFmData from '../components/LastFmData'
 import cv2021 from '../../content/assets/C.V.Ó.A.M.2021v1.pdf'
@@ -47,7 +48,7 @@ const Index = ({ data }, location) => {
           <div className="hero">
             <img
               className="about-img centrar img-detras"
-              src={oammGifAfx}
+              src={oammGifRed}
               alt="Animanoir Óscar A. Montiel Animation"
             />
           </div>
