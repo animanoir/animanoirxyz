@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -8,11 +8,12 @@ import inmersivaBg from '../../content/assets/projects/inmersiva/oraculobg.webp'
 import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoirxyzBg.webp'
 import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.webp'
 import { keywordsArray } from '../utils/keywordsArray'
-import yoGif from '../../content/assets/yo.gif'
-import yoGif2 from '../../content/assets/animav3.gif'
+import oammGifBW from '../../content/assets/yo.gif'
+import oammGifAfx from '../../content/assets/oamm-afx.gif'
 import FloatingName from '../components/FloatingName'
 import LastFmData from '../components/LastFmData'
 import cv2021 from '../../content/assets/C.V.Ó.A.M.2021v1.pdf'
+import FloatingSouls from '../components/FloatingSouls'
 
 const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -27,6 +28,8 @@ const Index = ({ data }, location) => {
         keywords={keywordsArray}
       />
       <Layout title={siteTitle} className="page">
+        <FloatingSouls />
+
         <div className="page-content">
           <div
             style={{ position: 'relative', zIndex: '200000000' }}
@@ -34,7 +37,7 @@ const Index = ({ data }, location) => {
           >
             <img
               className="about-img centrar"
-              src={yoGif}
+              src={oammGifBW}
               alt="Animanoir Óscar A. Montiel Animation"
             />
             <marquee scrollamount="8">
@@ -43,35 +46,40 @@ const Index = ({ data }, location) => {
           </div>
           <div className="hero">
             <img
-              className="about-img centrar"
-              src={yoGif2}
+              className="about-img centrar img-detras"
+              src={oammGifAfx}
               alt="Animanoir Óscar A. Montiel Animation"
             />
           </div>
-          <div
-            style={{ position: 'relative', zIndex: '200000000' }}
-            className="hero hero-info"
-          >
+          <div style={{ position: 'relative' }} className="hero hero-info">
             <div className="about-social">
               <h3 className="about-social_title">
                 Site in construction (July 2021)
               </h3>
               <h3 className="about-social_title">
                 {' '}
-                <a target="_blank" href="mailto:omontiel@animanoir.xyz">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="mailto:omontiel@animanoir.xyz"
+                >
                   omontiel@animanoir.xyz
                 </a>
               </h3>
               <h3 className="about-social_title">
                 {' '}
-                <a target="_blank" href={cv2021}>
+                <a target="_blank" rel="noreferrer" href={cv2021}>
                   FULL C.V.
                 </a>
               </h3>
             </div>
             <LastFmData />
             <div className="about-links">
-              <a target="_blank" href="https://linktr.ee/animanoir">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://linktr.ee/animanoir"
+              >
                 <svg
                   viewBox="0 0 15 15"
                   fill="none"
@@ -87,6 +95,7 @@ const Index = ({ data }, location) => {
               </a>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/oscaramontiel/"
               >
                 <svg
@@ -102,7 +111,11 @@ const Index = ({ data }, location) => {
                   ></path>
                 </svg>
               </a>
-              <a target="_blank" href="https://github.com/animanoir">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/animanoir"
+              >
                 <svg
                   viewBox="0 0 15 15"
                   fill="none"
