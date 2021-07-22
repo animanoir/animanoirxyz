@@ -56,7 +56,7 @@
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.4.1",
     "teenyicons": "^0.3.0",
-    "three": "^0.120.1",
+    "three": "^0.125.0",
     "threejs-meshline": "^2.0.12",
     "url-join": "^4.0.1"
   },
