@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react'
-import { Canvas, useFrame, extend } from 'react-three-fiber'
+import { Canvas, useFrame, extend } from '@react-three/fiber'
 import '../utils/css/main.css'
 import * as THREE from 'three'
-import * as meshline from 'three.meshline'
+import * as meshline from 'threejs-meshline'
 
 extend(meshline)
 

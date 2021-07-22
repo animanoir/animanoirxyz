@@ -9,7 +9,6 @@ import animanoirxyzBg from '../../content/assets/projects/animanoirxyz/animanoir
 import jardinesBg from '../../content/assets/projects/jardines/jardinesbg.webp'
 import { keywordsArray } from '../utils/keywordsArray'
 import oammGifBW from '../../content/assets/yo.gif'
-import oammGifAfx from '../../content/assets/oamm-afx.gif'
 import oammGifRed from '../../content/assets/animav3.gif'
 import FloatingName from '../components/FloatingName'
 import LastFmData from '../components/LastFmData'
@@ -32,16 +31,14 @@ const Index = ({ data }, location) => {
         <FloatingSouls />
 
         <div className="page-content">
-          <div
-            style={{ position: 'relative', zIndex: '200000000' }}
-            className="hero fade-in-quick"
-          >
+          <div style={{ position: 'relative' }} className="hero fade-in-quick">
             <img
               className="about-img centrar"
               src={oammGifBW}
+              style={{ zIndex: '10' }}
               alt="Animanoir Óscar A. Montiel Animation"
             />
-            <marquee scrollamount="8">
+            <marquee scrollamount="8" style={{ zIndex: '11' }}>
               <FloatingName />
             </marquee>
           </div>
