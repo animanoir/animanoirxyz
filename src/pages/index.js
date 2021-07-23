@@ -12,7 +12,7 @@ import oammGifBW from '../../content/assets/yo.gif'
 import oammGifRed from '../../content/assets/animav3.gif'
 import FloatingName from '../components/FloatingName'
 import LastFmData from '../components/LastFmData'
-import cv2021 from '../../content/assets/C.V.Ó.A.M.2021v1.pdf'
+import cv2021 from '../../content/assets/oammcv.pdf'
 import FloatingSouls from '../components/FloatingSouls'
 
 const Index = ({ data }, location) => {
