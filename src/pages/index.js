@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -51,9 +51,7 @@ const Index = ({ data }, location) => {
           </div>
           <div style={{ position: 'relative' }} className="hero hero-info">
             <div className="about-social">
-              <h3 className="about-social_title">
-                Site in construction (July 2021)
-              </h3>
+              <h3 className="about-social_title">Site under construction</h3>
               <h3 className="about-social_title">
                 {' '}
                 <a
