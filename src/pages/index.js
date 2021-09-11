@@ -28,8 +28,6 @@ const Index = ({ data }, location) => {
         keywords={keywordsArray}
       />
       <Layout title={siteTitle} className="page">
-        <FloatingSouls />
-
         <div className="page-content">
           <div style={{ position: 'relative' }} className="hero fade-in-quick">
             <img
