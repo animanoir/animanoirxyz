@@ -1,0 +1,99 @@
+{
+  "name": "animanoirxyz",
+  "private": true,
+  "description": "Sitio web, 2020",
+  "version": "1.0.2",
+  "author": "Óscar A. Montiel",
+  "bugs": {
+    "url": "https://github.com/animanoir/animanoirxyz/issues"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@react-three/fiber": "^7.0.6",
+    "aframe": "^1.0.4",
+    "aframe-react": "^4.4.0",
+    "aos": "^2.3.4",
+    "axios": "^0.21.0",
+    "classnames": "^2.2.6",
+    "crypto": "^1.0.1",
+    "fontsource-josefin-sans": "^3.1.6",
+    "fontsource-montserrat": "^3.1.5",
+    "fontsource-open-sans": "^3.1.5",
+    "fontsource-roboto-condensed": "^3.1.5",
+    "gatsby": "^2.32.13",
+    "gatsby-cli": "^2.18.0",
+    "gatsby-image": "^2.4.13",
+    "gatsby-plugin-feed": "^2.5.11",
+    "gatsby-plugin-google-analytics": "^2.3.11",
+    "gatsby-plugin-manifest": "^2.4.18",
+    "gatsby-plugin-netlify": "^2.3.11",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-purgecss": "^3.1.1",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
+    "gatsby-plugin-sharp": "^2.6.19",
+    "gatsby-plugin-sitemap": "^2.4.13",
+    "gatsby-plugin-twitter": "^2.7.0",
+    "gatsby-remark-copy-linked-files": "^2.3.11",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-remark-prismjs": "^3.3.20",
+    "gatsby-remark-responsive-iframe": "^2.4.11",
+    "gatsby-remark-smartypants": "^2.3.10",
+    "gatsby-source-filesystem": "^2.3.19",
+    "gatsby-transformer-remark": "^2.8.25",
+    "gatsby-transformer-sharp": "^2.5.11",
+    "gsap": "^3.5.1",
+    "prismjs": "^1.20.0",
+    "react": "^16.13.1",
+    "react-curtains": "^1.0.7",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-player": "^2.7.0",
+    "react-script-tag": "^1.1.2",
+    "react-spring": "^8.0.27",
+    "react-transition-group": "^4.4.1",
+    "teenyicons": "^0.3.0",
+    "three": "^0.120.1",
+    "threejs-meshline": "^2.0.12",
+    "url-join": "^4.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "husky": "^2.7.0",
+    "postcss-color-function": "^4.1.0",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-easy-import": "^3.0.0",
+    "prettier": "2.1.2",
+    "pretty-quick": "^1.11.1"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "keywords": [
+    "gatsby",
+    "ghost",
+    "gallery",
+    "blog",
+    "starter"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaporwavy/gatsby-london-after-midnight.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

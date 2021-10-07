@@ -1,0 +1,808 @@
+/* --------------------------- Archivos importados -------------------------- */
+
+@import './reset.css';
+@import 'vars.css';
+
+/* -------------------------- Estilo crudos de HTML ------------------------- */
+
+html {
+  font-size: 16px;
+  background-color: var(--color-dark) !important;
+}
+
+i {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+a {
+  color: var(--color-darkWhite);
+}
+
+a:hover {
+  color: rgb(236, 0, 0);
+  text-decoration: none;
+}
+
+b {
+  font-weight: bold;
+}
+
+/* -------------------------- El feed de proyectos -------------------------- */
+
+.page-feed {
+  height: auto;
+  margin: auto;
+  margin-bottom: 50vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.post-card {
+  margin-right: 1.5rem;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  flex: 1 1 100%;
+  display: flex;
+  background: linear-gradient(135deg, #242426 0%, #dd0000 100%) center center;
+  background-size: cover;
+  overflow: hidden;
+  counter-increment: posts;
+  height: 300px;
+}
+
+.post-card:hover {
+  transition: filter 0.1s;
+  background-color: rgba(0, 0, 0, 0.9);
+  filter: invert(100);
+}
+
+.post-card-large {
+  flex: 1 1 100%;
+}
+
+.page-card-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: copy;
+  color: var(--color-darkWhite);
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+/* .post-card-tag-link {
+  font-size: 0.7rem;
+  color: var(--color-sub-base);
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+} */
+
+.post-card-link:hover .page-card-content {
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+.page-card-title {
+  background-color: var(--color-dark);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0.7rem;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.55rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.page-card-title a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* ----------------------- Fin de El feed de proyectos ---------------------- */
+
+/* Logo derecha */
+/* ----------------------------- Custom sidebar ----------------------------- */
+
+.custom-sidebar {
+  position: absolute;
+  left: calc(100vw - 13%);
+  top: calc(100vh - 20%);
+  width: 10vw;
+  /* height: 200px; */
+  cursor: help;
+}
+
+.main-logo {
+  border-radius: 100%;
+  width: 100%;
+  transition: filter 0.5s;
+  z-index: 10000000000000000000000000000000000;
+}
+
+.main-logo:hover {
+  transition: filter 0.5s;
+  filter: invert(100);
+}
+
+/* -------------------------- Fin de Custom Sidebar ------------------------- */
+
+/* ----------------------- Proyecto individual (Page) ----------------------- */
+
+.page-full {
+  padding: 3.5rem 10rem;
+  overflow: hidden;
+}
+
+.page-content {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden !important;
+  color: var(--color-darkWhite);
+}
+
+.hero {
+  height: 100vh;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.hero-info {
+  z-index: 1000000000000000;
+  height: 50vh;
+  padding: 0;
+  margin: 0 0 0 10vw;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.img-detras {
+  z-index: -100;
+}
+
+.page-title {
+  word-wrap: break-word;
+  color: var(--color-darkWhite);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 4.5rem;
+  margin: 0;
+  text-shadow: 0px 5px 10px var(--color-dark);
+}
+
+.page-subtitle {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  font-weight: 100;
+  line-height: 1.2em;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-darkWhite);
+}
+
+.page-img {
+  width: 70%;
+  margin-bottom: 5rem;
+}
+
+.page-img-left {
+  width: 70%;
+  align-self: flex-end;
+}
+
+.page-img-container {
+  overflow-x: hidden !important;
+  padding: 1rem;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+}
+
+.page-img-container-ind {
+  overflow-x: hidden !important;
+  height: auto;
+  width: 100%;
+}
+
+.page-txt-container {
+  height: auto;
+  width: 60%;
+  text-align: justify;
+}
+
+.page-iframe {
+  padding: 0 5rem;
+  width: 80%;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.page-video {
+  width: 100%;
+}
+
+.page-p {
+  color: rgba(255, 255, 255, 0.308);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* .page-content-excerpt {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  color: var(--color-base);
+  opacity: 0.5;
+} */
+
+.page-gallery {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  grid-auto-flow: row !important;
+}
+
+/* --------------------- Fin Proyecto individual (Page) --------------------- */
+
+/* ---------------------- Fin de Estilos crudos de HTML --------------------- */
+
+.fixed-frame {
+  padding: 2rem 3rem;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+/* .blog-feed-container {
+  height: 100vh;
+} */
+
+.main-index-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-p-alt {
+  color: var(--color-darkWhite);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1em;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
+}
+
+.index-about {
+  color: var(--color-darkWhite);
+  font-size: 1rem;
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.index-about h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+
+.index-blogPosts {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.index-postContainer {
+  line-height: 1.3;
+}
+
+.main-blog-link {
+  text-decoration: none;
+}
+
+.main-blog-link *:hover {
+  color: var(--color-red);
+}
+
+.index-title {
+  margin-top: 0;
+  color: var(--color-darkWhite);
+  font-size: 4rem;
+  line-height: 1.2em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.index-p {
+  color: var(--color-darkWhite);
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1em;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+}
+.centrar {
+  position: absolute;
+  transform-origin: center;
+}
+
+.tag-head-title {
+  color: var(--color-darkWhite);
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.page-sidebar {
+  position: fixed;
+  padding: 2rem;
+  width: 30vw;
+  height: auto;
+  color: white;
+}
+
+.about-title {
+  font-size: 2.1rem;
+  color: white;
+  width: 90px;
+  padding-bottom: 1.5rem;
+  word-wrap: break-word;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 -12px;
+  padding: 0;
+  list-style: none;
+}
+
+/* ----------------------- Estilo individual del About ---------------------- */
+
+.about-page {
+  height: 100vh;
+}
+
+.acerca-contenedor {
+  color: var(--color-darkWhite);
+  display: flex;
+  width: 100vw;
+}
+
+.about-img {
+  width: 85vh;
+}
+
+.about-container-right {
+  width: 50%;
+}
+
+.about-bio {
+  font-size: 0.8rem;
+  word-break: keep-all;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 2rem 0;
+}
+
+.img-nowPlaying {
+  margin-left: 0.7rem;
+}
+
+.about-div_lastfm {
+  font-size: 1.5rem;
+  width: 100vw;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  padding-right: 1rem;
+  line-height: 1.2;
+}
+.floating-name {
+  margin-top: 5rem;
+  font-size: 9rem;
+  filter: drop-shadow(0 0 0.75rem black);
+  z-index: 10000;
+  width: auto;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.actualmente-escuchando {
+  color: rgba(255, 255, 255, 0.308);
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.artista {
+  color: var(--color-darkWhite);
+  margin: 0 !important;
+  font-family: 'Josefina sans';
+}
+
+.about-social {
+  line-height: 1.3;
+}
+
+.about-social li {
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-social_title {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  color: rgba(255, 255, 255, 0.308);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-work {
+  margin: 0.9rem 0;
+}
+
+.about-links {
+  display: flex;
+  width: 40%;
+  margin-top: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-contact {
+  width: 10%;
+}
+
+/* ------------------- Fin de Estilo individual del About ------------------- */
+
+/* ------------------------ Canvas y alguna otra cosa ----------------------- */
+
+.custom-canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* -------------------- Fin de Canvas y alguna otra cosa -------------------- */
+
+/* -------------------------------- Scrollbar ------------------------------- */
+
+body:hover::-webkit-scrollbar {
+  background-color: black;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--color-dark);
+  width: 0.5rem;
+  cursor: move;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-darkWhite);
+}
+
+/* ---------------------------- Fin de Scrollbar ---------------------------- */
+
+/* -------------------------- Colores de Selection -------------------------- */
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--color-red);
+  background: yellow;
+}
+
+::selection {
+  color: black;
+  background: rgba(255, 255, 255, 0.87);
+}
+
+.letra-interactiva {
+  cursor: crosshair;
+}
+
+/* ----------------------- Fin de Colores de Selection ---------------------- */
+
+.emoji {
+  font-size: 1rem;
+  vertical-align: text-top;
+}
+
+/* ----------------------------- Efectos visuales ----------------------------- */
+
+/* Fondo noise (thx to Omar (@OmarOlaes) por encontrar la solución :~)) */
+.foreground {
+  top: -10rem;
+  left: -10rem;
+  width: calc(100% + 20rem);
+  height: calc(100% + 20rem);
+  z-index: 0;
+  position: fixed;
+  pointer-events: none;
+  background-position: 50%;
+  background-image: url('../../../content/assets/noise-1.png');
+  pointer-events: none;
+  animation: foreground 1s steps(2) infinite;
+}
+
+@keyframes foreground {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+}
+.fade-in-quick {
+  animation: fadeIn ease-in 2s;
+  -webkit-animation: fadeIn ease-in 2s;
+  -moz-animation: fadeIn ease-in 2s;
+  -o-animation: fadeIn ease-in 2s;
+  -ms-animation: fadeIn ease-in 2s;
+}
+
+.fade-in-slow {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ------------------------- Fin de Efectos Visuales ------------------------ */
+
+/* ------------------------------ Media Queries ----------------------------- */
+
+@media (max-width: 1400px) {
+  .index-title {
+    font-size: 3.5rem;
+    line-height: 1em;
+  }
+  .index-p {
+    font-size: 1.1rem;
+  }
+  .index-about h3 {
+    font-size: 3rem;
+  }
+  .index-about {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .about-contact {
+    margin-right: 0;
+  }
+  .page-feed {
+    flex-direction: column;
+  }
+
+  .index-title {
+    font-size: 3rem;
+    line-height: 1em;
+  }
+  .index-p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+  }
+  .index-about h3 {
+    font-size: 3rem;
+  }
+  .index-about {
+    font-size: 1.5rem;
+  }
+  .page {
+    padding: 1.5rem 0.5rem;
+  }
+  .page-full {
+    padding: 3.5rem 2rem;
+  }
+  .page-txt-container {
+    width: 100%;
+  }
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .post-card {
+    margin: 0;
+    min-height: 100vh;
+    flex: 1 !important;
+  }
+
+  .custom-sidebar {
+    position: relative;
+    width: 50%;
+    top: initial;
+    left: initial;
+    margin: auto;
+    cursor: help;
+    margin-bottom: 1.5rem;
+  }
+  .post-content {
+    width: 100%;
+    margin: auto;
+  }
+
+  .acerca-contenedor {
+    display: block;
+    margin: 1rem;
+    text-align: center;
+    min-width: initial;
+  }
+
+  .centrar {
+    position: initial;
+    top: none;
+    left: none;
+    transform: none;
+  }
+
+  .about-div_lastfm {
+    padding-right: initial;
+    align-items: center;
+  }
+
+  .about-links {
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 0;
+  }
+  .about-img {
+    max-width: 100%;
+  }
+
+  .main-logo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 53em) {
+  .foreground {
+    display: none;
+  }
+}
+
+/* -------------------------- Fin de Media Queries -------------------------- */

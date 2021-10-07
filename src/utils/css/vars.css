@@ -1,0 +1,18 @@
+/* -------------------------------- Variables ------------------------------- */
+:root {
+  /* Colours */
+
+  --color-dark: rgb(1, 1, 1);
+  --color-red: #fd4c4c;
+  --color-darkWhite: #fffffff3;
+
+  --color-greyWhite: #ffffffab;
+
+  /* Breakpoints */
+  --xlarge: 1680px;
+  --large: 1280px;
+  --medium: 980px;
+  --small: 740px;
+  --xsmall: 480px;
+}
+/* ---------------------------- Fin de Variables ---------------------------- */
